@@ -14,7 +14,9 @@ def _extract_json(text):
         t = t.strip("`")
         t = t[t.find("\n") + 1:] if "\n" in t else t
     candidates = [t]
-    if "{" in t and "}" in t:
+    if "[" in t and "]" in t:                      # array (e.g. a competitive landscape)
+        candidates.append(t[t.find("["): t.rfind("]") + 1])
+    if "{" in t and "}" in t:                      # object (e.g. a verdict)
         candidates.append(t[t.find("{"): t.rfind("}") + 1])
     for c in candidates:
         try:

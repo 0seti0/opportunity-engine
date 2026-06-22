@@ -46,6 +46,9 @@ subscription, so no Anthropic API key is needed for personal use:
   Swap this one file for an API-key client when productizing for customers (same signature).
 - `assemble_evidence.py` — deterministic per-target evidence bundle (handles, fact-check, trials, patents, momentum).
 - `run_weekly.py` — discovery → evidence → `claude -p` judgment → fact-check override → rank → snapshot + weekly delta.
+- `whos_moving.py` — accurate **competitive landscape** per target: ClinicalTrials.gov programs (sponsor+drug+phase,
+  all modalities) + covalent-warhead patent filers + optional `claude -p` web leg (catches CT.gov gaps, e.g. BioAge
+  BGE-102, and flags covalent vs non-covalent). Crowding verdict from the REAL clinical count, not the patent count.
 - `report_gen.py` — renders the **persuasion report** (`covalent_report_<date>.md`): per target **who's moving** (patents+programs)
   · **why now** (momentum+biology) · **sources/IDs** (linked). Two tiers — open opportunities + a fresh-credible-filings
   fast-follow tier (degrader-filtered, title-validated "Company X just filed on target X").

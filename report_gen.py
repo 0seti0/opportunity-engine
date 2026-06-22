@@ -9,7 +9,10 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
+from whos_moving import firm, whos_moving
+
 HERE = Path(__file__).parent
+WEB = False   # True = add the claude -p web-landscape leg per target (catches CT.gov gaps like BioAge; slow)
 
 
 def _load(name, default=None):
@@ -17,8 +20,6 @@ def _load(name, default=None):
     return json.load(open(p)) if p.exists() else default
 
 
-LEGAL = {"INC", "LLC", "LTD", "LIMITED", "CO", "CORP", "CORPORATION", "COMPANY", "GMBH", "AG", "SA",
-         "SAS", "BV", "NV", "KG", "KGAA", "PLC", "LP", "LLP", "PTE", "PTY", "SRL", "SPA", "OY", "AB", "AS", "ULC"}
 # degraders/glues: warhead = linker/E3 chemistry, not covalent target engagement -> not a covalent-inhibitor race
 DEGRADER = re.compile(r"DEGRADER|PROTAC|MOLECULAR GLUE|BIFUNCTIONAL|CEREBLON|\bCRBN\b|VHL LIGAND|GLUTARIMIDE|"
                        r"\bIMID\b|E3 (UBIQUITIN )?LIGASE|ISOINDOLIN|PIPERIDINE-2,6-DIONE")
@@ -26,15 +27,6 @@ DEGRADER = re.compile(r"DEGRADER|PROTAC|MOLECULAR GLUE|BIFUNCTIONAL|CEREBLON|\bC
 
 def _gpatent(pn):                                  # SureChEMBL id -> Google Patents url
     return f"https://patents.google.com/patent/{pn.replace('-', '')}"
-
-
-def _firm(a):                                      # normalize assignee: one company = one player
-    a = re.sub(r"\(.*?\)", " ", (a or "").upper())
-    a = re.sub(r"[.,/]", " ", a)
-    toks = a.split()
-    while toks and toks[-1] in LEGAL:
-        toks.pop()
-    return " ".join(toks).strip()
 
 
 def run():
@@ -79,17 +71,18 @@ def run():
         out.append(f"\n## #{r['rank']} · {sym}  —  `{dd.get('verdict', r.get('verdict','?'))}` · lane: **{dd.get('lane','?')}**")
         out.append(f"> {dd.get('covalent_handle', r.get('note',''))[:200]}")
 
-        # ── WHO'S MOVING ──────────────────────────────────────────────
-        out.append("\n**🏢 Who's moving**")
-        ps = sorted(pats.get(sym, []), key=lambda x: x["date"], reverse=True)
-        if ps:
-            for p in ps[:5]:
-                out.append(f"- Patent **{p['assignee']}** — [{p['pn']}]({_gpatent(p['pn'])}) ({p['date']}) · _{p['title'][:60]}_")
-        else:
-            out.append("- No covalent patent in the SureChEMBL feed → **open IP lane (first-mover)**")
-        ec = dd.get("existing_covalent")
-        if ec:
-            out.append(f"- Programs: {ec}")
+        # ── WHO'S MOVING (real landscape: CT.gov clinical + covalent IP, not patents alone) ──
+        ps = sorted(pats.get(sym, []), key=lambda x: x["date"], reverse=True)   # covalent patents (for Sources)
+        wm = whos_moving(sym, web=WEB)
+        out.append(f"\n**🏢 Who's moving** — clinical field: **{wm['crowding']}** "
+                   f"({wm['n_clinical']} industry program(s)) · covalent lane: **{wm['covalent_lane']}**")
+        for c in wm["clinical_programs"][:4]:
+            out.append(f"- {c['phase'].replace('PHASE','Ph'):5} **{firm(c['sponsor'])}** — {c['drug'] or '(program)'}")
+        cf = wm["covalent_filers"]
+        out.append("- Covalent IP: " + (", ".join(f"{c['firm']} (latest {c['latest'][:7]})" for c in cf[:3])
+                                        if cf else "**none in feed → covalent lane open**"))
+        if dd.get("existing_covalent"):
+            out.append(f"- Covalent programs (web): {dd['existing_covalent'][:180]}")
 
         # ── WHY NOW ───────────────────────────────────────────────────
         out.append("\n**📈 Why now**")
@@ -131,11 +124,11 @@ def run():
             common = (d.get("common") or "").upper()
             if d["sym"].upper() not in title and (not common or common not in title):
                 continue                                        # title must NAME the target = "filed on X", not just mentions it
-            firm = _firm(e[2].split(';')[0])
-            if not firm:
+            fm = firm(e[2].split(';')[0])           # CN-aware (collapses 诺华 -> NOVARTIS)
+            if not fm:
                 continue
-            prog[d["sym"]]["firms"].add(firm)
-            prog[d["sym"]]["pats"].append({"pn": pn, "firm": firm, "date": e[1], "title": e[3]})
+            prog[d["sym"]]["firms"].add(fm)
+            prog[d["sym"]]["pats"].append({"pn": pn, "firm": fm, "date": e[1], "title": e[3]})
     fresh = []
     for sym, p in prog.items():
         if sym in top_syms:
@@ -147,16 +140,24 @@ def run():
     fresh.sort(key=lambda x: x[2], reverse=True)                # then most recent
 
     out += ["\n---\n", "## ⚡ Fresh credible filings — fast-follow tier",
-            "\n_A credible company just filed covalent IP (2025+), only 1–3 players, lane not yet crowded "
-            "— someone moved; the race is open._\n"]
-    for sym, players, latest, p in fresh[:12]:
+            "\n_A credible company recently filed **covalent** IP (2025+) on the target. Sorted so the true white space "
+            "— covalent-fresh **and** clinically open — leads; covalent-fresh-but-clinically-crowded targets follow, with "
+            "their clinical field shown so you see what a covalent fast-follow would compete with._\n"]
+    rank = {"OPEN": 0, "CONTESTED": 1, "CROWDED": 2}
+    fwm = [(sym, players, latest, p, whos_moving(sym, web=WEB)) for sym, players, latest, p in fresh[:16]]
+    fwm.sort(key=lambda x: x[2], reverse=True)             # recent first
+    fwm.sort(key=lambda x: rank.get(x[4]["crowding"], 3))  # then clinically-open first (stable)
+    for sym, players, latest, p, wm in fwm[:12]:
         ps = sorted(p["pats"], key=lambda x: x["date"], reverse=True)
-        accel = scan.get(sym, {}).get("accel")
-        out.append(f"\n### ⚡ {sym}  —  {players} player(s) · latest filing **{latest}**")
-        out.append("\n**🏢 Who's moving**")
+        out.append(f"\n### ⚡ {sym}  —  {players} covalent filer(s) · latest **{latest}** · clinical field **{wm['crowding']}**")
+        out.append("\n**🏢 Who's moving — covalent IP (the trigger):**")
         for x in ps[:4]:
             out.append(f"- **{x['firm']}** — [{x['pn']}]({_gpatent(x['pn'])}) ({x['date']}) · _{x['title'][:62]}_")
-        out.append(f"\n**📈 Why now** · filed **{latest}** (fresh) · only **{players}** player(s) — race just starting"
+        clin = ", ".join(f"{firm(c['sponsor'])} {c['drug'] or ''} ({c['phase'].replace('PHASE','Ph')})"
+                         for c in wm["clinical_programs"][:5])
+        out.append(f"\n**📉 …vs the clinical field ({wm['n_clinical']} program(s), {wm['crowding']}):** {clin or 'none registered'}")
+        accel = scan.get(sym, {}).get("accel")
+        out.append(f"\n**📈 Why now** · covalent IP filed **{latest}** · only **{players}** covalent filer(s)"
                    + (f" · literature ×{accel}" if accel and accel >= 1.15 else ""))
         out.append(f"**🔗 Sources** · [trials](https://clinicaltrials.gov/search?term={sym}) · "
                    f"[literature](https://europepmc.org/search?query={sym}) · SureChEMBL patents (linked above)")

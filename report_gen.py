@@ -9,6 +9,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
+from tractable import covalently_tractable
 from whos_moving import firm, whos_moving
 
 HERE = Path(__file__).parent
@@ -30,7 +31,7 @@ def _gpatent(pn):                                  # SureChEMBL id -> Google Pat
 
 
 def run():
-    ranking = _load("covalent_ranking_final.json", [])
+    ranking = [r for r in _load("covalent_ranking_final.json", []) if covalently_tractable(r["target"])]
     deep = {d["sym"]: d for d in (_load("leveled_ranking.json", {}) or {}).get("deep", [])}
     fc = _load("factcheck.json", {})
     scan = {r["sym"]: r for r in (_load("emerging_open_ranked.json", {}) or {}).get("all", [])}
@@ -131,7 +132,7 @@ def run():
             prog[d["sym"]]["pats"].append({"pn": pn, "firm": fm, "date": e[1], "title": e[3]})
     fresh = []
     for sym, p in prog.items():
-        if sym in top_syms:
+        if sym in top_syms or not covalently_tractable(sym):   # drop antibody-class / biologic targets
             continue
         players, latest = len(p["firms"]), max(x["date"] for x in p["pats"])
         if 1 <= players <= 3 and latest >= "2025":             # credible (feed-filtered) · uncrowded · fresh

@@ -37,5 +37,28 @@ uv run --with openpyxl --python 3.12 python report.py
 - CysDB supplement (NIHMS1893018-supplement-2.xlsx): from the CysDB paper (Cell Chem Biol 2023)
 - HGNC complete set, DepMap common essentials, Hart CEG2 — see script headers
 
+## Weekly run — no API key (rides your Claude Max subscription)
+
+The LLM judgment runs through Claude Code headless (`claude -p`), authenticated by your Max
+subscription, so no Anthropic API key is needed for personal use:
+
+- `llm_claude_code.py` — `judge(evidence, schema)` shells out to `claude -p --output-format json`.
+  Swap this one file for an API-key client when productizing for customers (same signature).
+- `assemble_evidence.py` — deterministic per-target evidence bundle (handles, fact-check, trials, patents, momentum).
+- `run_weekly.py` — discovery → evidence → `claude -p` judgment → fact-check override → rank → snapshot + weekly delta.
+
+```bash
+uv run --python 3.12 python run_weekly.py
+```
+
+Schedule it (Mondays 8am) via `crontab -e`:
+```
+0 8 * * 1 cd /path/to/layer1 && ~/.local/bin/uv run --python 3.12 python run_weekly.py >> runs/cron.log 2>&1
+```
+
+The deterministic fact-check (`factcheck.py`) overrides the model on any residue/selectivity fact.
+For a multi-customer product, swap `claude -p` for an Anthropic/OpenAI API key (console.anthropic.com) —
+the subscription path is for individual use and is rate-limited.
+
 ## Note
 `.epo_creds.json` (EPO OPS keys) is gitignored — never commit it.

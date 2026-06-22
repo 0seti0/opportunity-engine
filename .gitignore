@@ -22,3 +22,6 @@ __pycache__/
 
 # throwaway feasibility code
 phase0/
+
+# weekly run snapshots (generated)
+runs/

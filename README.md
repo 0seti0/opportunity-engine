@@ -46,6 +46,9 @@ subscription, so no Anthropic API key is needed for personal use:
   Swap this one file for an API-key client when productizing for customers (same signature).
 - `assemble_evidence.py` — deterministic per-target evidence bundle (handles, fact-check, trials, patents, momentum).
 - `run_weekly.py` — discovery → evidence → `claude -p` judgment → fact-check override → rank → snapshot + weekly delta.
+- `report_gen.py` — renders the **persuasion report** (`covalent_report_<date>.md`): per target **who's moving** (patents+programs)
+  · **why now** (momentum+biology) · **sources/IDs** (linked). Two tiers — open opportunities + a fresh-credible-filings
+  fast-follow tier (degrader-filtered, title-validated "Company X just filed on target X").
 
 ```bash
 uv run --python 3.12 python run_weekly.py

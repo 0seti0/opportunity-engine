@@ -23,5 +23,6 @@ __pycache__/
 # throwaway feasibility code
 phase0/
 
-# weekly run snapshots (generated)
+# weekly run snapshots + generated reports
 runs/
+covalent_report_*.md

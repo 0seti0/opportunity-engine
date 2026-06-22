@@ -69,8 +69,10 @@ def run():
         sym = r["target"]
         dd = deep.get(sym, {})
         acc = fc.get(sym, {}).get("uniprot")
-        out.append(f"\n## #{r['rank']} · {sym}  —  `{dd.get('verdict', r.get('verdict','?'))}` · lane: **{dd.get('lane','?')}**")
-        out.append(f"> {dd.get('covalent_handle', r.get('note',''))[:200]}")
+        # fact-checked ranking is the source of truth (overrides the LLM deep-analysis where they conflict,
+        # e.g. PRKCQ which the LLM wrongly called DEAD but the UniProt fact-check rescued)
+        out.append(f"\n## #{r['rank']} · {sym}  —  selectivity **{r.get('selectivity_factchecked','?')}** · lane **{dd.get('lane','OPEN')}**")
+        out.append(f"> {r.get('note') or dd.get('covalent_handle','')}")
 
         # ── WHO'S MOVING (real landscape: CT.gov clinical + covalent IP, not patents alone) ──
         ps = sorted(pats.get(sym, []), key=lambda x: x["date"], reverse=True)   # covalent patents (for Sources)

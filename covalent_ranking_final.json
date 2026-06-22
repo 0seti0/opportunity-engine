@@ -1,0 +1,87 @@
+[
+ {
+  "rank": 1,
+  "target": "SLC1A5",
+  "selectivity_factchecked": "unique-handle",
+  "residues_verified": [
+   "C467=cys"
+  ],
+  "note": "#1 \u2014 Cys467 UNIQUE across all 6 SLC1 paralogs (SLC1A4=Thr, EAATs=Arg): warhead IS the selectivity. Risk: efficacy/redundancy."
+ },
+ {
+  "rank": 2,
+  "target": "PPARD",
+  "selectivity_factchecked": "conserved-liability",
+  "residues_verified": [
+   "C249=cys"
+  ],
+  "note": "conserved Cys249 but scaffold-selectivity demonstrated (GSK3787); empty covalent-antagonist lane. Risk: inhibit-direction unproven."
+ },
+ {
+  "rank": 3,
+  "target": "PRKCQ",
+  "selectivity_factchecked": "unique-handle",
+  "residues_verified": [
+   "C303=cys",
+   "C322=cys",
+   "C424=cys"
+  ],
+  "note": "RESCUED from 'DEAD' by fact-check: C303/C322 are REAL and paralog-UNIQUE (PRKCD/E/H lack them); validated immunology, EXS4318 dropped. Risk: regulatory cysteines, mechanism unproven."
+ },
+ {
+  "rank": 4,
+  "target": "USP35",
+  "selectivity_factchecked": "conserved-liability",
+  "residues_verified": [
+   "C450=cys"
+  ],
+  "note": "untouched DUB lane, USP30 pocket-selectivity precedent. Risk: conserved catalytic Cys, soft validation."
+ },
+ {
+  "rank": 5,
+  "target": "RAF1",
+  "selectivity_factchecked": "conserved-liability",
+  "residues_verified": [
+   "C424=cys"
+  ],
+  "note": "MID-PACK: strong validation + open lane; Cys424 conserved pan-RAF (arguably a feature for dimer coverage) but ligandability is computational-only. Risk: no ABPP evidence + wild-type tox ceiling."
+ },
+ {
+  "rank": 6,
+  "target": "IRF4",
+  "selectivity_factchecked": "partial",
+  "residues_verified": [
+   "C99=cys",
+   "C194=cys",
+   "C250=cys"
+  ],
+  "note": "elite validation (MM addiction, ASO de-risked); C194/C250 partial-unique but reactivity unproven; C99 pan-IRF conserved."
+ },
+ {
+  "rank": 7,
+  "target": "YES1",
+  "selectivity_factchecked": "partial",
+  "residues_verified": [
+   "C287=cys"
+  ],
+  "note": "best validation but Cys287 shared with SRC/FGR (partial) + contested by NXP900 Ph1b."
+ },
+ {
+  "rank": 8,
+  "target": "AKR1B1",
+  "selectivity_factchecked": "conserved-liability",
+  "residues_verified": [
+   "C299=cys"
+  ],
+  "note": "real C299 (lit 'C298'=mature numbering) but conserved with AKR1B10 + Ph3 failures (AT-001/govorestat)."
+ },
+ {
+  "rank": 9,
+  "target": "PRKCG",
+  "selectivity_factchecked": "conserved-liability",
+  "residues_verified": [
+   "C516=cys"
+  ],
+  "note": "conserved C516 (PRKCA/B), no proven unique handle, CNS-only."
+ }
+]

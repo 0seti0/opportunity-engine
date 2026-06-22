@@ -1,0 +1,350 @@
+[
+ {
+  "symbol": "KRAS",
+  "first_clinical_year": 2018,
+  "drug_or_program": "Sotorasib (AMG 510) \u2014 KRAS G12C covalent inhibitor; CodeBreaK 100 (NCT03600883)",
+  "area": "Oncology \u2014 non-immuno targeted therapies"
+ },
+ {
+  "symbol": "PTPN11",
+  "first_clinical_year": 2018,
+  "drug_or_program": "RMC-4630 \u2014 allosteric SHP2 inhibitor (NCT03634982); TNO155 in parallel",
+  "area": "Oncology \u2014 non-immuno targeted therapies"
+ },
+ {
+  "symbol": "SOS1",
+  "first_clinical_year": 2019,
+  "drug_or_program": "BI 1701963 \u2014 SOS1::KRAS interaction inhibitor (NCT04111458)",
+  "area": "Oncology \u2014 non-immuno targeted therapies"
+ },
+ {
+  "symbol": "WRN",
+  "first_clinical_year": 2023,
+  "drug_or_program": "HRO761 \u2014 allosteric WRN helicase inhibitor for MSI-H/dMMR (NCT05838768); VVD-214 parallel",
+  "area": "Oncology \u2014 non-immuno targeted therapies"
+ },
+ {
+  "symbol": "MAT2A",
+  "first_clinical_year": 2018,
+  "drug_or_program": "AG-270 / S095033 \u2014 MAT2A inhibitor for MTAP-deleted tumors (NCT03435250)",
+  "area": "Oncology \u2014 non-immuno targeted therapies"
+ },
+ {
+  "symbol": "MEN1",
+  "first_clinical_year": 2019,
+  "drug_or_program": "Revumenib (SNDX-5613) \u2014 menin\u2013KMT2A interaction inhibitor; AUGMENT-101 (NCT04065399)",
+  "area": "Oncology \u2014 non-immuno targeted therapies"
+ },
+ {
+  "symbol": "USP1",
+  "first_clinical_year": 2021,
+  "drug_or_program": "KSQ-4279 \u2014 USP1 deubiquitinase inhibitor for BRCA/HRD (NCT05240898)",
+  "area": "Oncology \u2014 non-immuno targeted therapies"
+ },
+ {
+  "symbol": "POLQ",
+  "first_clinical_year": 2021,
+  "drug_or_program": "ART4215 \u2014 oral Pol-theta inhibitor for HRD tumors (NCT04991480)",
+  "area": "Oncology \u2014 non-immuno targeted therapies"
+ },
+ {
+  "symbol": "TIPARP",
+  "first_clinical_year": 2019,
+  "drug_or_program": "RBN-2397 \u2014 PARP7 (TIPARP) mono-ADP-ribosyltransferase inhibitor (NCT04053673)",
+  "area": "Oncology \u2014 non-immuno targeted therapies"
+ },
+ {
+  "symbol": "CDK2",
+  "first_clinical_year": 2021,
+  "drug_or_program": "PF-07104091 (tagtociclib) \u2014 CDK2-selective inhibitor (NCT04553133); INX-315 parallel",
+  "area": "Oncology \u2014 non-immuno targeted therapies"
+ },
+ {
+  "symbol": "PKMYT1",
+  "first_clinical_year": 2021,
+  "drug_or_program": "Lunresertib (RP-6306) \u2014 PKMYT1 kinase inhibitor; MYTHIC (NCT04855656)",
+  "area": "Oncology \u2014 non-immuno targeted therapies"
+ },
+ {
+  "symbol": "KAT6A",
+  "first_clinical_year": 2021,
+  "drug_or_program": "PF-07248144 \u2014 KAT6A/KAT6B acetyltransferase inhibitor in ER+/HER2- breast cancer (NCT04606446)",
+  "area": "Oncology \u2014 non-immuno targeted therapies"
+ },
+ {
+  "symbol": "EP300",
+  "first_clinical_year": 2018,
+  "drug_or_program": "Inobrodib (CCS1477) \u2014 p300/CBP (EP300 & CREBBP) bromodomain inhibitor (NCT03568656)",
+  "area": "Oncology \u2014 non-immuno targeted therapies"
+ },
+ {
+  "symbol": "GPRC5D",
+  "first_clinical_year": 2018,
+  "drug_or_program": "Talquetamab (Talvey) \u2014 GPRC5DxCD3 bispecific; MonumenTAL-1 (NCT03399799)",
+  "area": "Immuno-oncology & cell therapy"
+ },
+ {
+  "symbol": "DLL3",
+  "first_clinical_year": 2024,
+  "drug_or_program": "Tarlatamab (Imdelltra) \u2014 DLL3xCD3 BiTE; first DLL3 approval (FDA May 2024)",
+  "area": "Immuno-oncology & cell therapy"
+ },
+ {
+  "symbol": "CLDN18",
+  "first_clinical_year": 2024,
+  "drug_or_program": "Zolbetuximab (Vyloy) \u2014 anti-Claudin-18.2 mAb; first CLDN18.2 approval (FDA Oct 2024)",
+  "area": "Immuno-oncology & cell therapy"
+ },
+ {
+  "symbol": "CLDN6",
+  "first_clinical_year": 2021,
+  "drug_or_program": "BNT211 \u2014 CLDN6-directed CAR-T + CARVac mRNA vaccine (NCT04503278)",
+  "area": "Immuno-oncology & cell therapy"
+ },
+ {
+  "symbol": "CBLB",
+  "first_clinical_year": 2021,
+  "drug_or_program": "NX-1607 \u2014 oral CBL-B inhibitor (NCT05107674)",
+  "area": "Immuno-oncology & cell therapy"
+ },
+ {
+  "symbol": "CCR8",
+  "first_clinical_year": 2021,
+  "drug_or_program": "BMS-986340 \u2014 afucosylated anti-CCR8 mAb for Treg depletion; LM-108 parallel",
+  "area": "Immuno-oncology & cell therapy"
+ },
+ {
+  "symbol": "PVRIG",
+  "first_clinical_year": 2018,
+  "drug_or_program": "COM701 \u2014 anti-PVRIG checkpoint mAb (first patient dosed Sept 2018)",
+  "area": "Immuno-oncology & cell therapy"
+ },
+ {
+  "symbol": "LILRB2",
+  "first_clinical_year": 2018,
+  "drug_or_program": "MK-4830 \u2014 anti-ILT4 (LILRB2) myeloid checkpoint mAb (NCT03564691)",
+  "area": "Immuno-oncology & cell therapy"
+ },
+ {
+  "symbol": "ENTPD1",
+  "first_clinical_year": 2019,
+  "drug_or_program": "TTX-030 \u2014 anti-CD39 (ENTPD1) mAb (NCT03884556)",
+  "area": "Immuno-oncology & cell therapy"
+ },
+ {
+  "symbol": "GUCY2C",
+  "first_clinical_year": 2018,
+  "drug_or_program": "PF-07062119 \u2014 GUCY2CxCD3 bispecific for GI tumors (NCT03524339)",
+  "area": "Immuno-oncology & cell therapy"
+ },
+ {
+  "symbol": "GIPR",
+  "first_clinical_year": 2020,
+  "drug_or_program": "Maridebart cafraglutide (MariTide / AMG 133) \u2014 GIPR-antagonist antibody-peptide conjugate (NCT04478708); tirzepatide GIPR agonist approved 2022",
+  "area": "Cardiometabolic & obesity"
+ },
+ {
+  "symbol": "ANGPTL3",
+  "first_clinical_year": 2021,
+  "drug_or_program": "Evinacumab (Evkeeza) \u2014 anti-ANGPTL3 mAb for HoFH",
+  "area": "Cardiometabolic & obesity"
+ },
+ {
+  "symbol": "APOC3",
+  "first_clinical_year": 2019,
+  "drug_or_program": "Volanesorsen (Waylivra) \u2014 APOC3 ASO (EU 2019); olezarsen (Tryngolza) FDA 2024",
+  "area": "Cardiometabolic & obesity"
+ },
+ {
+  "symbol": "PNPLA3",
+  "first_clinical_year": 2020,
+  "drug_or_program": "AZD2693 (ION839) \u2014 GalNAc PNPLA3 ASO for MASH (NCT04483947)",
+  "area": "Cardiometabolic & obesity"
+ },
+ {
+  "symbol": "HSD17B13",
+  "first_clinical_year": 2020,
+  "drug_or_program": "ARO-HSD / ALN-HSD (GSK4532990) \u2014 GalNAc-siRNA for NASH/MASH (NCT04202354)",
+  "area": "Cardiometabolic & obesity"
+ },
+ {
+  "symbol": "GFRAL",
+  "first_clinical_year": 2018,
+  "drug_or_program": "LY3463251 \u2014 long-acting GFRAL/RET agonist (GDF15-mimetic) for obesity (NCT03764774)",
+  "area": "Cardiometabolic & obesity"
+ },
+ {
+  "symbol": "GDF15",
+  "first_clinical_year": 2020,
+  "drug_or_program": "Visugromab (CTL-002) \u2014 GDF15-neutralizing antibody (NCT04725474); ponsegromab, AZD8853 parallel",
+  "area": "Cardiometabolic & obesity"
+ },
+ {
+  "symbol": "INHBE",
+  "first_clinical_year": 2024,
+  "drug_or_program": "ARO-INHBE \u2014 GalNAc-siRNA silencing activin E for obesity (NCT06700538); WVE-007 parallel",
+  "area": "Cardiometabolic & obesity"
+ },
+ {
+  "symbol": "MC4R",
+  "first_clinical_year": 2020,
+  "drug_or_program": "Setmelanotide (Imcivree) \u2014 MC4R-selective agonist (FDA Nov 2020)",
+  "area": "Cardiometabolic & obesity"
+ },
+ {
+  "symbol": "SORT1",
+  "first_clinical_year": 2018,
+  "drug_or_program": "Latozinemab (AL001) \u2014 anti-sortilin mAb raising progranulin in GRN-FTD",
+  "area": "Neuroscience & Psychiatry"
+ },
+ {
+  "symbol": "TREM2",
+  "first_clinical_year": 2018,
+  "drug_or_program": "AL002 \u2014 TREM2 agonistic mAb for early Alzheimer's (INVOKE-1/INVOKE-2)",
+  "area": "Neuroscience & Psychiatry"
+ },
+ {
+  "symbol": "CD33",
+  "first_clinical_year": 2019,
+  "drug_or_program": "AL003 \u2014 anti-CD33 (Siglec-3) mAb for Alzheimer's (NCT03822208)",
+  "area": "Neuroscience & Psychiatry"
+ },
+ {
+  "symbol": "CHRM4",
+  "first_clinical_year": 2019,
+  "drug_or_program": "Emraclidine (CVL-231) \u2014 M4-selective muscarinic PAM for schizophrenia (NCT04136873)",
+  "area": "Neuroscience & Psychiatry"
+ },
+ {
+  "symbol": "FUS",
+  "first_clinical_year": 2019,
+  "drug_or_program": "Jacifusen / ulefnersen (ION363) \u2014 FUS-lowering ASO for FUS-mutant ALS",
+  "area": "Neuroscience & Psychiatry"
+ },
+ {
+  "symbol": "ATXN2",
+  "first_clinical_year": 2020,
+  "drug_or_program": "BIIB105 \u2014 ataxin-2-lowering ASO for ALS; ALSpire (NCT04494256)",
+  "area": "Neuroscience & Psychiatry"
+ },
+ {
+  "symbol": "KCNT1",
+  "first_clinical_year": 2021,
+  "drug_or_program": "n-of-1 KCNT1 (Slack channel) ASO in infants with KCNT1 epileptic encephalopathy",
+  "area": "Neuroscience & Psychiatry"
+ },
+ {
+  "symbol": "ADCYAP1",
+  "first_clinical_year": 2021,
+  "drug_or_program": "Lu AG09222 \u2014 anti-PACAP ligand mAb for migraine prevention (NCT04976309; HOPE)",
+  "area": "Neuroscience & Psychiatry"
+ },
+ {
+  "symbol": "HCRTR2",
+  "first_clinical_year": 2018,
+  "drug_or_program": "Danavorexton (TAK-925) \u2014 orexin-2 receptor agonist for narcolepsy type 1 (NCT03332784)",
+  "area": "Neuroscience & Psychiatry"
+ },
+ {
+  "symbol": "TYK2",
+  "first_clinical_year": 2022,
+  "drug_or_program": "Deucravacitinib (Sotyktu) \u2014 allosteric pseudokinase-domain TYK2 inhibitor",
+  "area": "Immunology, inflammation & fibrosis"
+ },
+ {
+  "symbol": "TSLP",
+  "first_clinical_year": 2021,
+  "drug_or_program": "Tezepelumab (Tezspire) \u2014 anti-TSLP mAb",
+  "area": "Immunology, inflammation & fibrosis"
+ },
+ {
+  "symbol": "IL1RL2",
+  "first_clinical_year": 2022,
+  "drug_or_program": "Spesolimab (Spevigo) \u2014 IL-36 receptor (IL36R) antagonist antibody for GPP",
+  "area": "Immunology, inflammation & fibrosis"
+ },
+ {
+  "symbol": "FCGRT",
+  "first_clinical_year": 2021,
+  "drug_or_program": "Efgartigimod (Vyvgart) \u2014 FcRn antagonist Fc fragment for gMG",
+  "area": "Immunology, inflammation & fibrosis"
+ },
+ {
+  "symbol": "CFB",
+  "first_clinical_year": 2023,
+  "drug_or_program": "Iptacopan (Fabhalta / LNP023) \u2014 oral complement factor B inhibitor",
+  "area": "Immunology / Rare disease (complement)"
+ },
+ {
+  "symbol": "CFD",
+  "first_clinical_year": 2024,
+  "drug_or_program": "Danicopan (Voydeya / ACH-4471) \u2014 oral complement factor D inhibitor",
+  "area": "Immunology / Rare disease (complement)"
+ },
+ {
+  "symbol": "ITGB6",
+  "first_clinical_year": 2018,
+  "drug_or_program": "Bexotegrast (PLN-74809) \u2014 dual av-b6 / av-b1 integrin inhibitor for IPF/PSC",
+  "area": "Immunology, inflammation & fibrosis"
+ },
+ {
+  "symbol": "IRAK4",
+  "first_clinical_year": 2021,
+  "drug_or_program": "KT-474 (SAR444656) \u2014 IRAK4 heterobifunctional degrader for TLR/IL-1R disease",
+  "area": "Immunology, inflammation & fibrosis"
+ },
+ {
+  "symbol": "C3",
+  "first_clinical_year": 2021,
+  "drug_or_program": "Pegcetacoplan (Empaveli/Syfovre / APL-2) \u2014 pegylated compstatin-derived C3/C3b inhibitor",
+  "area": "Rare disease, hematology, ophthalmology & other"
+ },
+ {
+  "symbol": "C1S",
+  "first_clinical_year": 2022,
+  "drug_or_program": "Sutimlimab (Enjaymo / BIVV009) \u2014 classical-pathway C1s inhibitor mAb",
+  "area": "Rare disease, hematology, ophthalmology & other"
+ },
+ {
+  "symbol": "C5AR1",
+  "first_clinical_year": 2021,
+  "drug_or_program": "Avacopan (Tavneos / CCX168) \u2014 oral C5a receptor (C5aR1) antagonist",
+  "area": "Rare disease, hematology, ophthalmology & other"
+ },
+ {
+  "symbol": "HBB",
+  "first_clinical_year": 2019,
+  "drug_or_program": "Voxelotor (Oxbryta / GBT440) \u2014 oral HbS polymerization inhibitor",
+  "area": "Rare disease, hematology, ophthalmology & other"
+ },
+ {
+  "symbol": "SELP",
+  "first_clinical_year": 2019,
+  "drug_or_program": "Crizanlizumab (Adakveo / SelG1) \u2014 anti-P-selectin mAb",
+  "area": "Rare disease, hematology, ophthalmology & other"
+ },
+ {
+  "symbol": "PKLR",
+  "first_clinical_year": 2022,
+  "drug_or_program": "Mitapivat (Pyrukynd / AG-348) \u2014 allosteric red-cell pyruvate kinase activator",
+  "area": "Rare disease, hematology, ophthalmology & other"
+ },
+ {
+  "symbol": "GDF11",
+  "first_clinical_year": 2019,
+  "drug_or_program": "Luspatercept (Reblozyl / ACE-536) \u2014 ActRIIB-Fc ligand trap (GDF11/activin-B axis; scaffold ACVR2B)",
+  "area": "Rare disease, hematology, ophthalmology & other"
+ },
+ {
+  "symbol": "TFPI",
+  "first_clinical_year": 2023,
+  "drug_or_program": "Concizumab (Alhemo) \u2014 anti-TFPI mAb; marstacimab (Hympavzi) in class",
+  "area": "Rare disease, hematology, ophthalmology & other"
+ },
+ {
+  "symbol": "EGLN1",
+  "first_clinical_year": 2018,
+  "drug_or_program": "Roxadustat (Evrenzo / FG-4592) \u2014 oral HIF prolyl-hydroxylase (PHD2/EGLN1) inhibitor",
+  "area": "Rare disease, hematology, ophthalmology & other"
+ }
+]

@@ -1,0 +1,217 @@
+{
+ "opportunities": [
+  {
+   "sym": "ERBB4",
+   "uniprot": "Q15303",
+   "group": "TK",
+   "handles": [
+    "front-pocket@52"
+   ],
+   "best": "front-pocket",
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "cysdb_ligandable": false,
+   "covalent_patented": false,
+   "essential": false
+  },
+  {
+   "sym": "CSF1R",
+   "uniprot": "P07333",
+   "group": "TK",
+   "handles": [
+    "front-pocket@49",
+    "hinge@48"
+   ],
+   "best": "front-pocket",
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "cysdb_ligandable": false,
+   "covalent_patented": false,
+   "essential": false
+  },
+  {
+   "sym": "KIT",
+   "uniprot": "P10721",
+   "group": "TK",
+   "handles": [
+    "front-pocket@49",
+    "hinge@48"
+   ],
+   "best": "front-pocket",
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "cysdb_ligandable": false,
+   "covalent_patented": false,
+   "essential": false
+  },
+  {
+   "sym": "IKBKB",
+   "uniprot": "O14920",
+   "group": "Other",
+   "handles": [
+    "hinge@48"
+   ],
+   "best": "hinge",
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "cysdb_ligandable": true,
+   "covalent_patented": false,
+   "essential": false
+  },
+  {
+   "sym": "RAF1",
+   "uniprot": "P04049",
+   "group": "TKL",
+   "handles": [
+    "hinge@48"
+   ],
+   "best": "hinge",
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "cysdb_ligandable": true,
+   "covalent_patented": false,
+   "essential": false
+  },
+  {
+   "sym": "GUCY2C",
+   "uniprot": "P25092",
+   "group": "RGC",
+   "handles": [
+    "hinge@48"
+   ],
+   "best": "hinge",
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "cysdb_ligandable": false,
+   "covalent_patented": false,
+   "essential": false
+  },
+  {
+   "sym": "NPR1",
+   "uniprot": "P16066",
+   "group": "RGC",
+   "handles": [
+    "hinge@48"
+   ],
+   "best": "hinge",
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "cysdb_ligandable": false,
+   "covalent_patented": false,
+   "essential": false
+  },
+  {
+   "sym": "NPR2",
+   "uniprot": "P20594",
+   "group": "RGC",
+   "handles": [
+    "hinge@48"
+   ],
+   "best": "hinge",
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "cysdb_ligandable": false,
+   "covalent_patented": false,
+   "essential": false
+  },
+  {
+   "sym": "PDGFRB",
+   "uniprot": "P09619",
+   "group": "TK",
+   "handles": [
+    "hinge@48"
+   ],
+   "best": "hinge",
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "cysdb_ligandable": false,
+   "covalent_patented": false,
+   "essential": false
+  },
+  {
+   "sym": "FLT1",
+   "uniprot": "P17948",
+   "group": "TK",
+   "handles": [
+    "hinge@48"
+   ],
+   "best": "hinge",
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "cysdb_ligandable": false,
+   "covalent_patented": false,
+   "essential": false
+  },
+  {
+   "sym": "FLT4",
+   "uniprot": "P35916",
+   "group": "TK",
+   "handles": [
+    "hinge@48"
+   ],
+   "best": "hinge",
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "cysdb_ligandable": false,
+   "covalent_patented": false,
+   "essential": false
+  },
+  {
+   "sym": "KDR",
+   "uniprot": "P35968",
+   "group": "TK",
+   "handles": [
+    "hinge@48"
+   ],
+   "best": "hinge",
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "cysdb_ligandable": false,
+   "covalent_patented": false,
+   "essential": false
+  },
+  {
+   "sym": "YES1",
+   "uniprot": "P07947",
+   "group": "TK",
+   "handles": [
+    "P-loop@7"
+   ],
+   "best": "P-loop",
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "cysdb_ligandable": true,
+   "covalent_patented": false,
+   "essential": false
+  },
+  {
+   "sym": "SRC",
+   "uniprot": "P12931",
+   "group": "TK",
+   "handles": [
+    "P-loop@7"
+   ],
+   "best": "P-loop",
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "cysdb_ligandable": false,
+   "covalent_patented": false,
+   "essential": false
+  }
+ ],
+ "all_pocket_cys_kinases": 147
+}

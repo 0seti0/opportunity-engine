@@ -1,0 +1,184 @@
+{
+ "SLC1A5": {
+  "uniprot": "Q15758",
+  "residues": [
+   {
+    "pos": 467,
+    "is_cysteine": true,
+    "paralog_residues": {
+     "SLC1A4": "T",
+     "SLC1A1": "R",
+     "SLC1A2": "R",
+     "SLC1A3": "R",
+     "SLC1A6": "R",
+     "SLC1A7": "R"
+    },
+    "selectivity": "unique-handle"
+   }
+  ],
+  "selectivity": "unique-handle"
+ },
+ "PPARD": {
+  "uniprot": "Q03181",
+  "residues": [
+   {
+    "pos": 249,
+    "is_cysteine": true,
+    "paralog_residues": {
+     "PPARA": "C",
+     "PPARG": "C"
+    },
+    "selectivity": "conserved-liability"
+   }
+  ],
+  "selectivity": "conserved-liability"
+ },
+ "USP35": {
+  "uniprot": "Q9P2H5",
+  "residues": [
+   {
+    "pos": 450,
+    "is_cysteine": true,
+    "paralog_residues": {
+     "USP30": "C",
+     "USP7": "C"
+    },
+    "selectivity": "conserved-liability"
+   }
+  ],
+  "selectivity": "conserved-liability"
+ },
+ "IRF4": {
+  "uniprot": "Q15306",
+  "residues": [
+   {
+    "pos": 99,
+    "is_cysteine": true,
+    "paralog_residues": {
+     "IRF8": "C",
+     "IRF1": "C",
+     "IRF3": "S"
+    },
+    "selectivity": "partial"
+   },
+   {
+    "pos": 194,
+    "is_cysteine": true,
+    "paralog_residues": {
+     "IRF8": "-",
+     "IRF1": "S",
+     "IRF3": "C"
+    },
+    "selectivity": "partial"
+   },
+   {
+    "pos": 250,
+    "is_cysteine": true,
+    "paralog_residues": {
+     "IRF8": "S",
+     "IRF1": "C",
+     "IRF3": "-"
+    },
+    "selectivity": "partial"
+   }
+  ],
+  "selectivity": "partial"
+ },
+ "YES1": {
+  "uniprot": "P07947",
+  "residues": [
+   {
+    "pos": 287,
+    "is_cysteine": true,
+    "paralog_residues": {
+     "SRC": "C",
+     "FGR": "C",
+     "FYN": "Q",
+     "LCK": "Q"
+    },
+    "selectivity": "partial"
+   }
+  ],
+  "selectivity": "partial"
+ },
+ "RAF1": {
+  "uniprot": "P04049",
+  "residues": [
+   {
+    "pos": 424,
+    "is_cysteine": true,
+    "paralog_residues": {
+     "BRAF": "C",
+     "ARAF": "C"
+    },
+    "selectivity": "conserved-liability"
+   }
+  ],
+  "selectivity": "conserved-liability"
+ },
+ "AKR1B1": {
+  "uniprot": "P15121",
+  "residues": [
+   {
+    "pos": 299,
+    "is_cysteine": true,
+    "paralog_residues": {
+     "AKR1B10": "C"
+    },
+    "selectivity": "conserved-liability"
+   }
+  ],
+  "selectivity": "conserved-liability"
+ },
+ "PRKCG": {
+  "uniprot": "P05129",
+  "residues": [
+   {
+    "pos": 516,
+    "is_cysteine": true,
+    "paralog_residues": {
+     "PRKCA": "C",
+     "PRKCB": "C"
+    },
+    "selectivity": "conserved-liability"
+   }
+  ],
+  "selectivity": "conserved-liability"
+ },
+ "PRKCQ": {
+  "uniprot": "Q04759",
+  "residues": [
+   {
+    "pos": 303,
+    "is_cysteine": true,
+    "paralog_residues": {
+     "PRKCD": "R",
+     "PRKCE": "T",
+     "PRKCH": "I"
+    },
+    "selectivity": "unique-handle"
+   },
+   {
+    "pos": 322,
+    "is_cysteine": true,
+    "paralog_residues": {
+     "PRKCD": "-",
+     "PRKCE": "A",
+     "PRKCH": "-"
+    },
+    "selectivity": "unique-handle"
+   },
+   {
+    "pos": 424,
+    "is_cysteine": true,
+    "paralog_residues": {
+     "PRKCD": "C",
+     "PRKCE": "C",
+     "PRKCH": "C"
+    },
+    "selectivity": "conserved-liability"
+   }
+  ],
+  "selectivity": "unique-handle"
+ }
+}

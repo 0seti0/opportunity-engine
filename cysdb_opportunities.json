@@ -1,0 +1,1326 @@
+{
+ "opportunities": [
+  {
+   "uniprot": "Q13370",
+   "sym": "PDE3B",
+   "n_lig_cys": 10,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P49327",
+   "sym": "FASN",
+   "n_lig_cys": 9,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q71U36",
+   "sym": "TUBA1A",
+   "n_lig_cys": 7,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P23458",
+   "sym": "JAK1",
+   "n_lig_cys": 6,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P68371",
+   "sym": "TUBB4B",
+   "n_lig_cys": 6,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q02880",
+   "sym": "TOP2B",
+   "n_lig_cys": 6,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P68366",
+   "sym": "TUBA4A",
+   "n_lig_cys": 5,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P09110",
+   "sym": "ACAA1",
+   "n_lig_cys": 5,
+   "fda": true,
+   "chembl": false,
+   "drugbank": false,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P04150",
+   "sym": "NR3C1",
+   "n_lig_cys": 5,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "O75116",
+   "sym": "ROCK2",
+   "n_lig_cys": 5,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P31040",
+   "sym": "SDHA",
+   "n_lig_cys": 5,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q16881",
+   "sym": "TXNRD1",
+   "n_lig_cys": 4,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P12277",
+   "sym": "CKB",
+   "n_lig_cys": 4,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q99707",
+   "sym": "MTR",
+   "n_lig_cys": 4,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P31939",
+   "sym": "ATIC",
+   "n_lig_cys": 4,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P53396",
+   "sym": "ACLY",
+   "n_lig_cys": 4,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P32320",
+   "sym": "CDA",
+   "n_lig_cys": 3,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P04049",
+   "sym": "RAF1",
+   "n_lig_cys": 3,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P04818",
+   "sym": "TYMS",
+   "n_lig_cys": 3,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P27707",
+   "sym": "DCK",
+   "n_lig_cys": 3,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "O60664",
+   "sym": "PLIN3",
+   "n_lig_cys": 3,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P12235",
+   "sym": "SLC25A4",
+   "n_lig_cys": 3,
+   "fda": true,
+   "chembl": false,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P09874",
+   "sym": "PARP1",
+   "n_lig_cys": 3,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P20020",
+   "sym": "ATP2B1",
+   "n_lig_cys": 3,
+   "fda": true,
+   "chembl": false,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P42574",
+   "sym": "CASP3",
+   "n_lig_cys": 3,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P15121",
+   "sym": "AKR1B1",
+   "n_lig_cys": 3,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P30044",
+   "sym": "PRDX5",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "O14920",
+   "sym": "IKBKB",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "O00329",
+   "sym": "PIK3CD",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P27816",
+   "sym": "MAP4",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": false,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q00534",
+   "sym": "CDK6",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q03181",
+   "sym": "PPARD",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P28702",
+   "sym": "RXRB",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q9BQB6",
+   "sym": "VKORC1",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q14289",
+   "sym": "PTK2B",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q13509",
+   "sym": "TUBB3",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P12814",
+   "sym": "ACTN1",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": false,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P09525",
+   "sym": "ANXA4",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": false,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P23634",
+   "sym": "ATP2B4",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": false,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q8N0U8",
+   "sym": "VKORC1L1",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": false,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P00390",
+   "sym": "GSR",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q15758",
+   "sym": "SLC1A5",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P11473",
+   "sym": "VDR",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "O60674",
+   "sym": "JAK2",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q04759",
+   "sym": "PRKCQ",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P50416",
+   "sym": "CPT1A",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P19793",
+   "sym": "RXRA",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P21964",
+   "sym": "COMT",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P12532",
+   "sym": "CKMT1B",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": false,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P07947",
+   "sym": "YES1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P00813",
+   "sym": "ADA",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q16637",
+   "sym": "SMN2",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": false,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P24394",
+   "sym": "IL4R",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P06746",
+   "sym": "POLB",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P20839",
+   "sym": "IMPDH1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q96ER9",
+   "sym": "CCDC51",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": false,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "O43741",
+   "sym": "PRKAB2",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q9NR33",
+   "sym": "POLE4",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": false,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P14735",
+   "sym": "IDE",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P08758",
+   "sym": "ANXA5",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": false,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P40926",
+   "sym": "MDH2",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P17252",
+   "sym": "PRKCA",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P26010",
+   "sym": "ITGB7",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P00492",
+   "sym": "HPRT1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P06729",
+   "sym": "CD2",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P11836",
+   "sym": "MS4A1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P19838",
+   "sym": "NFKB1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P02675",
+   "sym": "FGB",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P36894",
+   "sym": "BMPR1A",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P35610",
+   "sym": "SOAT1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q14353",
+   "sym": "GAMT",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P13716",
+   "sym": "ALAD",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P27815",
+   "sym": "PDE4A",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P23786",
+   "sym": "CPT2",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P05546",
+   "sym": "SERPIND1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": false,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P12259",
+   "sym": "F5",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P05771",
+   "sym": "PRKCB",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P00740",
+   "sym": "F9",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P27361",
+   "sym": "MAPK3",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q15116",
+   "sym": "PDCD1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P33527",
+   "sym": "ABCC1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P01008",
+   "sym": "SERPINC1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q9Y478",
+   "sym": "PRKAB1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P05091",
+   "sym": "ALDH2",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P00488",
+   "sym": "F13A1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P41743",
+   "sym": "PRKCI",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P20701",
+   "sym": "ITGAL",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q15118",
+   "sym": "PDK1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "O75330",
+   "sym": "HMMR",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P32745",
+   "sym": "SSTR3",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P28062",
+   "sym": "PSMB8",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q13464",
+   "sym": "ROCK1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P12236",
+   "sym": "SLC25A6",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P48637",
+   "sym": "GSS",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": false,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P00734",
+   "sym": "F2",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P40306",
+   "sym": "PSMB10",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P00747",
+   "sym": "PLG",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P43116",
+   "sym": "PTGER2",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q92769",
+   "sym": "HDAC2",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P10636",
+   "sym": "MAPT",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P30084",
+   "sym": "ECHS1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q14697",
+   "sym": "GANAB",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "Q00653",
+   "sym": "NFKB2",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P11926",
+   "sym": "ODC1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  },
+  {
+   "uniprot": "P30536",
+   "sym": "TSPO",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": false
+  }
+ ],
+ "essential_bucket": [
+  {
+   "uniprot": "P09884",
+   "sym": "POLA1",
+   "n_lig_cys": 7,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P23921",
+   "sym": "RRM1",
+   "n_lig_cys": 7,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P16615",
+   "sym": "ATP2A2",
+   "n_lig_cys": 6,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "O14980",
+   "sym": "XPO1",
+   "n_lig_cys": 6,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P07437",
+   "sym": "TUBB",
+   "n_lig_cys": 5,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P05023",
+   "sym": "ATP1A1",
+   "n_lig_cys": 4,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P12268",
+   "sym": "IMPDH2",
+   "n_lig_cys": 4,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P26358",
+   "sym": "DNMT1",
+   "n_lig_cys": 4,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P14324",
+   "sym": "FDPS",
+   "n_lig_cys": 4,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P11388",
+   "sym": "TOP2A",
+   "n_lig_cys": 3,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P13639",
+   "sym": "EEF2",
+   "n_lig_cys": 3,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P21281",
+   "sym": "ATP6V1B2",
+   "n_lig_cys": 3,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P56282",
+   "sym": "POLE2",
+   "n_lig_cys": 3,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P62937",
+   "sym": "PPIA",
+   "n_lig_cys": 3,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P05141",
+   "sym": "SLC25A5",
+   "n_lig_cys": 3,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "Q9Y2I1",
+   "sym": "NISCH",
+   "n_lig_cys": 3,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P22102",
+   "sym": "GART",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "O15379",
+   "sym": "HDAC3",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P11387",
+   "sym": "TOP1",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "Q99714",
+   "sym": "HSD17B10",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P04406",
+   "sym": "GAPDH",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P39023",
+   "sym": "RPL3",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": false,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "Q07864",
+   "sym": "POLE",
+   "n_lig_cys": 2,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "O95749",
+   "sym": "GGPS1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P31350",
+   "sym": "RRM2",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "P21283",
+   "sym": "ATP6V1C1",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": false,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  },
+  {
+   "uniprot": "Q02218",
+   "sym": "OGDH",
+   "n_lig_cys": 1,
+   "fda": true,
+   "chembl": true,
+   "drugbank": true,
+   "covalent_patented": false,
+   "core_essential": true
+  }
+ ]
+}

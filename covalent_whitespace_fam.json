@@ -1,0 +1,1178 @@
+[
+ {
+  "symbol": "KEAP1",
+  "proteinid": "Q14145",
+  "n_lig_cys": "12",
+  "resids": "319;288;241;297;151;23;613;257;38;249;395;406",
+  "fam": "non-IDG",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "PDE3B",
+  "proteinid": "Q13370",
+  "n_lig_cys": "10",
+  "resids": "55;52;76;321;35;394;297;311;576;579",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "FASN",
+  "proteinid": "P49327",
+  "n_lig_cys": "9",
+  "resids": "2359;1558;2202;1141;223;2292;1881;2369;1564",
+  "fam": "Enzyme",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "TUBA1A",
+  "proteinid": "Q71U36",
+  "n_lig_cys": "7",
+  "resids": "347;376;20;25;129;200;316",
+  "fam": "non-IDG",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "POLA1",
+  "proteinid": "P09884",
+  "n_lig_cys": "7",
+  "resids": "1403;514;1310;1315;1281;1283;1286",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "RRM1",
+  "proteinid": "P23921",
+  "n_lig_cys": "7",
+  "resids": "352;492;779;356;238;425;429",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "EGFR",
+  "proteinid": "P00533",
+  "n_lig_cys": "7",
+  "resids": "1049;311;248;251;236;231;207",
+  "fam": "Kinase",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "ATP2A2",
+  "proteinid": "P16615",
+  "n_lig_cys": "6",
+  "resids": "669;447;471;997;344;349",
+  "fam": "Transporter",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "XPO1",
+  "proteinid": "O14980",
+  "n_lig_cys": "6",
+  "resids": "34;528;1070;164;119;99",
+  "fam": "non-IDG",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "JAK1",
+  "proteinid": "P23458",
+  "n_lig_cys": "6",
+  "resids": "169;944;1116;1120;810;817",
+  "fam": "Kinase",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "TUBB4B",
+  "proteinid": "P68371",
+  "n_lig_cys": "6",
+  "resids": "213;354;239;303;127;129",
+  "fam": "non-IDG",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "TOP2B",
+  "proteinid": "Q02880",
+  "n_lig_cys": "6",
+  "resids": "426;271;7;191;754;1018",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "JAK3",
+  "proteinid": "P52333",
+  "n_lig_cys": "6",
+  "resids": "1048;1105;695;934;909;16",
+  "fam": "Kinase",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "TUBA4A",
+  "proteinid": "P68366",
+  "n_lig_cys": "5",
+  "resids": "295;347;315;54;305",
+  "fam": "non-IDG",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "ACAA1",
+  "proteinid": "P09110",
+  "n_lig_cys": "5",
+  "resids": "381;177;123;218;87",
+  "fam": "Enzyme",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "NR3C1",
+  "proteinid": "P04150",
+  "n_lig_cys": "5",
+  "resids": "302;622;367;638;643",
+  "fam": "NR",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "ROCK2",
+  "proteinid": "O75116",
+  "n_lig_cys": "5",
+  "resids": "804;649;607;761;766",
+  "fam": "Kinase",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "SDHA",
+  "proteinid": "P31040",
+  "n_lig_cys": "5",
+  "resids": "475;189;190;191;467",
+  "fam": "Enzyme",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "TUBB",
+  "proteinid": "P07437",
+  "n_lig_cys": "5",
+  "resids": "239;354;303;129;127",
+  "fam": "non-IDG",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "TXNRD1",
+  "proteinid": "Q16881",
+  "n_lig_cys": "4",
+  "resids": "209;515;533;214",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "CKB",
+  "proteinid": "P12277",
+  "n_lig_cys": "4",
+  "resids": "283;254;141;146",
+  "fam": "Kinase",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "MTR",
+  "proteinid": "Q99707",
+  "n_lig_cys": "4",
+  "resids": "400;798;812;1153",
+  "fam": "Enzyme",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "ATP1A1",
+  "proteinid": "P05023",
+  "n_lig_cys": "4",
+  "resids": "211;249;463;459",
+  "fam": "Transporter",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "ATIC",
+  "proteinid": "P31939",
+  "n_lig_cys": "4",
+  "resids": "287;101;434;363",
+  "fam": "non-IDG",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "IMPDH2",
+  "proteinid": "P12268",
+  "n_lig_cys": "4",
+  "resids": "140;331;173;339",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "ACLY",
+  "proteinid": "P53396",
+  "n_lig_cys": "4",
+  "resids": "764;20;845;633",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "DNMT1",
+  "proteinid": "P26358",
+  "n_lig_cys": "4",
+  "resids": "1478;1071;62;580",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "FDPS",
+  "proteinid": "P14324",
+  "n_lig_cys": "4",
+  "resids": "333;204;62;340",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "TOP2A",
+  "proteinid": "P11388",
+  "n_lig_cys": "3",
+  "resids": "405;392;455",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "EEF2",
+  "proteinid": "P13639",
+  "n_lig_cys": "3",
+  "resids": "41;136;567",
+  "fam": "non-IDG",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "ATP6V1B2",
+  "proteinid": "P21281",
+  "n_lig_cys": "3",
+  "resids": "162;112;425",
+  "fam": "Enzyme",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "POLE2",
+  "proteinid": "P56282",
+  "n_lig_cys": "3",
+  "resids": "408;494;496",
+  "fam": "Enzyme",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "CDA",
+  "proteinid": "P32320",
+  "n_lig_cys": "3",
+  "resids": "14;8;21",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "RAF1",
+  "proteinid": "P04049",
+  "n_lig_cys": "3",
+  "resids": "637;27;577",
+  "fam": "Kinase",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "TYMS",
+  "proteinid": "P04818",
+  "n_lig_cys": "3",
+  "resids": "199;195;210",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "DCK",
+  "proteinid": "P27707",
+  "n_lig_cys": "3",
+  "resids": "9;45;59",
+  "fam": "Kinase",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "PPIA",
+  "proteinid": "P62937",
+  "n_lig_cys": "3",
+  "resids": "62;161;115",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "SLC25A5",
+  "proteinid": "P05141",
+  "n_lig_cys": "3",
+  "resids": "160;257;57",
+  "fam": "Transporter",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "IDH1",
+  "proteinid": "O75874",
+  "n_lig_cys": "3",
+  "resids": "269;379;73",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "PLIN3",
+  "proteinid": "O60664",
+  "n_lig_cys": "3",
+  "resids": "39;341;60",
+  "fam": "non-IDG",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "BRAF",
+  "proteinid": "P15056",
+  "n_lig_cys": "3",
+  "resids": "748;261;264",
+  "fam": "Kinase",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "NISCH",
+  "proteinid": "Q9Y2I1",
+  "n_lig_cys": "3",
+  "resids": "848;884;887",
+  "fam": "non-IDG",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "SLC25A4",
+  "proteinid": "P12235",
+  "n_lig_cys": "3",
+  "resids": "160;257;57",
+  "fam": "Transporter",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "PARP1",
+  "proteinid": "P09874",
+  "n_lig_cys": "3",
+  "resids": "429;256;311",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "ATP2B1",
+  "proteinid": "P20020",
+  "n_lig_cys": "3",
+  "resids": "463;473;733",
+  "fam": "Transporter",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "CASP3",
+  "proteinid": "P42574",
+  "n_lig_cys": "3",
+  "resids": "170;184;163",
+  "fam": "Enzyme",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "AKR1B1",
+  "proteinid": "P15121",
+  "n_lig_cys": "3",
+  "resids": "299;200;304",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "PRDX5",
+  "proteinid": "P30044",
+  "n_lig_cys": "2",
+  "resids": "204;100",
+  "fam": "non-IDG",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "IDH2",
+  "proteinid": "P48735",
+  "n_lig_cys": "2",
+  "resids": "308;418",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "IKBKB",
+  "proteinid": "O14920",
+  "n_lig_cys": "2",
+  "resids": "464;179",
+  "fam": "Kinase",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "EZH2",
+  "proteinid": "Q15910",
+  "n_lig_cys": "2",
+  "resids": "503;14",
+  "fam": "Epigenetic",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "PIK3CD",
+  "proteinid": "O00329",
+  "n_lig_cys": "2",
+  "resids": "219;90",
+  "fam": "Kinase",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "MAP4",
+  "proteinid": "P27816",
+  "n_lig_cys": "2",
+  "resids": "635;1008",
+  "fam": "non-IDG",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "CDK6",
+  "proteinid": "Q00534",
+  "n_lig_cys": "2",
+  "resids": "83;15",
+  "fam": "Kinase",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "PPARD",
+  "proteinid": "Q03181",
+  "n_lig_cys": "2",
+  "resids": "249;251",
+  "fam": "NR",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "RXRB",
+  "proteinid": "P28702",
+  "n_lig_cys": "2",
+  "resids": "340;19",
+  "fam": "NR",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "GART",
+  "proteinid": "P22102",
+  "n_lig_cys": "2",
+  "resids": "41;237",
+  "fam": "non-IDG",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "VKORC1",
+  "proteinid": "Q9BQB6",
+  "n_lig_cys": "2",
+  "resids": "43;51",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "PTK2B",
+  "proteinid": "Q14289",
+  "n_lig_cys": "2",
+  "resids": "899;972",
+  "fam": "Kinase",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "HDAC3",
+  "proteinid": "O15379",
+  "n_lig_cys": "2",
+  "resids": "279;123",
+  "fam": "Epigenetic",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "TUBB3",
+  "proteinid": "Q13509",
+  "n_lig_cys": "2",
+  "resids": "129;124",
+  "fam": "non-IDG",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "ACTN1",
+  "proteinid": "P12814",
+  "n_lig_cys": "2",
+  "resids": "370;480",
+  "fam": "non-IDG",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "MTOR",
+  "proteinid": "P42345",
+  "n_lig_cys": "2",
+  "resids": "1214;2400",
+  "fam": "Kinase",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "ANXA4",
+  "proteinid": "P09525",
+  "n_lig_cys": "2",
+  "resids": "198;108",
+  "fam": "non-IDG",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "ATP2B4",
+  "proteinid": "P23634",
+  "n_lig_cys": "2",
+  "resids": "710;721",
+  "fam": "Transporter",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "VKORC1L1",
+  "proteinid": "Q8N0U8",
+  "n_lig_cys": "2",
+  "resids": "50;58",
+  "fam": "Enzyme",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "TOP1",
+  "proteinid": "P11387",
+  "n_lig_cys": "2",
+  "resids": "733;505",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "HSD17B10",
+  "proteinid": "Q99714",
+  "n_lig_cys": "2",
+  "resids": "214;58",
+  "fam": "Enzyme",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "BTK",
+  "proteinid": "Q06187",
+  "n_lig_cys": "2",
+  "resids": "481;337",
+  "fam": "Kinase",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "GSR",
+  "proteinid": "P00390",
+  "n_lig_cys": "2",
+  "resids": "102;107",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "CRBN",
+  "proteinid": "Q96SW2",
+  "n_lig_cys": "2",
+  "resids": "287;219",
+  "fam": "non-IDG",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "SLC1A5",
+  "proteinid": "Q15758",
+  "n_lig_cys": "2",
+  "resids": "363;39",
+  "fam": "Transporter",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "VDR",
+  "proteinid": "P11473",
+  "n_lig_cys": "2",
+  "resids": "288;151",
+  "fam": "NR",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "GAPDH",
+  "proteinid": "P04406",
+  "n_lig_cys": "2",
+  "resids": "152;156",
+  "fam": "Enzyme",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "JAK2",
+  "proteinid": "O60674",
+  "n_lig_cys": "2",
+  "resids": "243;125",
+  "fam": "Kinase",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "PRKCQ",
+  "proteinid": "Q04759",
+  "n_lig_cys": "2",
+  "resids": "303;322",
+  "fam": "Kinase",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "CPT1A",
+  "proteinid": "P50416",
+  "n_lig_cys": "2",
+  "resids": "304;96",
+  "fam": "Enzyme",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "RXRA",
+  "proteinid": "P19793",
+  "n_lig_cys": "2",
+  "resids": "135;138",
+  "fam": "NR",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "COMT",
+  "proteinid": "P21964",
+  "n_lig_cys": "2",
+  "resids": "119;83",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "RPL3",
+  "proteinid": "P39023",
+  "n_lig_cys": "2",
+  "resids": "253;114",
+  "fam": "non-IDG",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "POLE",
+  "proteinid": "Q07864",
+  "n_lig_cys": "2",
+  "resids": "2148;445",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "CDK4",
+  "proteinid": "P11802",
+  "n_lig_cys": "2",
+  "resids": "78;135",
+  "fam": "Kinase",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "CKMT1B",
+  "proteinid": "P12532",
+  "n_lig_cys": "2",
+  "resids": "316;89",
+  "fam": "non-IDG",
+  "tdl": ""
+ },
+ {
+  "symbol": "YES1",
+  "proteinid": "P07947",
+  "n_lig_cys": "1",
+  "resids": "287",
+  "fam": "Kinase",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "ADA",
+  "proteinid": "P00813",
+  "n_lig_cys": "1",
+  "resids": "75",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "SMN2",
+  "proteinid": "Q16637",
+  "n_lig_cys": "1",
+  "resids": "60",
+  "fam": "non-IDG",
+  "tdl": ""
+ },
+ {
+  "symbol": "IL4R",
+  "proteinid": "P24394",
+  "n_lig_cys": "1",
+  "resids": "342",
+  "fam": "non-IDG",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "ABL1",
+  "proteinid": "P00519",
+  "n_lig_cys": "1",
+  "resids": "1100",
+  "fam": "Kinase",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "POLB",
+  "proteinid": "P06746",
+  "n_lig_cys": "1",
+  "resids": "267",
+  "fam": "Enzyme",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "IMPDH1",
+  "proteinid": "P20839",
+  "n_lig_cys": "1",
+  "resids": "331",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "CCDC51",
+  "proteinid": "Q96ER9",
+  "n_lig_cys": "1",
+  "resids": "331",
+  "fam": "non-IDG",
+  "tdl": "Tdark"
+ },
+ {
+  "symbol": "PRKAB2",
+  "proteinid": "O43741",
+  "n_lig_cys": "1",
+  "resids": "178",
+  "fam": "Enzyme",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "GGPS1",
+  "proteinid": "O95749",
+  "n_lig_cys": "1",
+  "resids": "205",
+  "fam": "Enzyme",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "POLE4",
+  "proteinid": "Q9NR33",
+  "n_lig_cys": "1",
+  "resids": "84",
+  "fam": "Enzyme",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "IDE",
+  "proteinid": "P14735",
+  "n_lig_cys": "1",
+  "resids": "974",
+  "fam": "Enzyme",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "RRM2",
+  "proteinid": "P31350",
+  "n_lig_cys": "1",
+  "resids": "202",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "ANXA5",
+  "proteinid": "P08758",
+  "n_lig_cys": "1",
+  "resids": "316",
+  "fam": "non-IDG",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "MDH2",
+  "proteinid": "P40926",
+  "n_lig_cys": "1",
+  "resids": "212",
+  "fam": "Enzyme",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "PRKCA",
+  "proteinid": "P17252",
+  "n_lig_cys": "1",
+  "resids": "71",
+  "fam": "Kinase",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "ITGB7",
+  "proteinid": "P26010",
+  "n_lig_cys": "1",
+  "resids": "271",
+  "fam": "non-IDG",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "HPRT1",
+  "proteinid": "P00492",
+  "n_lig_cys": "1",
+  "resids": "106",
+  "fam": "Enzyme",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "PIK3CA",
+  "proteinid": "P42336",
+  "n_lig_cys": "1",
+  "resids": "242",
+  "fam": "Kinase",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "POLE3",
+  "proteinid": "Q9NRF9",
+  "n_lig_cys": "1",
+  "resids": "51",
+  "fam": "Enzyme",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "CD2",
+  "proteinid": "P06729",
+  "n_lig_cys": "1",
+  "resids": "186",
+  "fam": "non-IDG",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "MS4A1",
+  "proteinid": "P11836",
+  "n_lig_cys": "1",
+  "resids": "220",
+  "fam": "non-IDG",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "NFKB1",
+  "proteinid": "P19838",
+  "n_lig_cys": "1",
+  "resids": "61",
+  "fam": "TF",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "FGB",
+  "proteinid": "P02675",
+  "n_lig_cys": "1",
+  "resids": "437",
+  "fam": "non-IDG",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "BMPR1A",
+  "proteinid": "P36894",
+  "n_lig_cys": "1",
+  "resids": "503",
+  "fam": "Kinase",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "SOAT1",
+  "proteinid": "P35610",
+  "n_lig_cys": "1",
+  "resids": "92",
+  "fam": "Enzyme",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "GAMT",
+  "proteinid": "Q14353",
+  "n_lig_cys": "1",
+  "resids": "91",
+  "fam": "Enzyme",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "ALAD",
+  "proteinid": "P13716",
+  "n_lig_cys": "1",
+  "resids": "223",
+  "fam": "Enzyme",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "PDE4A",
+  "proteinid": "P27815",
+  "n_lig_cys": "1",
+  "resids": "218",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "CPT2",
+  "proteinid": "P23786",
+  "n_lig_cys": "1",
+  "resids": "512",
+  "fam": "Enzyme",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "SERPIND1",
+  "proteinid": "P05546",
+  "n_lig_cys": "1",
+  "resids": "292",
+  "fam": "non-IDG",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "F5",
+  "proteinid": "P12259",
+  "n_lig_cys": "1",
+  "resids": "526",
+  "fam": "non-IDG",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "PRKCB",
+  "proteinid": "P05771",
+  "n_lig_cys": "1",
+  "resids": "217",
+  "fam": "Kinase",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "F9",
+  "proteinid": "P00740",
+  "n_lig_cys": "1",
+  "resids": "178",
+  "fam": "Enzyme",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "MAPK3",
+  "proteinid": "P27361",
+  "n_lig_cys": "1",
+  "resids": "178",
+  "fam": "Kinase",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "PDCD1",
+  "proteinid": "Q15116",
+  "n_lig_cys": "1",
+  "resids": "93",
+  "fam": "non-IDG",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "ABCC1",
+  "proteinid": "P33527",
+  "n_lig_cys": "1",
+  "resids": "730",
+  "fam": "Transporter",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "SERPINC1",
+  "proteinid": "P01008",
+  "n_lig_cys": "1",
+  "resids": "160",
+  "fam": "non-IDG",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "PRKAB1",
+  "proteinid": "Q9Y478",
+  "n_lig_cys": "1",
+  "resids": "223",
+  "fam": "Kinase",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "ALDH2",
+  "proteinid": "P05091",
+  "n_lig_cys": "1",
+  "resids": "319",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "F13A1",
+  "proteinid": "P00488",
+  "n_lig_cys": "1",
+  "resids": "410",
+  "fam": "Enzyme",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "PRKCI",
+  "proteinid": "P41743",
+  "n_lig_cys": "1",
+  "resids": "400",
+  "fam": "Kinase",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "ITGAL",
+  "proteinid": "P20701",
+  "n_lig_cys": "1",
+  "resids": "111",
+  "fam": "non-IDG",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "ATP6V1C1",
+  "proteinid": "P21283",
+  "n_lig_cys": "1",
+  "resids": "376",
+  "fam": "Enzyme",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "PDK1",
+  "proteinid": "Q15118",
+  "n_lig_cys": "1",
+  "resids": "71",
+  "fam": "Kinase",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "HMMR",
+  "proteinid": "O75330",
+  "n_lig_cys": "1",
+  "resids": "712",
+  "fam": "non-IDG",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "SSTR3",
+  "proteinid": "P32745",
+  "n_lig_cys": "1",
+  "resids": "245",
+  "fam": "GPCR",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "PSMB8",
+  "proteinid": "P28062",
+  "n_lig_cys": "1",
+  "resids": "120",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "ROCK1",
+  "proteinid": "Q13464",
+  "n_lig_cys": "1",
+  "resids": "1206",
+  "fam": "Kinase",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "SLC25A6",
+  "proteinid": "P12236",
+  "n_lig_cys": "1",
+  "resids": "160",
+  "fam": "Transporter",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "GSS",
+  "proteinid": "P48637",
+  "n_lig_cys": "1",
+  "resids": "409",
+  "fam": "Enzyme",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "F2",
+  "proteinid": "P00734",
+  "n_lig_cys": "1",
+  "resids": "391",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "PSMB10",
+  "proteinid": "P40306",
+  "n_lig_cys": "1",
+  "resids": "17",
+  "fam": "Enzyme",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "PLG",
+  "proteinid": "P00747",
+  "n_lig_cys": "1",
+  "resids": "784",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "PTGER2",
+  "proteinid": "P43116",
+  "n_lig_cys": "1",
+  "resids": "234",
+  "fam": "GPCR",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "HDAC2",
+  "proteinid": "Q92769",
+  "n_lig_cys": "1",
+  "resids": "312",
+  "fam": "Epigenetic",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "MAPT",
+  "proteinid": "P10636",
+  "n_lig_cys": "1",
+  "resids": "608",
+  "fam": "non-IDG",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "ECHS1",
+  "proteinid": "P30084",
+  "n_lig_cys": "1",
+  "resids": "111",
+  "fam": "Enzyme",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "OGDH",
+  "proteinid": "Q02218",
+  "n_lig_cys": "1",
+  "resids": "283",
+  "fam": "Enzyme",
+  "tdl": "Tbio"
+ },
+ {
+  "symbol": "GANAB",
+  "proteinid": "Q14697",
+  "n_lig_cys": "1",
+  "resids": "502",
+  "fam": "Enzyme",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "NFKB2",
+  "proteinid": "Q00653",
+  "n_lig_cys": "1",
+  "resids": "57",
+  "fam": "TF",
+  "tdl": "Tchem"
+ },
+ {
+  "symbol": "IL2RB",
+  "proteinid": "P14784",
+  "n_lig_cys": "1",
+  "resids": "280",
+  "fam": "non-IDG",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "ODC1",
+  "proteinid": "P11926",
+  "n_lig_cys": "1",
+  "resids": "360",
+  "fam": "Enzyme",
+  "tdl": "Tclin"
+ },
+ {
+  "symbol": "TSPO",
+  "proteinid": "P30536",
+  "n_lig_cys": "1",
+  "resids": "19",
+  "fam": "non-IDG",
+  "tdl": "Tchem"
+ }
+]

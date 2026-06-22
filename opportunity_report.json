@@ -1,0 +1,245 @@
+[
+ {
+  "rank": 1,
+  "target": "RAF1",
+  "lane": "OPEN",
+  "covalent_handle": "hinge C424 (= BRAF C532 conserved hinge cysteine)",
+  "validation": {
+   "fda_approved_drug_target": true,
+   "chembl_target": true,
+   "drugbank_target": true,
+   "clinical_trials_ctgov": {
+    "total_interventional": 69,
+    "recent_2022_26": 11,
+    "earliest_entry_year": 2012,
+    "search_term": "RAF1"
+   }
+  },
+  "covalent_patents_surechembl": "none \u2014 no title/claims covalent patent in feed (lane open)",
+  "discarded_body_mentions": [
+   {
+    "patent": "US-20190292182-A1",
+    "date": "2019-09-26",
+    "assignee": "ASTELLAS PHARMA",
+    "title": "QUINAZOLINE COMPOUND",
+    "warheads": [
+     "acrylamide"
+    ],
+    "attribution": "body"
+   }
+  ],
+  "thesis": "First covalent pan-RAF on the conserved hinge Cys, locking out dimer/paradox escape that reversible RAF inhibitors leave open.",
+  "top_risk": "Directed engagement of C424 is computational-only (unproven), and the conserved hinge Cys imposes a wild-type pan-RAF tox ceiling.",
+  "sources": [
+   "SureChEMBL bulk 2026-06-15 (patents + biomedical_entities) \u2014 patents & attribution",
+   "ClinicalTrials.gov v2 API \u2014 trials",
+   "CysDB / Cell Chem Biol 2023 \u2014 drug-target flags + scout-fragment cysteines",
+   "KLIFS \u2014 kinase pocket cysteines",
+   "HGNC \u2014 gene/UniProt IDs",
+   "web verification (cited in covalent_bic_final.json) \u2014 existing covalent programs"
+  ]
+ },
+ {
+  "rank": 2,
+  "target": "YES1",
+  "lane": "CONTESTED",
+  "covalent_handle": "P-loop C287 (C277 numbering) in the ATP pocket",
+  "validation": {
+   "fda_approved_drug_target": true,
+   "chembl_target": true,
+   "drugbank_target": true,
+   "clinical_trials_ctgov": {
+    "total_interventional": 386,
+    "recent_2022_26": 180,
+    "earliest_entry_year": 2012,
+    "search_term": "YES1"
+   }
+  },
+  "covalent_patents_surechembl": "none \u2014 no title/claims covalent patent in feed (lane open)",
+  "discarded_body_mentions": null,
+  "thesis": "Durable covalent P-loop occupancy in YES1-amplified tumors where a rare, structurally addressable cysteine gives a real chemical foothold.",
+  "top_risk": "C287 is shared with SRC/FGR so the warhead gives no intra-SFK selectivity, and reversible NXP900 is already in Ph1b in the lead indication.",
+  "sources": [
+   "SureChEMBL bulk 2026-06-15 (patents + biomedical_entities) \u2014 patents & attribution",
+   "ClinicalTrials.gov v2 API \u2014 trials",
+   "CysDB / Cell Chem Biol 2023 \u2014 drug-target flags + scout-fragment cysteines",
+   "KLIFS \u2014 kinase pocket cysteines",
+   "HGNC \u2014 gene/UniProt IDs",
+   "web verification (cited in covalent_bic_final.json) \u2014 existing covalent programs"
+  ]
+ },
+ {
+  "rank": 3,
+  "target": "PPARD",
+  "lane": "OPEN",
+  "covalent_handle": "Cys249 (PPARG-Cys313 analog, ligand-binding pocket)",
+  "validation": {
+   "fda_approved_drug_target": true,
+   "chembl_target": true,
+   "drugbank_target": true,
+   "clinical_trials_ctgov": {
+    "total_interventional": 11,
+    "recent_2022_26": 2,
+    "earliest_entry_year": 2012,
+    "search_term": "PPARD"
+   }
+  },
+  "covalent_patents_surechembl": "none \u2014 no title/claims covalent patent in feed (lane open)",
+  "discarded_body_mentions": null,
+  "thesis": "Port the de-risked Flare PPARG covalent inverse-agonist chemistry onto the homologous PPARD Cys249 for an oncology indication.",
+  "top_risk": "Pharmacology is opposite (agonist validation vs. needed inverse-agonism) and the PPARD oncology thesis itself is unproven.",
+  "sources": [
+   "SureChEMBL bulk 2026-06-15 (patents + biomedical_entities) \u2014 patents & attribution",
+   "ClinicalTrials.gov v2 API \u2014 trials",
+   "CysDB / Cell Chem Biol 2023 \u2014 drug-target flags + scout-fragment cysteines",
+   "KLIFS \u2014 kinase pocket cysteines",
+   "HGNC \u2014 gene/UniProt IDs",
+   "web verification (cited in covalent_bic_final.json) \u2014 existing covalent programs"
+  ]
+ },
+ {
+  "rank": 4,
+  "target": "SLC1A5",
+  "lane": "OPEN",
+  "covalent_handle": "Cys467 quasi-catalytic substrate-pocket cysteine",
+  "validation": {
+   "fda_approved_drug_target": true,
+   "chembl_target": true,
+   "drugbank_target": true,
+   "clinical_trials_ctgov": {
+    "total_interventional": 0,
+    "recent_2022_26": 0,
+    "earliest_entry_year": null,
+    "search_term": "SLC1A5"
+   }
+  },
+  "covalent_patents_surechembl": "none \u2014 no title/claims covalent patent in feed (lane open)",
+  "discarded_body_mentions": null,
+  "thesis": "Washout-resistant covalent block of a paralog-selective quasi-catalytic cysteine the reversible transporter field cannot durably engage.",
+  "top_risk": "No validated human proof-of-concept for the target (the MEDI7247 ADC failed), so target validation is the binding constraint.",
+  "sources": [
+   "SureChEMBL bulk 2026-06-15 (patents + biomedical_entities) \u2014 patents & attribution",
+   "ClinicalTrials.gov v2 API \u2014 trials",
+   "CysDB / Cell Chem Biol 2023 \u2014 drug-target flags + scout-fragment cysteines",
+   "KLIFS \u2014 kinase pocket cysteines",
+   "HGNC \u2014 gene/UniProt IDs",
+   "web verification (cited in covalent_bic_final.json) \u2014 existing covalent programs"
+  ]
+ },
+ {
+  "rank": 5,
+  "target": "AKR1B1",
+  "lane": "EMERGING",
+  "covalent_handle": "Cys298 nucleophilic active-site cysteine",
+  "validation": {
+   "fda_approved_drug_target": true,
+   "chembl_target": true,
+   "drugbank_target": true,
+   "clinical_trials_ctgov": {
+    "total_interventional": 19,
+    "recent_2022_26": 4,
+    "earliest_entry_year": 2012,
+    "search_term": "AKR1B1"
+   }
+  },
+  "covalent_patents_surechembl": "none \u2014 no title/claims covalent patent in feed (lane open)",
+  "discarded_body_mentions": null,
+  "thesis": "Covalent active-site occupancy of Cys298 to convert transient aldose-reductase inhibition into durable, washout-resistant blockade.",
+  "top_risk": "Historical ARI failures were efficacy/translation, not potency, so covalency may improve the wrong axis and not rescue the indication.",
+  "sources": [
+   "SureChEMBL bulk 2026-06-15 (patents + biomedical_entities) \u2014 patents & attribution",
+   "ClinicalTrials.gov v2 API \u2014 trials",
+   "CysDB / Cell Chem Biol 2023 \u2014 drug-target flags + scout-fragment cysteines",
+   "KLIFS \u2014 kinase pocket cysteines",
+   "HGNC \u2014 gene/UniProt IDs",
+   "web verification (cited in covalent_bic_final.json) \u2014 existing covalent programs"
+  ]
+ },
+ {
+  "rank": 6,
+  "target": "IRF4",
+  "lane": "OPEN",
+  "covalent_handle": "linker C194 (ligandable across 4 datasets; silent for direct inhibition)",
+  "validation": {
+   "fda_approved_drug_target": false,
+   "chembl_target": false,
+   "drugbank_target": false,
+   "clinical_trials_ctgov": {
+    "total_interventional": 8,
+    "recent_2022_26": 3,
+    "earliest_entry_year": 2012,
+    "search_term": "IRF4"
+   }
+  },
+  "covalent_patents_surechembl": "none \u2014 no title/claims covalent patent in feed (lane open)",
+  "discarded_body_mentions": null,
+  "thesis": "Enter the undrugged MM TF as a covalent degrader off the ligandable but silent C194, claiming clean covalent white space.",
+  "top_risk": "C194 is functionally silent for direct inhibition, forcing a degrader bet with no covalent proof-of-concept against an entrenched PROTAC/ASO field.",
+  "sources": [
+   "SureChEMBL bulk 2026-06-15 (patents + biomedical_entities) \u2014 patents & attribution",
+   "ClinicalTrials.gov v2 API \u2014 trials",
+   "CysDB / Cell Chem Biol 2023 \u2014 drug-target flags + scout-fragment cysteines",
+   "KLIFS \u2014 kinase pocket cysteines",
+   "HGNC \u2014 gene/UniProt IDs",
+   "web verification (cited in covalent_bic_final.json) \u2014 existing covalent programs"
+  ]
+ },
+ {
+  "rank": 7,
+  "target": "PRKCQ",
+  "lane": "OPEN",
+  "covalent_handle": "ligandable C303/C322 (regulatory, not active-site; the 'Cys424 active-site' claim is FALSE)",
+  "validation": {
+   "fda_approved_drug_target": true,
+   "chembl_target": true,
+   "drugbank_target": true,
+   "clinical_trials_ctgov": {
+    "total_interventional": 0,
+    "recent_2022_26": 0,
+    "earliest_entry_year": null,
+    "search_term": "PRKCQ"
+   }
+  },
+  "covalent_patents_surechembl": "none \u2014 no title/claims covalent patent in feed (lane open)",
+  "discarded_body_mentions": null,
+  "thesis": "Open covalent lane on a validated T-cell immunology target whose lead reversible competitor was just discontinued.",
+  "top_risk": "The only ligandable cysteines are regulatory not active-site and no productive covalent cysteine is confirmed, so engagement may not be functional.",
+  "sources": [
+   "SureChEMBL bulk 2026-06-15 (patents + biomedical_entities) \u2014 patents & attribution",
+   "ClinicalTrials.gov v2 API \u2014 trials",
+   "CysDB / Cell Chem Biol 2023 \u2014 drug-target flags + scout-fragment cysteines",
+   "KLIFS \u2014 kinase pocket cysteines",
+   "HGNC \u2014 gene/UniProt IDs",
+   "web verification (cited in covalent_bic_final.json) \u2014 existing covalent programs"
+  ]
+ },
+ {
+  "rank": 8,
+  "target": "PRKCG",
+  "lane": "EMERGING",
+  "covalent_handle": "putative gamma-unique cysteine (unconfirmed) to break the PKC conserved-ATP-pocket problem",
+  "validation": {
+   "fda_approved_drug_target": true,
+   "chembl_target": true,
+   "drugbank_target": true,
+   "clinical_trials_ctgov": {
+    "total_interventional": 0,
+    "recent_2022_26": 0,
+    "earliest_entry_year": null,
+    "search_term": "PRKCG"
+   }
+  },
+  "covalent_patents_surechembl": "none \u2014 no title/claims covalent patent in feed (lane open)",
+  "discarded_body_mentions": null,
+  "thesis": "Exploit a PKC-gamma-unique cysteine to deliver the isoform selectivity the conserved ATP pocket has always denied, in orphan CNS.",
+  "top_risk": "The gamma-unique ligandable cysteine is unconfirmed, so the entire selectivity thesis rests on an unverified structural premise.",
+  "sources": [
+   "SureChEMBL bulk 2026-06-15 (patents + biomedical_entities) \u2014 patents & attribution",
+   "ClinicalTrials.gov v2 API \u2014 trials",
+   "CysDB / Cell Chem Biol 2023 \u2014 drug-target flags + scout-fragment cysteines",
+   "KLIFS \u2014 kinase pocket cysteines",
+   "HGNC \u2014 gene/UniProt IDs",
+   "web verification (cited in covalent_bic_final.json) \u2014 existing covalent programs"
+  ]
+ }
+]

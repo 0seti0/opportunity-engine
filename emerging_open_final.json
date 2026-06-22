@@ -1,0 +1,47 @@
+{
+ "hot_open_shortlist": [
+  {
+   "target": "USP35",
+   "cysteine_handle": "Catalytic Cys450 (triad Cys450/His862/Asp895) \u2014 the same active-site nucleophile class that has yielded cyanopyrrolidine/cyanimide covalent DUB inhibitors (USP30, USP32-Huib32, USP7). Selectivity is the live risk since USP active sites are conserved and USP35 is a promiscuous chain-cleaver, so allosteric/steric covalent designs are likely needed.",
+   "driver": "Ferroptosis regulation (USP35 stabilizes ferroportin), plus cancer metabolic reprogramming and immune escape via STING/ID3 deubiquitination.",
+   "why_now": "2025-26 surge across gastric (Cell Death & Dis 2025), colorectal ID3/immune escape (Adv Sci 2026), HCC/prostate/ovarian/lung \u2014 yet no dedicated USP35 probe, program, or patent has surfaced and only ~6 of ~100 DUBs have quality inhibitors, leaving the active-site covalent lane genuinely open."
+  }
+ ],
+ "emerging_contested": [
+  "ACSL4 \u2014 covalent Cys170 (rociletinib acrylamide, Cell Chem Biol 2025) already contested by AS-252424 + a fragment FBDD series (LIBX-A402/A403) converging 2024-26; dominant thesis is inhibition for cytoprotection",
+  "GSDMD \u2014 reactive Cys191 is a textbook covalent hotspot but already occupied: disulfiram (nM, Phase 2) plus NU6300, necrosulfonamide, DMF, GI-Y1/Y2 crowd the same cysteine",
+  "GFUS (TSTA3/FX) \u2014 catalytic Cys109/His179 dyad is tractable and the direct active-site covalent approach is relatively open, but salvage-pathway decoys (2-FF/SGN-2FF, 6-alkynyl-fucose) stake the field; clinical thromboembolism flag + SDR selectivity risk (medium confidence)",
+  "CPT1A \u2014 covalent Cys96 validated (DHP-B, Redox Biol 2023) but lane staked by that probe plus legacy etomoxir (hepatotoxicity) and 2025 HTS platforms; CPT1B/C selectivity and liver-tox overhang",
+  "SQOR \u2014 essential catalytic cysteine trisulfide (Cys201-S-S-S-Cys379) with 2019 X-ray enables covalent design, but the only chemical matter (STI1, 29 nM) is non-covalent/CoQ-competitive and aimed at heart failure; no covalent or ferroptosis-directed inhibitor yet (medium confidence)",
+  "FABP5 \u2014 pocket-bottom Cys43 already drugged covalently (Aurigene AUR104, MS-confirmed adduct) and Cys120 (MT-21); contested further by Artelo ART26.12 (selective FABP5 inhibitor, Phase 1) \u2014 clinically de-risked, covalent stake planted",
+  "NEK7 \u2014 reactive Cys79 at the NEK7-NLRP3 interface (rociletinib warhead, PoC published), but lane effectively closed/clinical: Halia HT-6184 (Ph2), Monte Rosa MRT-8102 glue (85% CRP reduction Ph1), Novartis + multiple CRBN degraders",
+  "USP11 \u2014 catalytic Cys318, the canonical covalent-DUB nucleophile, but already contested by a 2025 paralogue-selective covalent series (chloroacetyl pyrrole-carboxamide, jump-dilution confirmed, ~2.6 uM over USP4/15) plus mitoxantrone/IsoLiPro/HTS hits; early/academic, no clinic"
+ ],
+ "noise_filtered": [
+  "FER \u2014 WORD-COLLISION: signal_real=false; the 4540 hits and 496 'new_trials' are the 2021-26 ferroptosis/iron text-mining explosion ('Fer-1'=ferrostatin-1, 'fer/ferr'=ferritin/ferric/ferrous), not the niche FER tyrosine kinase (dozens of papers/yr); even the real gene has no covalent program",
+  "DOCK2 \u2014 NOT-TRACTABLE: real gene but surge is omics immune-infiltration marker usage; DHR-2 GEF/Rac interface has no exploitable cysteine, only reversible pan-DOCK CPYPP",
+  "HDGFL2 \u2014 NOT-TRACTABLE: real gene but surge is the HDGFL2-CE TDP-43 splicing biomarker (diagnostic, not a target); PWWP domain has one oxidation-prone solvent cysteine (Cys64) mutated out by structural teams",
+  "GBA1 \u2014 NOT-TRACTABLE/WRONG-DIRECTION: real GCase surge (Parkinson's genetics, clinical readouts) but thesis is ACTIVATE/chaperone; only covalent residue is catalytic Glu340 (glutamate), and probes there are irreversible inactivators",
+  "MS4A1 \u2014 NOT-TRACTABLE: real CD20 surge (CD20xCD3 bispecifics, CAR-T) but a 4-TM antigen with no small-molecule pocket; ECL2 cysteines form a structural disulfide; all 13+ programs are biologics",
+  "DLAT \u2014 NOT-TRACTABLE: real cuproptosis biology but His-Asp catalytic pair (no reactive cysteine); the actionable moiety is the lipoyl arm, and 'small molecules' (disulfiram/elesclomol) are upstream copper ionophores",
+  "ADGRE5 \u2014 NOT-TRACTABLE: real CD97 adhesion-GPCR surge but the epitope is the extracellular GAIN domain; every program is a biologic (ADC/nanobody/antibody), no cytoplasmic reactive cysteine",
+  "S100A10 \u2014 NOT-TRACTABLE: real p11/AnxA2 biology but a ~97-aa Ca-insensitive EF-hand PPI scaffold; only Cys61 is a solvent-exposed disulfide-former; all prior art reversible PPI disruption, depression thesis wants enhancement",
+  "PCLAF \u2014 NOT-TRACTABLE: real PAF15-PCNA Nature 2025 surge but a ~111-aa intrinsically disordered PIP-box protein with no fold/active site/cysteine; all pharmacology hits the partner PCNA (AOH1996)",
+  "MAEA \u2014 NOT-TRACTABLE/WRONG-DIRECTION: real CTLH/GID E3 biology but a non-canonical RING-L whose only cysteines are buried zinc-coordinating structural residues; GI-cancer role is tumor-suppressive (argues for boosting)",
+  "OXCT1 \u2014 NOT-TRACTABLE: real SCOT ketolysis/immunometabolism surge but catalytic nucleophile is Glu344 (glutamate), oxidative inactivation via Tyr/Trp nitration; no reactive cysteine; lane also contested by reversible inhibitors (pimozide, PSSI-51)",
+  "PGAM5 \u2014 NOT-TRACTABLE: real ferroptosis/cell-death node but a histidine-acid (2H-phosphatase) catalyzing through His105, not a thiol phosphatase; chemical matter (LFHP-1c) is reversible/non-covalent",
+  "GZMB \u2014 NOT-TRACTABLE/WRONG-CHEMISTRY: real granzyme B inflammaging/fibrosis surge but a SERINE protease (His-Asp-Ser triad); existing covalent inhibitors are serine-trap warheads on a conserved S1 site, no cysteine handle",
+  "MTCH2 \u2014 WEAK/NOT-TRACTABLE: real SLC25A50 insertase + ferroptosis surge but a membrane-buried hydrophilic conduction groove with no reported catalytic/reactive cysteine and no chemoproteomic flag; genetic validation only",
+  "ATOX1 \u2014 WEAK/NOT-TRACTABLE: real cuproptosis copper-chaperone surge with reactive CXXC cysteines (Cys12/15) but those are generic to the whole HMA metallochaperone family (CCS, ATP7A/B), so selectivity fails; only ligand (DC_AC50) binds the PPI interface, not the cysteines"
+ ],
+ "thematic_clusters": [
+  "Ferroptosis is the dominant engine \u2014 recurring across ACSL4 (PUFA esterification), FABP5 (PUFA funneling/GPX4 suppression), CPT1A (FAO-driven resistance), SQOR (GPX4-independent suppressor), MTCH2, PGAM5, USP11 and USP35 (ferroportin); even the FER false-positive rides 'Fer-1' ferroptosis vocabulary",
+  "Cuproptosis / copper-dependent death \u2014 DLAT (lipoylated E2 + Cu+ oligomerization) and ATOX1 (copper chaperone), plus a large wave of pan-cancer prognostic copper-signature bioinformatics",
+  "NLRP3 inflammasome / pyroptosis \u2014 GSDMD (pore-forming executioner, NET formation in sepsis) and NEK7 (obligate licensing factor); cardiovascular/residual-inflammatory-risk framing",
+  "Immuno-oncology & immunometabolism \u2014 CPT1A and OXCT1 (T-cell exhaustion / TAM reprogramming), GFUS (afucosylated-antibody ADCC), DOCK2 (ICI-response marker)",
+  "Cysteine-protease DUB class as a covalent-native modality \u2014 USP11 (Cys318) and USP35 (Cys450), riding DNA-repair/HR plus ferroptosis/autophagy biology",
+  "Neurodegeneration & fluid biomarkers \u2014 HDGFL2-CE (TDP-43 ALS/FTD diagnostic), GBA1 (Parkinson's lysosomal), with gasdermin/PGAM5 neuro roles appearing as secondary drivers",
+  "Bioinformatics marker-gene inflation \u2014 a cross-cutting noise source: scRNA-seq/TCGA prognostic-signature usage inflates counts for DOCK2, DLAT and copper/ferroptosis signatures without genuine drug-discovery momentum"
+ ],
+ "takeaway": "The momentum protocol surfaced exactly one genuinely HOT_OPEN covalent lane \u2014 USP35, a real, accelerating, ferroptosis/immune-escape DUB with an unclaimed catalytic Cys450 \u2014 and even that carries only medium confidence (modest accel ~1.17, zero new trials, conserved-active-site selectivity risk). The signal-to-noise is sobering: of 24 verdicts, 15 were filtered as NOISE/WEAK, and the failure mode is almost entirely 'real gene, wrong chemistry' (13 of 15) rather than true word-collisions \u2014 FER is the lone acronym artifact (Fer-1/ferritin), confirming the gene-name dedup is working but that biological-momentum signals get swamped by undruggable-for-covalent targets (membrane antigens, IDPs, His/Ser/Glu-catalysis enzymes, metallochaperones) and by omics marker-gene inflation. The 8 EMERGING_CONTESTED targets validate the underlying biology themes (ferroptosis above all) but every one already has a covalent stake or a clinical degrader/allosteric program planted, so they are de-risking reads rather than whitespace. Honest read: the protocol is good at finding hot emerging biology and good at killing non-tractable targets, but truly open hot covalent lanes are rare \u2014 here, one defensible shortlist entry, and the real value is the candid contested/noise triage that tells Axiom where not to spend."
+}

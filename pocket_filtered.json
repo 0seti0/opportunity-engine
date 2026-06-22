@@ -1,0 +1,920 @@
+[
+ {
+  "symbol": "ACAA1",
+  "proteinid": "P09110",
+  "tier": "A",
+  "n_pocket_cys": 3,
+  "n_pocket_ligandable": 2,
+  "pocket_cys": "123;381;408",
+  "lig_pocket_cys": "123;381"
+ },
+ {
+  "symbol": "CASP3",
+  "proteinid": "P42574",
+  "tier": "A",
+  "n_pocket_cys": 3,
+  "n_pocket_ligandable": 2,
+  "pocket_cys": "116;163;170",
+  "lig_pocket_cys": "163;170"
+ },
+ {
+  "symbol": "ATP2A2",
+  "proteinid": "P16615",
+  "tier": "A",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 2,
+  "pocket_cys": "344;349",
+  "lig_pocket_cys": "344;349"
+ },
+ {
+  "symbol": "TYMS",
+  "proteinid": "P04818",
+  "tier": "A",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 2,
+  "pocket_cys": "195;199",
+  "lig_pocket_cys": "195;199"
+ },
+ {
+  "symbol": "IMPDH2",
+  "proteinid": "P12268",
+  "tier": "A",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 2,
+  "pocket_cys": "331;339",
+  "lig_pocket_cys": "331;339"
+ },
+ {
+  "symbol": "RRM1",
+  "proteinid": "P23921",
+  "tier": "A",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 2,
+  "pocket_cys": "425;429",
+  "lig_pocket_cys": "425;429"
+ },
+ {
+  "symbol": "GAPDH",
+  "proteinid": "P04406",
+  "tier": "A",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 2,
+  "pocket_cys": "152;156",
+  "lig_pocket_cys": "152;156"
+ },
+ {
+  "symbol": "IMPDH1",
+  "proteinid": "P20839",
+  "tier": "A",
+  "n_pocket_cys": 3,
+  "n_pocket_ligandable": 1,
+  "pocket_cys": "327;331;339",
+  "lig_pocket_cys": "331"
+ },
+ {
+  "symbol": "ALDH2",
+  "proteinid": "P05091",
+  "tier": "A",
+  "n_pocket_cys": 3,
+  "n_pocket_ligandable": 1,
+  "pocket_cys": "318;319;320",
+  "lig_pocket_cys": "319"
+ },
+ {
+  "symbol": "ODC1",
+  "proteinid": "P11926",
+  "tier": "A",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 1,
+  "pocket_cys": "360;370",
+  "lig_pocket_cys": "360"
+ },
+ {
+  "symbol": "PRDX5",
+  "proteinid": "P30044",
+  "tier": "A",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 1,
+  "pocket_cys": "100",
+  "lig_pocket_cys": "100"
+ },
+ {
+  "symbol": "TOP1",
+  "proteinid": "P11387",
+  "tier": "A",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 1,
+  "pocket_cys": "733",
+  "lig_pocket_cys": "733"
+ },
+ {
+  "symbol": "ACLY",
+  "proteinid": "P53396",
+  "tier": "A",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 1,
+  "pocket_cys": "764",
+  "lig_pocket_cys": "764"
+ },
+ {
+  "symbol": "ATP2B1",
+  "proteinid": "P20020",
+  "tier": "A",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 1,
+  "pocket_cys": "473",
+  "lig_pocket_cys": "473"
+ },
+ {
+  "symbol": "CDK4",
+  "proteinid": "P11802",
+  "tier": "A",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 1,
+  "pocket_cys": "135",
+  "lig_pocket_cys": "135"
+ },
+ {
+  "symbol": "PLA2G2A",
+  "proteinid": "P14555",
+  "tier": "B",
+  "n_pocket_cys": 8,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "63;64;69;70;103;108;110;117",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "PLA2G10",
+  "proteinid": "O15496",
+  "tier": "B",
+  "n_pocket_cys": 8,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "84;85;90;91;125;130;132;139",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "F12",
+  "proteinid": "P00748",
+  "tier": "B",
+  "n_pocket_cys": 4,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "405;413;559;569",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "FASN",
+  "proteinid": "P49327",
+  "tier": "B",
+  "n_pocket_cys": 4,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "161;587;2312;2318",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "HMGCR",
+  "proteinid": "P04035",
+  "tier": "B",
+  "n_pocket_cys": 4,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "561;688;764;777",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "ALDH3B2",
+  "proteinid": "P48448",
+  "tier": "B",
+  "n_pocket_cys": 4,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "136;155;163;171",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "PLAT",
+  "proteinid": "P00750",
+  "tier": "B",
+  "n_pocket_cys": 4,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "350;358;509;519",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "KLK3",
+  "proteinid": "P07288",
+  "tier": "B",
+  "n_pocket_cys": 3,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "66;209;219",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "ATP2C1",
+  "proteinid": "P98194",
+  "tier": "B",
+  "n_pocket_cys": 3,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "343;344;348",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "HDAC6",
+  "proteinid": "Q9UBN7",
+  "tier": "B",
+  "n_pocket_cys": 3,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "226;618;621",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "F11",
+  "proteinid": "P03951",
+  "tier": "B",
+  "n_pocket_cys": 3,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "432;571;581",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "ELANE",
+  "proteinid": "P08246",
+  "tier": "B",
+  "n_pocket_cys": 3,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "71;198;208",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "PLG",
+  "proteinid": "P00747",
+  "tier": "B",
+  "n_pocket_cys": 3,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "623;756;766",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "ATP2C2",
+  "proteinid": "O75185",
+  "tier": "B",
+  "n_pocket_cys": 3,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "372;373;377",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "KLKB1",
+  "proteinid": "P03952",
+  "tier": "B",
+  "n_pocket_cys": 3,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "435;574;584",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "PCSK9",
+  "proteinid": "Q8NBP7",
+  "tier": "B",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "223;378",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "PROC",
+  "proteinid": "P04070",
+  "tier": "B",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "254;398",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "ATP2A1",
+  "proteinid": "O14983",
+  "tier": "B",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "344;349",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "CDA",
+  "proteinid": "P32320",
+  "tier": "B",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "59;65",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "HDAC11",
+  "proteinid": "Q96DB2",
+  "tier": "B",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "144;153",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "ALK",
+  "proteinid": "Q9UM73",
+  "tier": "B",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "1255;1259",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "PDGFRB",
+  "proteinid": "P09619",
+  "tier": "B",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "822;835",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "F7",
+  "proteinid": "P08709",
+  "tier": "B",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "254;400",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "F9",
+  "proteinid": "P00740",
+  "tier": "B",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "268;407",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "F10",
+  "proteinid": "P00742",
+  "tier": "B",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "277;415",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "REN",
+  "proteinid": "P00797",
+  "tier": "B",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "283;287",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "F13A1",
+  "proteinid": "P00488",
+  "tier": "B",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "315;375",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "PNLIP",
+  "proteinid": "P16233",
+  "tier": "B",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "198;278",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "DNMT1",
+  "proteinid": "P26358",
+  "tier": "B",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "1221;1226",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "F2",
+  "proteinid": "P00734",
+  "tier": "B",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "407;564",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "PGA5",
+  "proteinid": "P0DJD9",
+  "tier": "B",
+  "n_pocket_cys": 2,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "268;272",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "FLT3",
+  "proteinid": "P36888",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "807",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "NTRK2",
+  "proteinid": "Q16620",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "682",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "HDAC5",
+  "proteinid": "Q9UQL6",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "843",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "ABL1",
+  "proteinid": "P00519",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "369",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "HDAC4",
+  "proteinid": "P56524",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "813",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "IDE",
+  "proteinid": "P14735",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "110",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "FLT4",
+  "proteinid": "P35916",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "1033",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "PRKAA2",
+  "proteinid": "P54646",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "130",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "TXNRD1",
+  "proteinid": "Q16881",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "625",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "FGFR1",
+  "proteinid": "P11362",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "619",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "LDHB",
+  "proteinid": "P07195",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "186",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "HDAC10",
+  "proteinid": "Q969S8",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "145",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "AXL",
+  "proteinid": "P30530",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "678",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "ATP4A",
+  "proteinid": "P20648",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "385",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "CSF1R",
+  "proteinid": "P07333",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "774",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "KDR",
+  "proteinid": "P35968",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "1024",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "PTK2B",
+  "proteinid": "Q14289",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "545",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "HDAC3",
+  "proteinid": "O15379",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "145",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "ALPG",
+  "proteinid": "P10696",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "120",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "SOAT1",
+  "proteinid": "P35610",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "467",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "DPYD",
+  "proteinid": "Q12882",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "671",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "FGFR4",
+  "proteinid": "P22455",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "608",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "FLT1",
+  "proteinid": "P17948",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "1018",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "ALAD",
+  "proteinid": "P13716",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "203",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "NTRK3",
+  "proteinid": "Q16288",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "685",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "ATP2B3",
+  "proteinid": "Q16720",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "471",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "ATP2B4",
+  "proteinid": "P23634",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "463",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "LDHA",
+  "proteinid": "P00338",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "185",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "HDAC7",
+  "proteinid": "Q8WUI4",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "680",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "NTRK1",
+  "proteinid": "P04629",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "656",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "ATP1A1",
+  "proteinid": "P05023",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "374",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "BTK",
+  "proteinid": "Q06187",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "527",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "ATIC",
+  "proteinid": "P31939",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "146",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "MET",
+  "proteinid": "P08581",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "1210",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "ATP2B2",
+  "proteinid": "Q01814",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "497",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "HDAC9",
+  "proteinid": "Q9UKV0",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "793",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "FGFR3",
+  "proteinid": "P22607",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "613",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "HDAC1",
+  "proteinid": "Q13547",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "151",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "PRKAA1",
+  "proteinid": "Q13131",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "141",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "PDGFRA",
+  "proteinid": "P16234",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "814",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "CA7",
+  "proteinid": "P43166",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "56",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "ROS1",
+  "proteinid": "P08922",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "2085",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "DIO3",
+  "proteinid": "P55073",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "168",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "DDR2",
+  "proteinid": "Q16832",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "716",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "LPL",
+  "proteinid": "P06858",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "266",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "DBH",
+  "proteinid": "P09172",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "232",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "INSR",
+  "proteinid": "P06213",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "1165",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "JAK3",
+  "proteinid": "P52333",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "945",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "FGFR2",
+  "proteinid": "P21802",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "622",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "TOP1MT",
+  "proteinid": "Q969P6",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "569",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "KIT",
+  "proteinid": "P10721",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "788",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "HDAC2",
+  "proteinid": "Q92769",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "152",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "HDAC8",
+  "proteinid": "Q9BY41",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "153",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "IGF1R",
+  "proteinid": "P08069",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "1141",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "C1S",
+  "proteinid": "P09871",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "628",
+  "lig_pocket_cys": ""
+ },
+ {
+  "symbol": "AKR1B1",
+  "proteinid": "P15121",
+  "tier": "B",
+  "n_pocket_cys": 1,
+  "n_pocket_ligandable": 0,
+  "pocket_cys": "45",
+  "lig_pocket_cys": ""
+ }
+]

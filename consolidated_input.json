@@ -1,0 +1,552 @@
+{
+ "credible": [
+  {
+   "sym": "AKR1B1",
+   "cysdb_lig_cys": 3,
+   "struct_handles": null,
+   "verdict": "POSSIBLE_BIC"
+  },
+  {
+   "sym": "PPARD",
+   "cysdb_lig_cys": 2,
+   "struct_handles": null,
+   "verdict": "POSSIBLE_BIC"
+  },
+  {
+   "sym": "PRKCQ",
+   "cysdb_lig_cys": 2,
+   "struct_handles": null,
+   "verdict": "POSSIBLE_BIC"
+  },
+  {
+   "sym": "RAF1",
+   "cysdb_lig_cys": 3,
+   "struct_handles": [
+    "hinge@48"
+   ],
+   "verdict": "OPEN"
+  },
+  {
+   "sym": "SLC1A5",
+   "cysdb_lig_cys": 2,
+   "struct_handles": null,
+   "verdict": "POSSIBLE_BIC"
+  },
+  {
+   "sym": "YES1",
+   "cysdb_lig_cys": 1,
+   "struct_handles": [
+    "P-loop@7"
+   ],
+   "verdict": "POSSIBLE_BIC"
+  }
+ ],
+ "to_verify": [
+  {
+   "sym": "ABCC1",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "ACAA1",
+   "cysdb_lig_cys": 5,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "ACLY",
+   "cysdb_lig_cys": 4,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "ACTN1",
+   "cysdb_lig_cys": 2,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "ADA",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "ALAD",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "ALDH2",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "ANXA4",
+   "cysdb_lig_cys": 2,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "ANXA5",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "ATIC",
+   "cysdb_lig_cys": 4,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "ATP2B1",
+   "cysdb_lig_cys": 3,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "ATP2B4",
+   "cysdb_lig_cys": 2,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "CASP3",
+   "cysdb_lig_cys": 3,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "CCDC51",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "CD2",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "CDA",
+   "cysdb_lig_cys": 3,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "CKB",
+   "cysdb_lig_cys": 4,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "CKMT1B",
+   "cysdb_lig_cys": 2,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "CPT2",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "CSF1R",
+   "cysdb_lig_cys": null,
+   "struct_handles": [
+    "front-pocket@49",
+    "hinge@48"
+   ],
+   "verdict": null
+  },
+  {
+   "sym": "DCK",
+   "cysdb_lig_cys": 3,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "ECHS1",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "ERBB4",
+   "cysdb_lig_cys": null,
+   "struct_handles": [
+    "front-pocket@52"
+   ],
+   "verdict": null
+  },
+  {
+   "sym": "F13A1",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "F2",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "F5",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "F9",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "FASN",
+   "cysdb_lig_cys": 9,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "FGB",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "FLT1",
+   "cysdb_lig_cys": null,
+   "struct_handles": [
+    "hinge@48"
+   ],
+   "verdict": null
+  },
+  {
+   "sym": "FLT4",
+   "cysdb_lig_cys": null,
+   "struct_handles": [
+    "hinge@48"
+   ],
+   "verdict": null
+  },
+  {
+   "sym": "GAMT",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "GANAB",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "GSR",
+   "cysdb_lig_cys": 2,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "GSS",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "HMMR",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "HPRT1",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "IKBKB",
+   "cysdb_lig_cys": 2,
+   "struct_handles": [
+    "hinge@48"
+   ],
+   "verdict": null
+  },
+  {
+   "sym": "IL4R",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "IMPDH1",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "ITGAL",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "ITGB7",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "JAK1",
+   "cysdb_lig_cys": 6,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "KDR",
+   "cysdb_lig_cys": null,
+   "struct_handles": [
+    "hinge@48"
+   ],
+   "verdict": null
+  },
+  {
+   "sym": "KIT",
+   "cysdb_lig_cys": null,
+   "struct_handles": [
+    "front-pocket@49",
+    "hinge@48"
+   ],
+   "verdict": null
+  },
+  {
+   "sym": "MAP4",
+   "cysdb_lig_cys": 2,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "MAPK3",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "MAPT",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "MDH2",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "MS4A1",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "MTR",
+   "cysdb_lig_cys": 4,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "ODC1",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "PARP1",
+   "cysdb_lig_cys": 3,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "PDCD1",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "PDGFRB",
+   "cysdb_lig_cys": null,
+   "struct_handles": [
+    "hinge@48"
+   ],
+   "verdict": null
+  },
+  {
+   "sym": "PIK3CD",
+   "cysdb_lig_cys": 2,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "PLG",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "PLIN3",
+   "cysdb_lig_cys": 3,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "POLB",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "POLE4",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "PRDX5",
+   "cysdb_lig_cys": 2,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "PSMB10",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "PSMB8",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "PTGER2",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "SDHA",
+   "cysdb_lig_cys": 5,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "SERPINC1",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "SERPIND1",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "SLC25A4",
+   "cysdb_lig_cys": 3,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "SLC25A6",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "SMN2",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "SRC",
+   "cysdb_lig_cys": null,
+   "struct_handles": [
+    "P-loop@7"
+   ],
+   "verdict": null
+  },
+  {
+   "sym": "SSTR3",
+   "cysdb_lig_cys": 1,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "TOP2B",
+   "cysdb_lig_cys": 6,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "TUBA1A",
+   "cysdb_lig_cys": 7,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "TUBA4A",
+   "cysdb_lig_cys": 5,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "TUBB3",
+   "cysdb_lig_cys": 2,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "TUBB4B",
+   "cysdb_lig_cys": 6,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "TXNRD1",
+   "cysdb_lig_cys": 4,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "TYMS",
+   "cysdb_lig_cys": 3,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "VKORC1",
+   "cysdb_lig_cys": 2,
+   "struct_handles": null,
+   "verdict": null
+  },
+  {
+   "sym": "VKORC1L1",
+   "cysdb_lig_cys": 2,
+   "struct_handles": null,
+   "verdict": null
+  }
+ ]
+}

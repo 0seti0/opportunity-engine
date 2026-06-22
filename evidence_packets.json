@@ -1,0 +1,2040 @@
+[
+ {
+  "target": "IRAK4",
+  "common": "IRAK4",
+  "window": "OPEN",
+  "players": 2,
+  "cov_patents": 12,
+  "clinic_yrs": 11,
+  "recent_trials": 21,
+  "assignees": [
+   "GILEAD SCIENCES",
+   "KYMERA THERAPEUTICS"
+  ],
+  "patents": [
+   {
+    "pn": "US-20250375526-A1",
+    "date": "2025-12-11",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "IRAK DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4602042-A1",
+    "date": "2025-08-20",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "SALT FORMS OF IRAK4 DEGRADERS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-3731869-B1",
+    "date": "2025-07-23",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "IRAK DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250205342-A1",
+    "date": "2025-06-26",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "IRAK DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2025080300-A1",
+    "date": "2025-04-17",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "SALT FORMS OF IRAK4 DEGRADERS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4499068-A1",
+    "date": "2025-02-05",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "IRAK DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250034154-A1",
+    "date": "2025-01-30",
+    "firm": "GILEAD SCIENCES",
+    "title": "SALTS AND SOLID FORMS OF A COMPOUND THAT MODULATES IRAK4",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250000985-A1",
+    "date": "2025-01-02",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "IRAK DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "F2R",
+  "common": "CF2R",
+  "window": "OPEN",
+  "players": 2,
+  "cov_patents": 10,
+  "clinic_yrs": 14,
+  "recent_trials": 3,
+  "assignees": [
+   "KYMERA THERAPEUTICS",
+   "NIMBUS CLIO"
+  ],
+  "patents": [
+   {
+    "pn": "US-20250333417-A1",
+    "date": "2025-10-30",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "IRAK DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4620470-A2",
+    "date": "2025-09-24",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "IRAK DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4615455-A2",
+    "date": "2025-09-17",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "IRAK DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250163038-A1",
+    "date": "2025-05-22",
+    "firm": "NIMBUS CLIO",
+    "title": "CBL-B MODULATORS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250059164-A1",
+    "date": "2025-02-20",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "IRAK DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250011325-A1",
+    "date": "2025-01-09",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "IRAK DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2024092009-A1",
+    "date": "2024-05-02",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "PROTEIN DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4359381-A1",
+    "date": "2024-05-01",
+    "firm": "NIMBUS CLIO",
+    "title": "CBL-B MODULATORS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "STAT6",
+  "common": "STAT6",
+  "window": "OPEN",
+  "players": 2,
+  "cov_patents": 9,
+  "clinic_yrs": 14,
+  "recent_trials": 10,
+  "assignees": [
+   "GILEAD SCIENCES",
+   "KYMERA THERAPEUTICS"
+  ],
+  "patents": [
+   {
+    "pn": "US-20250340551-A1",
+    "date": "2025-11-06",
+    "firm": "GILEAD SCIENCES",
+    "title": "SMALL MOLECULE MODULATORS OF STAT6",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250325677-A1",
+    "date": "2025-10-23",
+    "firm": "GILEAD SCIENCES",
+    "title": "STAT6 DEGRADERS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250320205-A1",
+    "date": "2025-10-16",
+    "firm": "GILEAD SCIENCES",
+    "title": "STAT6 DEGRADERS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250320206-A1",
+    "date": "2025-10-16",
+    "firm": "GILEAD SCIENCES",
+    "title": "STAT6 DEGRADERS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250213586-A1",
+    "date": "2025-07-03",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "STAT6 INHIBITORS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250214977-A1",
+    "date": "2025-07-03",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "STAT6 INHIBITORS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2025049820-A1",
+    "date": "2025-03-06",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "STAT6 DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2025049821-A1",
+    "date": "2025-03-06",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "STAT6 DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "WRN",
+  "common": "WRN",
+  "window": "OPEN",
+  "players": 2,
+  "cov_patents": 8,
+  "clinic_yrs": 14,
+  "recent_trials": 39,
+  "assignees": [
+   "GILEAD SCIENCES",
+   "INCYTE"
+  ],
+  "patents": [
+   {
+    "pn": "US-20250333419-A1",
+    "date": "2025-10-30",
+    "firm": "INCYTE",
+    "title": "BICYCLIC COMPOUNDS AS INHIBITORS OF WRN",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250333420-A1",
+    "date": "2025-10-30",
+    "firm": "INCYTE",
+    "title": "FUSED BICYCLIC PYRIMIDONES AS WRN INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250270217-A1",
+    "date": "2025-08-28",
+    "firm": "INCYTE",
+    "title": "IMIDAZ0[1,2-A]PYRIMIDINE-5(1 H)-ONES HAVING A COVALENT WARHEAD AT THE 3-POS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250270218-A1",
+    "date": "2025-08-28",
+    "firm": "INCYTE",
+    "title": "IMIDAZ0[1,2-A]PYRIMIDINE-5(1 H)-ONES AS WRN INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250236622-A1",
+    "date": "2025-07-24",
+    "firm": "INCYTE",
+    "title": "BICYCLIC COMPOUNDS AS INHIBITORS OF WRN",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250230168-A1",
+    "date": "2025-07-17",
+    "firm": "GILEAD SCIENCES",
+    "title": "AZASPIRO WRN INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250215006-A1",
+    "date": "2025-07-03",
+    "firm": "INCYTE",
+    "title": "TRICYCLIC COMPOUNDS AS INHIBITORS OF WRN",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2025137640-A1",
+    "date": "2025-06-26",
+    "firm": "GILEAD SCIENCES",
+    "title": "AZASPIRO WRN INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "NLRP3",
+  "common": "NLRP3",
+  "window": "OPEN",
+  "players": 2,
+  "cov_patents": 8,
+  "clinic_yrs": 14,
+  "recent_trials": 80,
+  "assignees": [
+   "NOVARTIS",
+   "\u8bfa\u534e\u80a1\u4efd\u6709\u9650\u516c\u53f8"
+  ],
+  "patents": [
+   {
+    "pn": "US-20250270188-A1",
+    "date": "2025-08-28",
+    "firm": "NOVARTIS",
+    "title": "NLRP3 INFLAMMASOME INHIBITORS",
+    "warheads": [
+     "acrylamide",
+     "propiolamide"
+    ]
+   },
+   {
+    "pn": "US-12378222-B2",
+    "date": "2025-08-05",
+    "firm": "NOVARTIS",
+    "title": "NLRP3 inflammasome inhibitors",
+    "warheads": [
+     "acrylamide",
+     "propiolamide"
+    ]
+   },
+   {
+    "pn": "EP-4565326-A1",
+    "date": "2025-06-11",
+    "firm": "NOVARTIS",
+    "title": "NLRP3 INFLAMMASOME INHIBITORS",
+    "warheads": [
+     "acrylamide",
+     "propiolamide"
+    ]
+   },
+   {
+    "pn": "CN-119732956-A",
+    "date": "2025-04-01",
+    "firm": "\u8bfa\u534e\u80a1\u4efd\u6709\u9650\u516c\u53f8",
+    "title": "NLRP3 inflammatory corpuscle inhibitor",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "CN-119677725-A",
+    "date": "2025-03-21",
+    "firm": "\u8bfa\u534e\u80a1\u4efd\u6709\u9650\u516c\u53f8",
+    "title": "NLRP3 inflammatory corpuscle inhibitor",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250034114-A1",
+    "date": "2025-01-30",
+    "firm": "NOVARTIS",
+    "title": "NLRP3 INFLAMMASOME INHIBITORS",
+    "warheads": [
+     "acrylamide",
+     "propiolamide"
+    ]
+   },
+   {
+    "pn": "US-20240067627-A1",
+    "date": "2024-02-29",
+    "firm": "NOVARTIS",
+    "title": "NLRP3 INFLAMMASOME INHIBITORS",
+    "warheads": [
+     "acrylamide",
+     "propiolamide"
+    ]
+   },
+   {
+    "pn": "WO-2024028782-A1",
+    "date": "2024-02-08",
+    "firm": "NOVARTIS",
+    "title": "NLRP3 INFLAMMASOME INHIBITORS",
+    "warheads": [
+     "acrylamide",
+     "propiolamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "TPO",
+  "common": "TPX",
+  "window": "OPEN",
+  "players": 2,
+  "cov_patents": 7,
+  "clinic_yrs": 14,
+  "recent_trials": 24,
+  "assignees": [
+   "GILEAD SCIENCES",
+   "\u5409\u5229\u5fb7\u79d1\u5b66\u516c\u53f8"
+  ],
+  "patents": [
+   {
+    "pn": "EP-4291562-B1",
+    "date": "2025-09-10",
+    "firm": "GILEAD SCIENCES",
+    "title": "THIENOPYRROLE COMPOUNDS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250049780-A1",
+    "date": "2025-02-13",
+    "firm": "GILEAD SCIENCES",
+    "title": "THIENOPYRROLE COMPOUNDS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2025006568-A2",
+    "date": "2025-01-02",
+    "firm": "GILEAD SCIENCES",
+    "title": "MK2 INHIBITORS AND METHODS OF MAKING AND USING THE SAME",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4398989-A1",
+    "date": "2024-07-17",
+    "firm": "GILEAD SCIENCES",
+    "title": "THIENOPYRROLE COMPOUNDS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "CN-117957234-A",
+    "date": "2024-04-30",
+    "firm": "\u5409\u5229\u5fb7\u79d1\u5b66\u516c\u53f8",
+    "title": "Thienopyrrole compounds",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20240059673-A1",
+    "date": "2024-02-22",
+    "firm": "GILEAD SCIENCES",
+    "title": "SUBSTITUTED INDOLE COMPOUNDS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4323369-A1",
+    "date": "2024-02-21",
+    "firm": "GILEAD SCIENCES",
+    "title": "THIENOPYRROLE COMPOUNDS",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "SMARCA2",
+  "common": "SMARCA2",
+  "window": "OPEN",
+  "players": 2,
+  "cov_patents": 6,
+  "clinic_yrs": 2,
+  "recent_trials": 7,
+  "assignees": [
+   "KYMERA THERAPEUTICS",
+   "NOVARTIS"
+  ],
+  "patents": [
+   {
+    "pn": "US-20250388566-A1",
+    "date": "2025-12-25",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "PROTEIN DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250275970-A1",
+    "date": "2025-09-04",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "SMARCA DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-12358906-B2",
+    "date": "2025-07-15",
+    "firm": "NOVARTIS",
+    "title": "Urea compounds and compositions as SMARCA2/BRM ATPase inhibitors",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250170248-A1",
+    "date": "2025-05-29",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "SMARCA DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-11958846-B2",
+    "date": "2024-04-16",
+    "firm": "NOVARTIS",
+    "title": "Urea compounds and compositions as SMARCA2/BRM ATPase inhibitors",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20240024318-A1",
+    "date": "2024-01-25",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "SMARCA DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "CTLA4",
+  "common": "CTLA4",
+  "window": "OPEN",
+  "players": 2,
+  "cov_patents": 6,
+  "clinic_yrs": 14,
+  "recent_trials": 419,
+  "assignees": [
+   "GILEAD SCIENCES",
+   "JANSSEN PHARMACEUTICA"
+  ],
+  "patents": [
+   {
+    "pn": "US-20250243194-A1",
+    "date": "2025-07-31",
+    "firm": "JANSSEN PHARMACEUTICA",
+    "title": "ANTAGONIST OF ADENOSINE RECEPTORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2025054347-A1",
+    "date": "2025-03-13",
+    "firm": "GILEAD SCIENCES",
+    "title": "KRAS G12D MODULATING COMPOUNDS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2025054530-A1",
+    "date": "2025-03-13",
+    "firm": "GILEAD SCIENCES",
+    "title": "PYRIMIDINE-CONTAINING POLYCYCLIC DERIVATIVES AS KRAS G12D MODULATING COMPOU",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4511127-A1",
+    "date": "2025-02-26",
+    "firm": "GILEAD SCIENCES",
+    "title": "KRAS G12D MODULATING COMPOUNDS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2025006704-A1",
+    "date": "2025-01-02",
+    "firm": "GILEAD SCIENCES",
+    "title": "KRAS MODULATING COMPOUNDS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2025006720-A1",
+    "date": "2025-01-02",
+    "firm": "GILEAD SCIENCES",
+    "title": "KRAS MODULATING COMPOUNDS",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "OR6J1",
+  "common": "OR6J1",
+  "window": "OPEN",
+  "players": 2,
+  "cov_patents": 6,
+  "clinic_yrs": null,
+  "recent_trials": 0,
+  "assignees": [
+   "GILEAD SCIENCES",
+   "\u5361\u5c14\u90a3\u751f\u7269\u79d1\u5b66\u682a\u5f0f\u4f1a\u793e"
+  ],
+  "patents": [
+   {
+    "pn": "CN-118324767-A",
+    "date": "2024-07-12",
+    "firm": "\u5361\u5c14\u90a3\u751f\u7269\u79d1\u5b66\u682a\u5f0f\u4f1a\u793e",
+    "title": "Diacylglycerol kinase modulating compounds",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-11999733-B2",
+    "date": "2024-06-04",
+    "firm": "GILEAD SCIENCES",
+    "title": "Diacylglycerol kinase modulating compounds",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4359411-A1",
+    "date": "2024-05-01",
+    "firm": "GILEAD SCIENCES",
+    "title": "DIACYLGLYERCOL KINASE MODULATING COMPOUNDS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4359413-A1",
+    "date": "2024-05-01",
+    "firm": "GILEAD SCIENCES",
+    "title": "DIACYLGLYERCOL KINASE MODULATING COMPOUNDS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-11932634-B2",
+    "date": "2024-03-19",
+    "firm": "GILEAD SCIENCES",
+    "title": "Diacylglycerol kinase modulating compounds",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-11926628-B2",
+    "date": "2024-03-12",
+    "firm": "GILEAD SCIENCES",
+    "title": "Diacylglyercol kinase modulating compounds",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "STAT3",
+  "common": "STAT3",
+  "window": "OPEN",
+  "players": 1,
+  "cov_patents": 5,
+  "clinic_yrs": 14,
+  "recent_trials": 49,
+  "assignees": [
+   "KYMERA THERAPEUTICS"
+  ],
+  "patents": [
+   {
+    "pn": "US-20250375460-A1",
+    "date": "2025-12-11",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "STAT DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4565567-A1",
+    "date": "2025-06-11",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "DEUTERATED STAT3 DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4543854-A1",
+    "date": "2025-04-30",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "STAT DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2024030628-A1",
+    "date": "2024-02-08",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "DEUTERATED STAT3 DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20240016942-A1",
+    "date": "2024-01-18",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "STAT DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "TIPARP",
+  "common": "PARP7",
+  "window": "OPEN",
+  "players": 1,
+  "cov_patents": 5,
+  "clinic_yrs": 6,
+  "recent_trials": 3,
+  "assignees": [
+   "GILEAD SCIENCES"
+  ],
+  "patents": [
+   {
+    "pn": "US-12459922-B2",
+    "date": "2025-11-04",
+    "firm": "GILEAD SCIENCES",
+    "title": "PARP7 inhibitors",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250100998-A1",
+    "date": "2025-03-27",
+    "firm": "GILEAD SCIENCES",
+    "title": "PARP7 INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250066328-A1",
+    "date": "2025-02-27",
+    "firm": "GILEAD SCIENCES",
+    "title": "PARP7 INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2025024663-A1",
+    "date": "2025-01-30",
+    "firm": "GILEAD SCIENCES",
+    "title": "PARP7 INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2025024811-A1",
+    "date": "2025-01-30",
+    "firm": "GILEAD SCIENCES",
+    "title": "PARP7 INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "NR5A2",
+  "common": "NR5A2",
+  "window": "OPEN",
+  "players": 1,
+  "cov_patents": 5,
+  "clinic_yrs": 8,
+  "recent_trials": 0,
+  "assignees": [
+   "GILEAD SCIENCES"
+  ],
+  "patents": [
+   {
+    "pn": "US-20250296936-A1",
+    "date": "2025-09-25",
+    "firm": "GILEAD SCIENCES",
+    "title": "SARS-COV2 MAIN PROTEASE INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250276979-A1",
+    "date": "2025-09-04",
+    "firm": "GILEAD SCIENCES",
+    "title": "SARS-COV2 MAIN PROTEASE INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4565574-A1",
+    "date": "2025-06-11",
+    "firm": "GILEAD SCIENCES",
+    "title": "SARS-COV2 MAIN PROTEASE INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20240239807-A1",
+    "date": "2024-07-18",
+    "firm": "GILEAD SCIENCES",
+    "title": "SARS-COV2 MAIN PROTEASE INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2024031089-A1",
+    "date": "2024-02-08",
+    "firm": "GILEAD SCIENCES",
+    "title": "SARS-COV2 MAIN PROTEASE INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "CD19",
+  "common": "CD19",
+  "window": "OPEN",
+  "players": 1,
+  "cov_patents": 5,
+  "clinic_yrs": 14,
+  "recent_trials": 919,
+  "assignees": [
+   "NOVARTIS"
+  ],
+  "patents": [
+   {
+    "pn": "US-20250223359-A1",
+    "date": "2025-07-10",
+    "firm": "NOVARTIS",
+    "title": "CD19 BINDING MOLECULES AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-12221481-B2",
+    "date": "2025-02-11",
+    "firm": "NOVARTIS",
+    "title": "CD19 binding molecules and uses thereof",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-3380620-B1",
+    "date": "2024-07-03",
+    "firm": "NOVARTIS",
+    "title": "OPTIMIZED LENTIVIRAL TRANSFER VECTORS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20240025993-A1",
+    "date": "2024-01-25",
+    "firm": "NOVARTIS",
+    "title": "CD19 BINDING MOLECULES AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-11866725-B2",
+    "date": "2024-01-09",
+    "firm": "NOVARTIS",
+    "title": "Optimized lentiviral transfer vectors and uses thereof",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "IKZF1",
+  "common": "IKAROS",
+  "window": "OPEN",
+  "players": 1,
+  "cov_patents": 4,
+  "clinic_yrs": 14,
+  "recent_trials": 7,
+  "assignees": [
+   "GILEAD SCIENCES"
+  ],
+  "patents": [
+   {
+    "pn": "EP-4667056-A1",
+    "date": "2025-12-24",
+    "firm": "GILEAD SCIENCES",
+    "title": "IKAROS ZINC FINGER FAMILY DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-12358887-B2",
+    "date": "2025-07-15",
+    "firm": "GILEAD SCIENCES",
+    "title": "IKAROS Zinc Finger Family degraders and uses thereof",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4493554-A1",
+    "date": "2025-01-22",
+    "firm": "GILEAD SCIENCES",
+    "title": "IKAROS ZINC FINGER FAMILY DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-11897862-B2",
+    "date": "2024-02-13",
+    "firm": "GILEAD SCIENCES",
+    "title": "IKAROS zinc finger family degraders and uses thereof",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "KIFC1",
+  "common": "HSET",
+  "window": "OPEN",
+  "players": 2,
+  "cov_patents": 4,
+  "clinic_yrs": 14,
+  "recent_trials": 1,
+  "assignees": [
+   "MERCK PATENT",
+   "\u9ed8\u514b\u4e13\u5229\u80a1\u4efd\u516c\u53f8"
+  ],
+  "patents": [
+   {
+    "pn": "EP-4615838-A1",
+    "date": "2025-09-17",
+    "firm": "MERCK PATENT",
+    "title": "SUBSTITUTED BI-AND TRICYCLIC HSET INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250084074-A1",
+    "date": "2025-03-13",
+    "firm": "MERCK PATENT",
+    "title": "SUBSTITUTED HETEROCYCLES AS HSET INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "CN-119421877-A",
+    "date": "2025-02-11",
+    "firm": "\u9ed8\u514b\u4e13\u5229\u80a1\u4efd\u516c\u53f8",
+    "title": "Substituted heterocyclic compounds as HSET inhibitors",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2024099898-A1",
+    "date": "2024-05-16",
+    "firm": "MERCK PATENT",
+    "title": "SUBSTITUTED BI-AND TRICYCLIC HSET INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "DGKA",
+  "common": "DGKA",
+  "window": "OPEN",
+  "players": 1,
+  "cov_patents": 4,
+  "clinic_yrs": 2,
+  "recent_trials": 1,
+  "assignees": [
+   "F HOFFMANN-LA ROCHE"
+  ],
+  "patents": [
+   {
+    "pn": "EP-4568746-A1",
+    "date": "2025-06-18",
+    "firm": "F HOFFMANN-LA ROCHE",
+    "title": "BICYCLIC TETRAHYDROTHIAZEPINE DERIVATIVES",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4568958-A1",
+    "date": "2025-06-18",
+    "firm": "F HOFFMANN-LA ROCHE",
+    "title": "BICYCLIC TETRAHYDROTHIAZEPINE DERIVATIVES",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4568959-A1",
+    "date": "2025-06-18",
+    "firm": "F HOFFMANN-LA ROCHE",
+    "title": "BICYCLIC TETRAHYDROTHIAZEPINE DERIVATIVES",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2024033388-A1",
+    "date": "2024-02-15",
+    "firm": "F HOFFMANN-LA ROCHE",
+    "title": "BICYCLIC TETRAHYDROTHIAZEPINE DERIVATIVES",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "IKZF2",
+  "common": "IKZF2",
+  "window": "OPEN",
+  "players": 1,
+  "cov_patents": 3,
+  "clinic_yrs": 6,
+  "recent_trials": 0,
+  "assignees": [
+   "NOVARTIS"
+  ],
+  "patents": [
+   {
+    "pn": "US-12479817-B2",
+    "date": "2025-11-25",
+    "firm": "NOVARTIS",
+    "title": "Substituted 3-(1-oxoisoindolin-2-yl)piperidine-2,6-dione derivatives and us",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250289802-A1",
+    "date": "2025-09-18",
+    "firm": "NOVARTIS",
+    "title": "3-(1-OXO-5-(PIPERIDIN-4-YL)ISOINDOLIN-2-YL)PIPERIDINE-2,6-DIONE DERIVATIVES",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4306111-A2",
+    "date": "2024-01-17",
+    "firm": "NOVARTIS",
+    "title": "3-(5-HYDROXY-1-OXOISOINDOLIN-2-YL)PIPERIDINE-2,6-DIONE DERIVATIVES AND USES",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "CDK4",
+  "common": "CDK4",
+  "window": "OPEN",
+  "players": 1,
+  "cov_patents": 3,
+  "clinic_yrs": 14,
+  "recent_trials": 277,
+  "assignees": [
+   "PFIZER"
+  ],
+  "patents": [
+   {
+    "pn": "EP-4578450-A2",
+    "date": "2025-07-02",
+    "firm": "PFIZER",
+    "title": "SOLID FORMS OF A CDK4 INHIBITOR",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4214202-B1",
+    "date": "2025-02-26",
+    "firm": "PFIZER",
+    "title": "SOLID FORMS OF A CDK4 INHIBITOR",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250041277-A1",
+    "date": "2025-02-06",
+    "firm": "PFIZER",
+    "title": "METHODS AND DOSING REGIMENS COMPRISING A CDK2 INHIBITOR AND A CDK4 INHIBITO",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "BCL2L1",
+  "common": "BCL-XL",
+  "window": "OPEN",
+  "players": 2,
+  "cov_patents": 3,
+  "clinic_yrs": 14,
+  "recent_trials": 17,
+  "assignees": [
+   "KYMERA THERAPEUTICS",
+   "\u82cf\u5dde\u4e9a\u76db\u836f\u4e1a\u6709\u9650\u516c\u53f8"
+  ],
+  "patents": [
+   {
+    "pn": "US-20250197387-A1",
+    "date": "2025-06-19",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "BCL-XL DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4522154-A1",
+    "date": "2025-03-19",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "BCL-XL/BCL-2 DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "CN-118161618-A",
+    "date": "2024-06-11",
+    "firm": "\u82cf\u5dde\u4e9a\u76db\u836f\u4e1a\u6709\u9650\u516c\u53f8",
+    "title": "Combination product comprising a Bcl-2 inhibitor or a Bcl-2/Bcl-xL inhibito",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "STMN4",
+  "common": "RB3",
+  "window": "OPEN",
+  "players": 1,
+  "cov_patents": 3,
+  "clinic_yrs": null,
+  "recent_trials": 0,
+  "assignees": [
+   "INCYTE"
+  ],
+  "patents": [
+   {
+    "pn": "US-20250188073-A1",
+    "date": "2025-06-12",
+    "firm": "INCYTE",
+    "title": "TRICYCLIC COMPOUNDS AS INHIBITORS OF KRAS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4548918-A2",
+    "date": "2025-05-07",
+    "firm": "INCYTE",
+    "title": "TRICYCLIC COMPOUNDS AS INHIBITORS OF KRAS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-11897891-B2",
+    "date": "2024-02-13",
+    "firm": "INCYTE",
+    "title": "Tricyclic heterocycles as FGFR inhibitors",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "TMEM131",
+  "common": "RW1",
+  "window": "OPEN",
+  "players": 2,
+  "cov_patents": 3,
+  "clinic_yrs": 8,
+  "recent_trials": 2,
+  "assignees": [
+   "ABBVIE",
+   "CALICO LIFE SCIENCES"
+  ],
+  "patents": [
+   {
+    "pn": "US-20250145594-A1",
+    "date": "2025-05-08",
+    "firm": "ABBVIE",
+    "title": "MODULATORS OF THE INTEGRATED STRESS PATHWAY",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20240018133-A1",
+    "date": "2024-01-18",
+    "firm": "ABBVIE",
+    "title": "MODULATORS OF THE INTEGRATED STRESS PATHWAY",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20240000792-A1",
+    "date": "2024-01-04",
+    "firm": "CALICO LIFE SCIENCES",
+    "title": "MODULATORS OF THE INTEGRATED STRESS PATHWAY",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "IDH2",
+  "common": "IDH2",
+  "window": "OPEN",
+  "players": 2,
+  "cov_patents": 3,
+  "clinic_yrs": 14,
+  "recent_trials": 30,
+  "assignees": [
+   "ELI LILLY AND",
+   "LILLY CO ELI"
+  ],
+  "patents": [
+   {
+    "pn": "EP-4125915-B1",
+    "date": "2024-04-17",
+    "firm": "LILLY CO ELI",
+    "title": "COMBINATION THERAPY WITH A MUTANT IDH INHIBITOR",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4125917-B1",
+    "date": "2024-04-17",
+    "firm": "LILLY CO ELI",
+    "title": "COMBINATION THERAPY WITH A MUTANT IDH INHIBITOR AND A BCL-2 INHIBITOR",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4337217-A1",
+    "date": "2024-03-20",
+    "firm": "ELI LILLY AND",
+    "title": "METHOD FOR TREATING IDH INHIBITOR-RESISTANT SUBJECTS",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "MDM2",
+  "common": "MDM2",
+  "window": "OPEN",
+  "players": 2,
+  "cov_patents": 3,
+  "clinic_yrs": 14,
+  "recent_trials": 29,
+  "assignees": [
+   "KYMERA THERAPEUTICS",
+   "\u8bfa\u534e\u80a1\u4efd\u6709\u9650\u516c\u53f8"
+  ],
+  "patents": [
+   {
+    "pn": "CN-117835978-A",
+    "date": "2024-04-05",
+    "firm": "\u8bfa\u534e\u80a1\u4efd\u6709\u9650\u516c\u53f8",
+    "title": "Pharmaceutical combinations comprising TEAD inhibitors and their use for ca",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-11932624-B2",
+    "date": "2024-03-19",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "MDM2 degraders and uses thereof",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20240025878-A1",
+    "date": "2024-01-25",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "MDM2 DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "PRMT5",
+  "common": "PRMT5",
+  "window": "CONTESTED",
+  "players": 4,
+  "cov_patents": 18,
+  "clinic_yrs": 8,
+  "recent_trials": 28,
+  "assignees": [
+   "AMGEN",
+   "GILEAD SCIENCES",
+   "MIRATI THERAPEUTICS",
+   "\u7c73\u62c9\u8482\u533b\u7597\u80a1\u4efd\u6709\u9650\u516c\u53f8"
+  ],
+  "patents": [
+   {
+    "pn": "US-20250388585-A1",
+    "date": "2025-12-25",
+    "firm": "GILEAD SCIENCES",
+    "title": "PRMT5 INHIBITORS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250376484-A1",
+    "date": "2025-12-11",
+    "firm": "GILEAD SCIENCES",
+    "title": "PRMT5 INHIBITORS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2025245003-A1",
+    "date": "2025-11-27",
+    "firm": "GILEAD SCIENCES",
+    "title": "PRMT5 INHIBITORS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4637774-A1",
+    "date": "2025-10-29",
+    "firm": "AMGEN",
+    "title": "CANCER TREATMENTS USING MTA-COOPERATIVE PRMT5 INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4638436-A1",
+    "date": "2025-10-29",
+    "firm": "GILEAD SCIENCES",
+    "title": "PRMT5 INHIBITORS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-12448388-B2",
+    "date": "2025-10-21",
+    "firm": "GILEAD SCIENCES",
+    "title": "PRMT5 inhibitors and uses thereof",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2025217247-A1",
+    "date": "2025-10-16",
+    "firm": "AMGEN",
+    "title": "TETHERED SPIRO-HETEROCYCLIC INHIBITORS OF KRAS G12C MUTANT PROTEINS AND USE",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4598915-A2",
+    "date": "2025-08-13",
+    "firm": "AMGEN",
+    "title": "TETHERED HETEROCYCLIC INHIBITORS OF KRAS G12C MUTANT PROTEINS AND USES THER",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "CCNE1",
+  "common": "CCNE1",
+  "window": "CONTESTED",
+  "players": 3,
+  "cov_patents": 13,
+  "clinic_yrs": 14,
+  "recent_trials": 20,
+  "assignees": [
+   "BLUEPRINT MEDICINES",
+   "KYMERA THERAPEUTICS",
+   "\u7f06\u56fe\u836f\u54c1\u516c\u53f8"
+  ],
+  "patents": [
+   {
+    "pn": "EP-4646411-A1",
+    "date": "2025-11-12",
+    "firm": "BLUEPRINT MEDICINES",
+    "title": "CDK2 INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4646414-A1",
+    "date": "2025-11-12",
+    "firm": "BLUEPRINT MEDICINES",
+    "title": "CDK2 INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4646416-A1",
+    "date": "2025-11-12",
+    "firm": "BLUEPRINT MEDICINES",
+    "title": "CDK2 INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4573094-A2",
+    "date": "2025-06-25",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "CDK2 INHIBITORS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250074895-A1",
+    "date": "2025-03-06",
+    "firm": "BLUEPRINT MEDICINES",
+    "title": "CDK2 INHIBITORS AND METHODS OF MAKING AND USING SAME",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2024148087-A1",
+    "date": "2024-07-11",
+    "firm": "BLUEPRINT MEDICINES",
+    "title": "CDK2 INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2024148089-A1",
+    "date": "2024-07-11",
+    "firm": "BLUEPRINT MEDICINES",
+    "title": "CDK2 INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2024148091-A1",
+    "date": "2024-07-11",
+    "firm": "BLUEPRINT MEDICINES",
+    "title": "CDK2 INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "PRKN",
+  "common": "E3 ubiquitin ligase",
+  "window": "CONTESTED",
+  "players": 3,
+  "cov_patents": 12,
+  "clinic_yrs": 11,
+  "recent_trials": 15,
+  "assignees": [
+   "KYMERA THERAPEUTICS",
+   "NOVARTIS",
+   "THE REGENTS OF THE UNIVERSITY OF CALIFORNIA"
+  ],
+  "patents": [
+   {
+    "pn": "EP-4605088-A1",
+    "date": "2025-08-27",
+    "firm": "NOVARTIS",
+    "title": "MOLECULAR GLUE DEGRADER COMPOUNDS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4572755-A2",
+    "date": "2025-06-25",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "CDK2 DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250179075-A1",
+    "date": "2025-06-05",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "MK2 DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250163042-A1",
+    "date": "2025-05-22",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "IRAK DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250120982-A1",
+    "date": "2025-04-17",
+    "firm": "THE REGENTS OF THE UNIVERSITY OF CALIFORNIA",
+    "title": "COVALENT TARGETING OF E3 LIGASES",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250121073-A1",
+    "date": "2025-04-17",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "IRAK DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250114461-A1",
+    "date": "2025-04-10",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "CDK2 DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20240173419-A1",
+    "date": "2024-05-30",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "CDK2 DEGRADERS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "STING1",
+  "common": "STIMULATOR OF INTERFERON GENES",
+  "window": "CONTESTED",
+  "players": 4,
+  "cov_patents": 10,
+  "clinic_yrs": 6,
+  "recent_trials": 7,
+  "assignees": [
+   "BOEHRINGER INGELHEIM INT",
+   "BOEHRINGER INGELHEIM INTERNATIONAL",
+   "BOEHRINGER INGELHEIM RCV GMBH &",
+   "BOEHRINGER INGELHEIM VETMEDICA"
+  ],
+  "patents": [
+   {
+    "pn": "EP-4608818-A1",
+    "date": "2025-09-03",
+    "firm": "BOEHRINGER INGELHEIM INTERNATIONAL",
+    "title": "HETEROCYCLIC COMPOUNDS CAPABLE OF ACTIVATING STING",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4608819-A1",
+    "date": "2025-09-03",
+    "firm": "BOEHRINGER INGELHEIM INTERNATIONAL",
+    "title": "HETEROCYCLIC COMPOUNDS CAPABLE OF ACTIVATING STING",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4608820-A1",
+    "date": "2025-09-03",
+    "firm": "BOEHRINGER INGELHEIM INTERNATIONAL",
+    "title": "HETEROCYCLIC COMPOUNDS CAPABLE OF ACTIVATING STING",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4330250-B1",
+    "date": "2025-02-19",
+    "firm": "BOEHRINGER INGELHEIM INT",
+    "title": "HETEROCYCLIC COMPOUNDS CAPABLE OF ACTIVATING STING",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20240174642-A1",
+    "date": "2024-05-30",
+    "firm": "BOEHRINGER INGELHEIM VETMEDICA",
+    "title": "HETEROCYCLIC COMPOUNDS CAPABLE OF ACTIVATING STING",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20240166629-A1",
+    "date": "2024-05-23",
+    "firm": "BOEHRINGER INGELHEIM RCV GMBH &",
+    "title": "HETEROCYCLIC COMPOUNDS CAPABLE OF ACTIVATING STING",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2024088991-A1",
+    "date": "2024-05-02",
+    "firm": "BOEHRINGER INGELHEIM INTERNATIONAL",
+    "title": "HETEROCYCLIC COMPOUNDS CAPABLE OF ACTIVATING STING",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2024089006-A1",
+    "date": "2024-05-02",
+    "firm": "BOEHRINGER INGELHEIM INTERNATIONAL",
+    "title": "HETEROCYCLIC COMPOUNDS CAPABLE OF ACTIVATING STING",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "CRBN",
+  "common": "CEREBLON",
+  "window": "CONTESTED",
+  "players": 3,
+  "cov_patents": 6,
+  "clinic_yrs": 14,
+  "recent_trials": 21,
+  "assignees": [
+   "BRISTOL-MYERS SQUIBB",
+   "KYMERA THERAPEUTICS",
+   "NOVARTIS"
+  ],
+  "patents": [
+   {
+    "pn": "EP-4665720-A2",
+    "date": "2025-12-24",
+    "firm": "BRISTOL-MYERS SQUIBB",
+    "title": "ISOINDOLINONE GLUTARIMIDE AND PHENYL GLUTARIMIDE ANALOGS AS DEGRADERS OF RE",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250051320-A1",
+    "date": "2025-02-13",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "CRBN LIGANDS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250042902-A1",
+    "date": "2025-02-06",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "TRICYCLIC CRBN LIGANDS AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-11999802-B2",
+    "date": "2024-06-04",
+    "firm": "NOVARTIS",
+    "title": "Compositions and methods for selective protein degradation",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-11932635-B2",
+    "date": "2024-03-19",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "CRBN ligands and uses thereof",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-11897882-B2",
+    "date": "2024-02-13",
+    "firm": "KYMERA THERAPEUTICS",
+    "title": "Tricyclic crbn ligands and uses thereof",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "NRAS",
+  "common": "NRAS",
+  "window": "CONTESTED",
+  "players": 3,
+  "cov_patents": 5,
+  "clinic_yrs": 14,
+  "recent_trials": 63,
+  "assignees": [
+   "DECIPHERA PHARMACEUTICALS",
+   "NOVARTIS",
+   "\u8bfa\u534e\u80a1\u4efd\u6709\u9650\u516c\u53f8"
+  ],
+  "patents": [
+   {
+    "pn": "EP-4580626-A1",
+    "date": "2025-07-09",
+    "firm": "DECIPHERA PHARMACEUTICALS",
+    "title": "COMBINATION OF DCC-3116 AND MAPKAP PATHWAY INHIBITORS FOR USE IN THE TREATM",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "WO-2025137105-A1",
+    "date": "2025-06-26",
+    "firm": "DECIPHERA PHARMACEUTICALS",
+    "title": "DUAL RAF AND TUBULIN INHIBITORS AND METHODS OF USE THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4359081-A1",
+    "date": "2024-05-01",
+    "firm": "NOVARTIS",
+    "title": "PYRAZOLYL DERIVATIVES AS INHIBITORS OF THE KRAS MUTANT PROTEIN",
+    "warheads": [
+     "acrylamide",
+     "propiolamide"
+    ]
+   },
+   {
+    "pn": "WO-2024050351-A1",
+    "date": "2024-03-07",
+    "firm": "DECIPHERA PHARMACEUTICALS",
+    "title": "COMBINATION OF DCC-3116 AND MAPKAP PATHWAY INHIBITORS FOR USE IN THE TREATM",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "CN-117425649-A",
+    "date": "2024-01-19",
+    "firm": "\u8bfa\u534e\u80a1\u4efd\u6709\u9650\u516c\u53f8",
+    "title": "Pyrazole derivatives as KRAS mutein inhibitors",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "NRN1",
+  "common": "NRN",
+  "window": "CONTESTED",
+  "players": 3,
+  "cov_patents": 4,
+  "clinic_yrs": 14,
+  "recent_trials": 5,
+  "assignees": [
+   "ABBVIE",
+   "REVOLUTION MEDICINES",
+   "WILMINGTON TRUST NATIONAL ASSOCIATION AS AGENT"
+  ],
+  "patents": [
+   {
+    "pn": "US-20250368661-A1",
+    "date": "2025-12-04",
+    "firm": "REVOLUTION MEDICINES",
+    "title": "RAS INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250145643-A1",
+    "date": "2025-05-08",
+    "firm": "WILMINGTON TRUST NATIONAL ASSOCIATION AS AGENT",
+    "title": "RAS INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-11939320-B2",
+    "date": "2024-03-26",
+    "firm": "ABBVIE",
+    "title": "Modulators of the integrated stress pathway",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "EP-4334321-A1",
+    "date": "2024-03-13",
+    "firm": "REVOLUTION MEDICINES",
+    "title": "RAS INHIBITORS",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "ORC2",
+  "common": "ORC2",
+  "window": "CONTESTED",
+  "players": 3,
+  "cov_patents": 4,
+  "clinic_yrs": null,
+  "recent_trials": 0,
+  "assignees": [
+   "BOEHRINGER INGELHEIM INT",
+   "BOEHRINGER INGELHEIM INTERNATIONAL",
+   "BOEHRINGER INGELHEIM INTL"
+  ],
+  "patents": [
+   {
+    "pn": "EP-4157836-B1",
+    "date": "2025-10-29",
+    "firm": "BOEHRINGER INGELHEIM INT",
+    "title": "ANNULATED 2-AMINO-3-CYANO THIOPHENES AND DERIVATIVES FOR THE TREATMENT OF C",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250296940-A1",
+    "date": "2025-09-25",
+    "firm": "BOEHRINGER INGELHEIM INTL",
+    "title": "ANNULATED 2-AMINO-3-CYANO THIOPHENES AND DERIVATIVES FOR THE TREATMENT OF C",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250002485-A1",
+    "date": "2025-01-02",
+    "firm": "BOEHRINGER INGELHEIM INT",
+    "title": "ANNULATED 2-AMINO-3-CYANO THIOPHENES AND DERIVATIVES FOR THE TREATMENT OF C",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-11945812-B2",
+    "date": "2024-04-02",
+    "firm": "BOEHRINGER INGELHEIM INTERNATIONAL",
+    "title": "Annulated 2-amino-3-cyano thiophenes and derivatives for the treatment of c",
+    "warheads": [
+     "acrylamide"
+    ]
+   }
+  ]
+ },
+ {
+  "target": "KEAP1",
+  "common": "KEAP1",
+  "window": "CONTESTED",
+  "players": 3,
+  "cov_patents": 3,
+  "clinic_yrs": 14,
+  "recent_trials": 16,
+  "assignees": [
+   "FOUNDATION MEDICINE",
+   "UNIVERSITY OF ROCHESTER",
+   "VIVIDION THERAPEUTICS"
+  ],
+  "patents": [
+   {
+    "pn": "US-20250372256-A1",
+    "date": "2025-12-04",
+    "firm": "FOUNDATION MEDICINE",
+    "title": "ANCESTRY-RELATED KRAS CO-ALTERATION PATTERNS AS PROGNOSTIC BIOMARKERS",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250197448-A1",
+    "date": "2025-06-19",
+    "firm": "UNIVERSITY OF ROCHESTER",
+    "title": "CYCLOPEPTIBODIES AND USES THEREOF",
+    "warheads": [
+     "acrylamide"
+    ]
+   },
+   {
+    "pn": "US-20250011291-A1",
+    "date": "2025-01-09",
+    "firm": "VIVIDION THERAPEUTICS",
+    "title": "KEAP1 INHIBITORS AND USES THEREOF",
+    "warheads": [
+     "acrylamide",
+     "propiolamide"
+    ]
+   }
+  ]
+ }
+]

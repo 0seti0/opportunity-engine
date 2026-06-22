@@ -1,0 +1,90 @@
+{
+ "best_opportunities": [
+  {
+   "rank": 1,
+   "target": "RAF1",
+   "handle": "hinge C424 (= BRAF C532 conserved hinge cysteine)",
+   "validation": "RAF pathway A-grade validated; NO covalent RAF inhibitor in clinic; covalent pan-RAF answers V600E negative-allostery and dimer-escape that reversible agents cannot.",
+   "lane": "OPEN",
+   "thesis": "First covalent pan-RAF on the conserved hinge Cys, locking out dimer/paradox escape that reversible RAF inhibitors leave open.",
+   "top_risk": "Directed engagement of C424 is computational-only (unproven), and the conserved hinge Cys imposes a wild-type pan-RAF tox ceiling."
+  },
+  {
+   "rank": 2,
+   "target": "YES1",
+   "handle": "P-loop C287 (C277 numbering) in the ATP pocket",
+   "validation": "Doubly validated P-loop cysteine; YES1-amplified NSCLC/SCLC/TNBC genetics; rare kinome P-loop Cys (~1.4% of kinome).",
+   "lane": "CONTESTED",
+   "thesis": "Durable covalent P-loop occupancy in YES1-amplified tumors where a rare, structurally addressable cysteine gives a real chemical foothold.",
+   "top_risk": "C287 is shared with SRC/FGR so the warhead gives no intra-SFK selectivity, and reversible NXP900 is already in Ph1b in the lead indication."
+  },
+  {
+   "rank": 3,
+   "target": "PPARD",
+   "handle": "Cys249 (PPARG-Cys313 analog, ligand-binding pocket)",
+   "validation": "Receptor pharmacologically validated (seladelpar approval 2024); a proven covalent playbook exists to port (Flare FX-909 covalent inverse-agonist on the PPARG-Cys313 analog).",
+   "lane": "OPEN",
+   "thesis": "Port the de-risked Flare PPARG covalent inverse-agonist chemistry onto the homologous PPARD Cys249 for an oncology indication.",
+   "top_risk": "Pharmacology is opposite (agonist validation vs. needed inverse-agonism) and the PPARD oncology thesis itself is unproven."
+  },
+  {
+   "rank": 4,
+   "target": "SLC1A5",
+   "handle": "Cys467 quasi-catalytic substrate-pocket cysteine",
+   "validation": "Paralog-selective substrate-pocket cysteine enabling washout-resistant transport blockade; transporter biology of interest in oncology/immunometabolism.",
+   "lane": "OPEN",
+   "thesis": "Washout-resistant covalent block of a paralog-selective quasi-catalytic cysteine the reversible transporter field cannot durably engage.",
+   "top_risk": "No validated human proof-of-concept for the target (the MEDI7247 ADC failed), so target validation is the binding constraint."
+  },
+  {
+   "rank": 5,
+   "target": "AKR1B1",
+   "handle": "Cys298 nucleophilic active-site cysteine",
+   "validation": "Genuine nucleophilic active-site cysteine; aldose-reductase biology long pursued; covalent durability could exceed reversible ARIs.",
+   "lane": "EMERGING",
+   "thesis": "Covalent active-site occupancy of Cys298 to convert transient aldose-reductase inhibition into durable, washout-resistant blockade.",
+   "top_risk": "Historical ARI failures were efficacy/translation, not potency, so covalency may improve the wrong axis and not rescue the indication."
+  },
+  {
+   "rank": 6,
+   "target": "IRF4",
+   "handle": "linker C194 (ligandable across 4 datasets; silent for direct inhibition)",
+   "validation": "Undrugged myeloma Achilles-heel transcription factor; C194 ligandable in 4 chemoproteomic datasets; no covalent program (vs dIRF4-2 PROTAC + Ionis ASO).",
+   "lane": "OPEN",
+   "thesis": "Enter the undrugged MM TF as a covalent degrader off the ligandable but silent C194, claiming clean covalent white space.",
+   "top_risk": "C194 is functionally silent for direct inhibition, forcing a degrader bet with no covalent proof-of-concept against an entrenched PROTAC/ASO field."
+  },
+  {
+   "rank": 7,
+   "target": "PRKCQ",
+   "handle": "ligandable C303/C322 (regulatory, not active-site; the 'Cys424 active-site' claim is FALSE)",
+   "validation": "Validated immunology target (PKC-theta); covalent lane open after reversible EXS4318 dropped by BMS Oct-2025; CysDB-ligandable cysteines exist.",
+   "lane": "OPEN",
+   "thesis": "Open covalent lane on a validated T-cell immunology target whose lead reversible competitor was just discontinued.",
+   "top_risk": "The only ligandable cysteines are regulatory not active-site and no productive covalent cysteine is confirmed, so engagement may not be functional."
+  },
+  {
+   "rank": 8,
+   "target": "PRKCG",
+   "handle": "putative gamma-unique cysteine (unconfirmed) to break the PKC conserved-ATP-pocket problem",
+   "validation": "A gamma-unique cysteine could solve the PKC selectivity problem; orphan CNS indication (SCA14) gives a clean genetic rationale.",
+   "lane": "EMERGING",
+   "thesis": "Exploit a PKC-gamma-unique cysteine to deliver the isoform selectivity the conserved ATP pocket has always denied, in orphan CNS.",
+   "top_risk": "The gamma-unique ligandable cysteine is unconfirmed, so the entire selectivity thesis rests on an unverified structural premise."
+  }
+ ],
+ "excluded": [
+  "CSF1R \u2014 DEAD: only covalent handle (Cys667) is conserved across type III RTKs so a warhead co-engages FLT3/KIT/PDGFR; covalent incumbent FF-10101 already reached Ph1 then sponsor suspended; on-target macrophage tox + two approved reversible drugs.",
+  "ERBB4 \u2014 DEAD: covalent handle Cys803 (=EGFR-C797/HER2-C805) already drugged by approved pan-HER TKIs (afatinib/neratinib/dacomitinib); non-selective by construction; ERBB4 weak as a standalone driver.",
+  "FLT1 \u2014 DEAD: validated benefit lives in the paralog VEGFR-2, FLT1 kinase weak/autoinhibited; hinge cysteine conserved across VEGFR-1/2/3 (no selectivity) and scout-invisible; field saturated by pan-VEGFR TKIs + biologics.",
+  "FLT4 \u2014 DEAD: no cysteine anywhere in the intracellular kinase domain (UniProt P35916) \u2014 the hinge@48 handle is a BRAF/RAF1 alignment artifact (false positive); no covalent anchor exists.",
+  "IKBKB \u2014 DEAD: dose-limiting tox is on-target systemic NF-kB suppression that covalency would deepen; real cysteines (Cys179/Cys46) conserved with IKKalpha and promiscuously labeled; decades-long clinical graveyard, no validation.",
+  "JAK1 \u2014 DEAD: no orthosteric cysteine (Ser909, not Cys); only covalent handle is allosteric JH2 C817, non-selective vs TYK2 and already claimed by Vividion/Bayer; class boxed warning disfavors irreversible chronic dosing.",
+  "KDR \u2014 WEAK: clean covalent lane is illusory; hinge Cys919 is an H-bond donor shared with the EGFR/Tec/JAK3 cysteine family (erodes selectivity), scout-invisible; irreversible block worsens anti-angiogenic on-target tox; reversible/biologic field saturated.",
+  "KIT \u2014 WEAK: covalent site Cys788 conserved across PDGFRA/PDGFRB/CSF1R/FLT3 (anti-selective); acrylamide fails to engage it (needs exotic warheads); 5 approved drugs + selective reversible pipeline already solving the resistance problem.",
+  "PDGFRB \u2014 WEAK: advertised hinge/roof handle does not exist (Asp at the BTK-C481 position); only real cysteine (pre-DFG Cys814) conserved with PDGFRA/KIT (no selectivity) and scout-invisible; driver indication already controlled by generic imatinib.",
+  "PLG \u2014 DEAD: serine protease with no catalytic/allosteric cysteine (triad His603/Asp646/Ser741); all ~48 Cys locked in structural disulfides; covalent modality biochemically unavailable; reversible kringle/S1 space owned by generics + late-stage muvalaplin.",
+  "SRC \u2014 DEAD: covalent handle Cys277 already taken (published selective covalent SRC inhibitors DGY-06-116/15a with co-crystals); Cys277 shared with YES1/FGR (no selectivity); reversible NXP900 advancing in Ph1b with a scaffolding-lock mechanism covalency cannot match."
+ ],
+ "takeaway": "The honest read: the opportunity set is thin but not empty. Only ONE candidate (RAF1) is a true greenfield covalent OPEN with a structural premise \u2014 and even it carries an unproven-engagement and conserved-Cys tox caveat. The remaining seven are POSSIBLE, and every one is gated by a hard constraint: a non-selective shared cysteine (YES1), unproven human target validation (SLC1A5, PPARD oncology), failures on the wrong axis (AKR1B1), a silent linker forcing a degrader bet (IRF4), or an unconfirmed productive cysteine (PRKCQ, PRKCG). Eleven of nineteen targets screened were killed as WEAK/DEAD \u2014 overwhelmingly because the only available pocket cysteine is conserved across paralogs (CSF1R, ERBB4, FLT1, KDR, KIT, PDGFRB, SRC), already drugged or claimed (ERBB4, SRC, JAK1, CSF1R), or simply does not exist (FLT4, PLG, JAK1 orthosteric). The recurring lesson is that conserved ATP/hinge cysteines give covalency without selectivity, so the genuinely investable shortlist is RAF1 plus, at most, the three best-validated POSSIBLEs (YES1, PPARD, SLC1A5), each requiring a specific de-risking experiment before it is fundable."
+}

@@ -1,0 +1,1674 @@
+[
+ {
+  "target": "WRN",
+  "common": "WRN",
+  "cov_patents": 8,
+  "players": 2,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 39,
+  "window": "OPEN",
+  "latest_pub": "2025-10-30",
+  "assignees": [
+   "GILEAD SCIENCES",
+   "INCYTE"
+  ],
+  "verdict": "CLOSED",
+  "real_target": "WRN",
+  "is_degrader": false,
+  "ext_stage": "phase1"
+ },
+ {
+  "target": "NLRP3",
+  "common": "NLRP3",
+  "cov_patents": 8,
+  "players": 2,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 80,
+  "window": "OPEN",
+  "latest_pub": "2025-08-28",
+  "assignees": [
+   "NOVARTIS",
+   "\u8bfa\u534e\u80a1\u4efd\u6709\u9650\u516c\u53f8"
+  ],
+  "verdict": "CLOSED",
+  "real_target": "NLRP3",
+  "is_degrader": false,
+  "ext_stage": "phase3"
+ },
+ {
+  "target": "TPO",
+  "common": "TPX",
+  "cov_patents": 7,
+  "players": 2,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 24,
+  "window": "OPEN",
+  "latest_pub": "2025-09-10",
+  "assignees": [
+   "GILEAD SCIENCES",
+   "\u5409\u5229\u5fb7\u79d1\u5b66\u516c\u53f8"
+  ],
+  "verdict": "MISATTRIBUTED",
+  "real_target": "TLR7/TLR8 (dominant Gilead thienopyrrole patents); MK2/MAPKAPK2 is a second, separately mis-merged target from the lone \"MK2 inhibitors\" title",
+  "is_degrader": false,
+  "ext_stage": "phase2"
+ },
+ {
+  "target": "CTLA4",
+  "common": "CTLA4",
+  "cov_patents": 6,
+  "players": 2,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 419,
+  "window": "OPEN",
+  "latest_pub": "2025-07-31",
+  "assignees": [
+   "GILEAD SCIENCES",
+   "JANSSEN PHARMACEUTICA"
+  ],
+  "verdict": "MISATTRIBUTED",
+  "real_target": "KRAS G12D (KRAS)",
+  "is_degrader": false,
+  "ext_stage": "phase1"
+ },
+ {
+  "target": "OR6J1",
+  "common": "OR6J1",
+  "cov_patents": 6,
+  "players": 2,
+  "earliest_trial": null,
+  "clinic_yrs": null,
+  "recent_trials": 0,
+  "window": "OPEN",
+  "latest_pub": "2024-07-12",
+  "assignees": [
+   "GILEAD SCIENCES",
+   "\u5361\u5c14\u90a3\u751f\u7269\u79d1\u5b66\u682a\u5f0f\u4f1a\u793e"
+  ],
+  "verdict": "MISATTRIBUTED",
+  "real_target": "DGKA/DGKZ (diacylglycerol kinase alpha/zeta)",
+  "is_degrader": false,
+  "ext_stage": "phase2"
+ },
+ {
+  "target": "TIPARP",
+  "common": "PARP7",
+  "cov_patents": 5,
+  "players": 1,
+  "earliest_trial": 2020,
+  "clinic_yrs": 6,
+  "recent_trials": 3,
+  "window": "OPEN",
+  "latest_pub": "2025-11-04",
+  "assignees": [
+   "GILEAD SCIENCES"
+  ],
+  "verdict": "NOT_COVALENT",
+  "real_target": "TIPARP",
+  "is_degrader": false,
+  "ext_stage": "none"
+ },
+ {
+  "target": "NR5A2",
+  "common": "NR5A2",
+  "cov_patents": 5,
+  "players": 1,
+  "earliest_trial": 2018,
+  "clinic_yrs": 8,
+  "recent_trials": 0,
+  "window": "OPEN",
+  "latest_pub": "2025-09-25",
+  "assignees": [
+   "GILEAD SCIENCES"
+  ],
+  "verdict": "MISATTRIBUTED",
+  "real_target": "SARS-CoV-2 main protease (Mpro / 3CLpro / nsp5)",
+  "is_degrader": false,
+  "ext_stage": "approved"
+ },
+ {
+  "target": "CD19",
+  "common": "CD19",
+  "cov_patents": 5,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 919,
+  "window": "OPEN",
+  "latest_pub": "2025-07-10",
+  "assignees": [
+   "NOVARTIS"
+  ],
+  "verdict": "NOT_COVALENT",
+  "real_target": "CD19",
+  "is_degrader": false,
+  "ext_stage": "none"
+ },
+ {
+  "target": "KIFC1",
+  "common": "HSET",
+  "cov_patents": 4,
+  "players": 2,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 1,
+  "window": "OPEN",
+  "latest_pub": "2025-09-17",
+  "assignees": [
+   "MERCK PATENT",
+   "\u9ed8\u514b\u4e13\u5229\u80a1\u4efd\u516c\u53f8"
+  ],
+  "verdict": "NOT_COVALENT",
+  "real_target": "KIFC1",
+  "is_degrader": false,
+  "ext_stage": "preclinical"
+ },
+ {
+  "target": "DGKA",
+  "common": "DGKA",
+  "cov_patents": 4,
+  "players": 1,
+  "earliest_trial": 2024,
+  "clinic_yrs": 2,
+  "recent_trials": 1,
+  "window": "OPEN",
+  "latest_pub": "2025-06-18",
+  "assignees": [
+   "F HOFFMANN-LA ROCHE"
+  ],
+  "verdict": "CLOSED",
+  "real_target": "DGKA",
+  "is_degrader": false,
+  "ext_stage": "phase2"
+ },
+ {
+  "target": "IKZF2",
+  "common": "IKZF2",
+  "cov_patents": 3,
+  "players": 1,
+  "earliest_trial": 2020,
+  "clinic_yrs": 6,
+  "recent_trials": 0,
+  "window": "OPEN",
+  "latest_pub": "2025-11-25",
+  "assignees": [
+   "NOVARTIS"
+  ],
+  "verdict": "NOT_COVALENT",
+  "real_target": "IKZF2",
+  "is_degrader": true,
+  "ext_stage": "none"
+ },
+ {
+  "target": "STAT6",
+  "common": "STAT6",
+  "cov_patents": 3,
+  "players": 2,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 10,
+  "window": "OPEN",
+  "latest_pub": "2025-11-06",
+  "assignees": [
+   "GILEAD SCIENCES",
+   "KYMERA THERAPEUTICS"
+  ],
+  "verdict": "NOT_COVALENT",
+  "real_target": "STAT6",
+  "is_degrader": true,
+  "ext_stage": "none"
+ },
+ {
+  "target": "CDK4",
+  "common": "CDK4",
+  "cov_patents": 3,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 277,
+  "window": "OPEN",
+  "latest_pub": "2025-07-02",
+  "assignees": [
+   "PFIZER"
+  ],
+  "verdict": "NOT_COVALENT",
+  "real_target": "CDK4",
+  "is_degrader": false,
+  "ext_stage": "none"
+ },
+ {
+  "target": "STMN4",
+  "common": "RB3",
+  "cov_patents": 3,
+  "players": 1,
+  "earliest_trial": null,
+  "clinic_yrs": null,
+  "recent_trials": 0,
+  "window": "OPEN",
+  "latest_pub": "2025-06-12",
+  "assignees": [
+   "INCYTE"
+  ],
+  "verdict": "MISATTRIBUTED",
+  "real_target": "KRAS (covalent G12C; one FGFR title also misfiled)",
+  "is_degrader": false,
+  "ext_stage": "approved"
+ },
+ {
+  "target": "F2R",
+  "common": "CF2R",
+  "cov_patents": 3,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 3,
+  "window": "OPEN",
+  "latest_pub": "2025-05-22",
+  "assignees": [
+   "NIMBUS CLIO"
+  ],
+  "verdict": "MISATTRIBUTED",
+  "real_target": "IRAK4 (IRAK4/IRAK1)",
+  "is_degrader": true,
+  "ext_stage": "none"
+ },
+ {
+  "target": "TMEM131",
+  "common": "RW1",
+  "cov_patents": 3,
+  "players": 2,
+  "earliest_trial": 2018,
+  "clinic_yrs": 8,
+  "recent_trials": 2,
+  "window": "OPEN",
+  "latest_pub": "2025-05-08",
+  "assignees": [
+   "ABBVIE",
+   "CALICO LIFE SCIENCES"
+  ],
+  "verdict": "MISATTRIBUTED",
+  "real_target": "eIF2B (eukaryotic translation initiation factor 2B; integrated stress response regulator) \u2014 clinical asset fosigotifator/ABBV-CLS-7262",
+  "is_degrader": false,
+  "ext_stage": "none"
+ },
+ {
+  "target": "IDH2",
+  "common": "IDH2",
+  "cov_patents": 3,
+  "players": 2,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 30,
+  "window": "OPEN",
+  "latest_pub": "2024-04-17",
+  "assignees": [
+   "ELI LILLY AND",
+   "LILLY CO ELI"
+  ],
+  "verdict": "CLOSED",
+  "real_target": "IDH2",
+  "is_degrader": false,
+  "ext_stage": "phase1"
+ },
+ {
+  "target": "JAK3",
+  "common": "JAK3",
+  "cov_patents": 2,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 13,
+  "window": "OPEN",
+  "latest_pub": "2025-11-19",
+  "assignees": [
+   "PFIZER"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "FGFR2",
+  "common": "FGFR2",
+  "cov_patents": 2,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 33,
+  "window": "OPEN",
+  "latest_pub": "2025-07-31",
+  "assignees": [
+   "RELAY THERAPEUTICS"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "FGFR3",
+  "common": "FGFR3",
+  "cov_patents": 2,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 24,
+  "window": "OPEN",
+  "latest_pub": "2025-07-16",
+  "assignees": [
+   "ELI LILLY AND"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "SMARCA2",
+  "common": "SMARCA2",
+  "cov_patents": 2,
+  "players": 1,
+  "earliest_trial": 2024,
+  "clinic_yrs": 2,
+  "recent_trials": 7,
+  "window": "OPEN",
+  "latest_pub": "2025-07-15",
+  "assignees": [
+   "NOVARTIS"
+  ],
+  "verdict": "NOT_COVALENT",
+  "real_target": "SMARCA2",
+  "is_degrader": true,
+  "ext_stage": "none"
+ },
+ {
+  "target": "CCR8",
+  "common": "CCR8",
+  "cov_patents": 2,
+  "players": 2,
+  "earliest_trial": 2018,
+  "clinic_yrs": 8,
+  "recent_trials": 16,
+  "window": "OPEN",
+  "latest_pub": "2025-07-03",
+  "assignees": [
+   "BRISTOL-MYERS SQUIBB",
+   "GILEAD SCIENCES"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "MCL1",
+  "common": "MCL1",
+  "cov_patents": 2,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 20,
+  "window": "OPEN",
+  "latest_pub": "2025-06-19",
+  "assignees": [
+   "GILEAD SCIENCES"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "WFS1",
+  "common": "WFS1",
+  "cov_patents": 2,
+  "players": 2,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 2,
+  "window": "OPEN",
+  "latest_pub": "2025-06-12",
+  "assignees": [
+   "MERCK PATENT",
+   "VERTEX PHARMACEUTICALS INCORPORATED"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "IRAK4",
+  "common": "IRAK4",
+  "cov_patents": 2,
+  "players": 1,
+  "earliest_trial": 2015,
+  "clinic_yrs": 11,
+  "recent_trials": 21,
+  "window": "OPEN",
+  "latest_pub": "2025-01-30",
+  "assignees": [
+   "GILEAD SCIENCES"
+  ],
+  "verdict": "NOT_COVALENT",
+  "real_target": "IRAK4",
+  "is_degrader": true,
+  "ext_stage": "none"
+ },
+ {
+  "target": "CCR2",
+  "common": "CCR2",
+  "cov_patents": 2,
+  "players": 2,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 15,
+  "window": "OPEN",
+  "latest_pub": "2025-01-28",
+  "assignees": [
+   "ANKURA TRUST COMPANY LLC AS ADMINISTRATIVE AND COLLATERAL AGENT",
+   "CENTREXION THERAPEUTICS"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "GPT",
+  "common": "alanine aminotransferase",
+  "cov_patents": 2,
+  "players": 2,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 1360,
+  "window": "OPEN",
+  "latest_pub": "2024-07-10",
+  "assignees": [
+   "NOVARTIS",
+   "\u8bfa\u534e\u80a1\u4efd\u6709\u9650\u516c\u53f8"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "RET",
+  "common": "rearranged during transfection",
+  "cov_patents": 2,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 13,
+  "window": "OPEN",
+  "latest_pub": "2024-06-04",
+  "assignees": [
+   "ARRAY BIOPHARMA"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "FOLH1",
+  "common": "PSMA",
+  "cov_patents": 2,
+  "players": 2,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 436,
+  "window": "OPEN",
+  "latest_pub": "2024-02-22",
+  "assignees": [
+   "JANSSEN BIOTECH",
+   "\u8a79\u68ee\u751f\u7269\u79d1\u6280\u516c\u53f8"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "ALB",
+  "common": "ALBUMIN",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 2497,
+  "window": "OPEN",
+  "latest_pub": "2025-12-10",
+  "assignees": [
+   "GENENTECH"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "MALT1",
+  "common": "MALT1",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2020,
+  "clinic_yrs": 6,
+  "recent_trials": 6,
+  "window": "OPEN",
+  "latest_pub": "2025-10-30",
+  "assignees": [
+   "JANSSEN PHARMACEUTICA"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "CDKN2A",
+  "common": "CDKN2A",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 45,
+  "window": "OPEN",
+  "latest_pub": "2025-10-16",
+  "assignees": [
+   "REVOLUTION MEDICINES"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "TIGIT",
+  "common": "TIGIT",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2015,
+  "clinic_yrs": 11,
+  "recent_trials": 67,
+  "window": "OPEN",
+  "latest_pub": "2025-09-25",
+  "assignees": [
+   "GENENTECH"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "TLR8",
+  "common": "TLR8",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 11,
+  "window": "OPEN",
+  "latest_pub": "2025-09-10",
+  "assignees": [
+   "GILEAD SCIENCES"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "CTPS1",
+  "common": "CTPS1",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2022,
+  "clinic_yrs": 4,
+  "recent_trials": 3,
+  "window": "OPEN",
+  "latest_pub": "2025-08-28",
+  "assignees": [
+   "NIMBUS DISCOVERY"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "MYCN",
+  "common": "MYCN",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 4,
+  "window": "OPEN",
+  "latest_pub": "2025-08-07",
+  "assignees": [
+   "REVOLUTION MEDICINES"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "COL18A1",
+  "common": "Endostatin",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 26,
+  "window": "OPEN",
+  "latest_pub": "2025-07-23",
+  "assignees": [
+   "BAYER AKTIENGESELLSCHAFT"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "CRP",
+  "common": "C-reactive protein",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 2800,
+  "window": "OPEN",
+  "latest_pub": "2025-06-26",
+  "assignees": [
+   "MERCK SHARP & DOHME"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "PGR",
+  "common": "progesterone receptor",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 116,
+  "window": "OPEN",
+  "latest_pub": "2025-05-27",
+  "assignees": [
+   "\u57fa\u56e0\u6cf0\u514b\u516c\u53f8"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "C1S",
+  "common": "C1S",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 13,
+  "window": "OPEN",
+  "latest_pub": "2025-05-22",
+  "assignees": [
+   "GILEAD SCIENCES"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "GCG",
+  "common": "GLUCAGON",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 814,
+  "window": "OPEN",
+  "latest_pub": "2025-04-25",
+  "assignees": [
+   "\u62dc\u8033\u516c\u53f8"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "CYP3A4",
+  "common": "CYP3A4",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 203,
+  "window": "OPEN",
+  "latest_pub": "2025-04-04",
+  "assignees": [
+   "\u827e\u5e93\u65af\u751f\u7269\u79d1\u5b66\u6709\u9650\u516c\u53f8"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "CHD2",
+  "common": "CHD2",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2015,
+  "clinic_yrs": 11,
+  "recent_trials": 0,
+  "window": "OPEN",
+  "latest_pub": "2025-04-03",
+  "assignees": [
+   "NUVALENT"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "EML4",
+  "common": "EML4",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 0,
+  "window": "OPEN",
+  "latest_pub": "2025-04-03",
+  "assignees": [
+   "NUVALENT"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "C3",
+  "common": "complement C3",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 130,
+  "window": "OPEN",
+  "latest_pub": "2025-02-18",
+  "assignees": [
+   "\u5409\u5229\u5fb7\u79d1\u5b66\u516c\u53f8"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "STEAP1",
+  "common": "STEAP1",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2015,
+  "clinic_yrs": 11,
+  "recent_trials": 5,
+  "window": "OPEN",
+  "latest_pub": "2025-02-13",
+  "assignees": [
+   "AMGEN"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "NR6A1",
+  "common": "NR6A1",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": null,
+  "clinic_yrs": null,
+  "recent_trials": 0,
+  "window": "OPEN",
+  "latest_pub": "2025-02-13",
+  "assignees": [
+   "GILEAD SCIENCES"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "TGM2",
+  "common": "TGM2",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 2,
+  "window": "OPEN",
+  "latest_pub": "2025-01-09",
+  "assignees": [
+   "SITARI PHARMA"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "CD58",
+  "common": "CD58",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 0,
+  "window": "OPEN",
+  "latest_pub": "2024-07-16",
+  "assignees": [
+   "NOVARTIS"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "EZH2",
+  "common": "EZH2",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 46,
+  "window": "OPEN",
+  "latest_pub": "2024-07-03",
+  "assignees": [
+   "JIANGSU HENGRUI PHARMACEUTICALS"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "EP300",
+  "common": "EP300",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 4,
+  "window": "OPEN",
+  "latest_pub": "2024-06-19",
+  "assignees": [
+   "GENENTECH"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "BCL2L1",
+  "common": "BCL-XL",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 17,
+  "window": "OPEN",
+  "latest_pub": "2024-06-11",
+  "assignees": [
+   "\u82cf\u5dde\u4e9a\u76db\u836f\u4e1a\u6709\u9650\u516c\u53f8"
+  ],
+  "verdict": "NOT_COVALENT",
+  "real_target": "BCL2L1",
+  "is_degrader": true,
+  "ext_stage": "none"
+ },
+ {
+  "target": "CRBN",
+  "common": "CEREBLON",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 21,
+  "window": "OPEN",
+  "latest_pub": "2024-06-04",
+  "assignees": [
+   "NOVARTIS"
+  ],
+  "verdict": "NOT_COVALENT",
+  "real_target": "CRBN",
+  "is_degrader": true,
+  "ext_stage": "none"
+ },
+ {
+  "target": "CTSC",
+  "common": "DPP1",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2015,
+  "clinic_yrs": 11,
+  "recent_trials": 7,
+  "window": "OPEN",
+  "latest_pub": "2024-04-25",
+  "assignees": [
+   "ASTRAZENECA"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "YAP1",
+  "common": "YAP1",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2020,
+  "clinic_yrs": 6,
+  "recent_trials": 6,
+  "window": "OPEN",
+  "latest_pub": "2024-04-24",
+  "assignees": [
+   "SANOFI"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "IDH1",
+  "common": "IDH1",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 75,
+  "window": "OPEN",
+  "latest_pub": "2024-04-17",
+  "assignees": [
+   "LILLY CO ELI"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "PDGFRA",
+  "common": "PDGFRA",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 12,
+  "window": "OPEN",
+  "latest_pub": "2024-04-11",
+  "assignees": [
+   "DECIPHERA PHARMACEUTICALS"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "CFTR",
+  "common": "CFTR",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 47,
+  "window": "OPEN",
+  "latest_pub": "2024-04-09",
+  "assignees": [
+   "VERTEX PHARMACEUTICALS INCORPORATED"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "MDM2",
+  "common": "MDM2",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 29,
+  "window": "OPEN",
+  "latest_pub": "2024-04-05",
+  "assignees": [
+   "\u8bfa\u534e\u80a1\u4efd\u6709\u9650\u516c\u53f8"
+  ],
+  "verdict": "NOT_COVALENT",
+  "real_target": "MDM2",
+  "is_degrader": true,
+  "ext_stage": "preclinical"
+ },
+ {
+  "target": "PPARG",
+  "common": "PPARG",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 27,
+  "window": "OPEN",
+  "latest_pub": "2024-04-04",
+  "assignees": [
+   "BAYER AKTIENGESELLSCHAFT"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "IFNG",
+  "common": "interferon gamma",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 309,
+  "window": "OPEN",
+  "latest_pub": "2024-03-21",
+  "assignees": [
+   "BAYER AKTIENGESELLSCHAFT"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "ADORA2A",
+  "common": "adenosine A2a receptor",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 20,
+  "window": "OPEN",
+  "latest_pub": "2024-03-14",
+  "assignees": [
+   "JANSSEN PHARMACEUTICA"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "CDK2",
+  "common": "cyclin dependent kinase 2",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 68,
+  "window": "OPEN",
+  "latest_pub": "2024-03-07",
+  "assignees": [
+   "PFIZER"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "TLR7",
+  "common": "TLR7",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 41,
+  "window": "OPEN",
+  "latest_pub": "2024-03-06",
+  "assignees": [
+   "BEIGENE"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "OTUB1",
+  "common": "OTUB1",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": null,
+  "clinic_yrs": null,
+  "recent_trials": 0,
+  "window": "OPEN",
+  "latest_pub": "2024-03-06",
+  "assignees": [
+   "NOVARTIS"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "KMT2B",
+  "common": "MLL2",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 3,
+  "window": "OPEN",
+  "latest_pub": "2024-02-28",
+  "assignees": [
+   "DAIICHI SANKYO"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "AKT1",
+  "common": "AKT",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 91,
+  "window": "OPEN",
+  "latest_pub": "2024-02-22",
+  "assignees": [
+   "AMGEN"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "SIRPA",
+  "common": "SIRPA",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 15,
+  "window": "OPEN",
+  "latest_pub": "2024-02-21",
+  "assignees": [
+   "GILEAD SCIENCES"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "IL2RB",
+  "common": "CD122",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 2,
+  "window": "OPEN",
+  "latest_pub": "2024-02-13",
+  "assignees": [
+   "GILEAD SCIENCES"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "LTC4S",
+  "common": "LTC4S",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2015,
+  "clinic_yrs": 11,
+  "recent_trials": 0,
+  "window": "OPEN",
+  "latest_pub": "2024-02-08",
+  "assignees": [
+   "NOVARTIS"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "AKR1C3",
+  "common": "AKR1C3",
+  "cov_patents": 1,
+  "players": 1,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 3,
+  "window": "OPEN",
+  "latest_pub": "2024-02-01",
+  "assignees": [
+   "NOVARTIS"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "PRMT5",
+  "common": "PRMT5",
+  "cov_patents": 18,
+  "players": 4,
+  "earliest_trial": 2018,
+  "clinic_yrs": 8,
+  "recent_trials": 28,
+  "window": "CONTESTED",
+  "latest_pub": "2025-12-25",
+  "assignees": [
+   "AMGEN",
+   "GILEAD SCIENCES",
+   "MIRATI THERAPEUTICS",
+   "\u7c73\u62c9\u8482\u533b\u7597\u80a1\u4efd\u6709\u9650\u516c\u53f8"
+  ],
+  "verdict": "NOT_COVALENT",
+  "real_target": "PRMT5",
+  "is_degrader": false,
+  "ext_stage": "preclinical"
+ },
+ {
+  "target": "CCNE1",
+  "common": "CCNE1",
+  "cov_patents": 13,
+  "players": 3,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 20,
+  "window": "CONTESTED",
+  "latest_pub": "2025-11-12",
+  "assignees": [
+   "BLUEPRINT MEDICINES",
+   "KYMERA THERAPEUTICS",
+   "\u7f06\u56fe\u836f\u54c1\u516c\u53f8"
+  ],
+  "verdict": "MISATTRIBUTED",
+  "real_target": "CDK2",
+  "is_degrader": true,
+  "ext_stage": "preclinical"
+ },
+ {
+  "target": "TYK2",
+  "common": "TYK2",
+  "cov_patents": 11,
+  "players": 4,
+  "earliest_trial": 2015,
+  "clinic_yrs": 11,
+  "recent_trials": 27,
+  "window": "CONTESTED",
+  "latest_pub": "2025-10-23",
+  "assignees": [
+   "ARVINAS OPERATIONS",
+   "NIMBUS DISCOVERY",
+   "TAKEDA PHARMACEUTICAL",
+   "TAKEDA PHARMACEUTICALS"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "STING1",
+  "common": "STIMULATOR OF INTERFERON GENES",
+  "cov_patents": 10,
+  "players": 4,
+  "earliest_trial": 2020,
+  "clinic_yrs": 6,
+  "recent_trials": 7,
+  "window": "CONTESTED",
+  "latest_pub": "2025-09-03",
+  "assignees": [
+   "BOEHRINGER INGELHEIM INT",
+   "BOEHRINGER INGELHEIM INTERNATIONAL",
+   "BOEHRINGER INGELHEIM RCV GMBH &",
+   "BOEHRINGER INGELHEIM VETMEDICA"
+  ],
+  "verdict": "CLOSED",
+  "real_target": "STING1",
+  "is_degrader": false,
+  "ext_stage": "phase1"
+ },
+ {
+  "target": "NRAS",
+  "common": "NRAS",
+  "cov_patents": 5,
+  "players": 3,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 63,
+  "window": "CONTESTED",
+  "latest_pub": "2025-07-09",
+  "assignees": [
+   "DECIPHERA PHARMACEUTICALS",
+   "NOVARTIS",
+   "\u8bfa\u534e\u80a1\u4efd\u6709\u9650\u516c\u53f8"
+  ],
+  "verdict": "MISATTRIBUTED",
+  "real_target": "KRAS (Novartis pyrazolyl KRAS-mutant inhibitor); ULK1/ULK2 (Deciphera DCC-3116); BRAF/CRAF + tubulin (dual RAF/tubulin) \u2014 NRAS is only a context/pathway mutation, not the drug target",
+  "is_degrader": false,
+  "ext_stage": "none"
+ },
+ {
+  "target": "NRN1",
+  "common": "NRN",
+  "cov_patents": 4,
+  "players": 3,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 5,
+  "window": "CONTESTED",
+  "latest_pub": "2025-12-04",
+  "assignees": [
+   "ABBVIE",
+   "REVOLUTION MEDICINES",
+   "WILMINGTON TRUST NATIONAL ASSOCIATION AS AGENT"
+  ],
+  "verdict": "MISATTRIBUTED",
+  "real_target": "KRAS",
+  "is_degrader": false,
+  "ext_stage": "approved"
+ },
+ {
+  "target": "ORC2",
+  "common": "ORC2",
+  "cov_patents": 4,
+  "players": 3,
+  "earliest_trial": null,
+  "clinic_yrs": null,
+  "recent_trials": 0,
+  "window": "CONTESTED",
+  "latest_pub": "2025-10-29",
+  "assignees": [
+   "BOEHRINGER INGELHEIM INT",
+   "BOEHRINGER INGELHEIM INTERNATIONAL",
+   "BOEHRINGER INGELHEIM INTL"
+  ],
+  "verdict": "MISATTRIBUTED",
+  "real_target": "KRAS (KRAS G12C)",
+  "is_degrader": false,
+  "ext_stage": "approved"
+ },
+ {
+  "target": "KEAP1",
+  "common": "KEAP1",
+  "cov_patents": 3,
+  "players": 3,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 16,
+  "window": "CONTESTED",
+  "latest_pub": "2025-12-04",
+  "assignees": [
+   "FOUNDATION MEDICINE",
+   "UNIVERSITY OF ROCHESTER",
+   "VIVIDION THERAPEUTICS"
+  ],
+  "verdict": "CLOSED",
+  "real_target": "KEAP1",
+  "is_degrader": false,
+  "ext_stage": "phase1"
+ },
+ {
+  "target": "EGFR",
+  "common": "EGFR",
+  "cov_patents": 80,
+  "players": 32,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 2234,
+  "window": "CLOSED",
+  "latest_pub": "2025-12-24",
+  "assignees": [
+   "ABBISKO THERAPEUTICS",
+   "AMGEN",
+   "ANTARES THERAPEUTICS",
+   "ASCENTAGE PHARMA SUZHOU",
+   "ASTRAZENECA",
+   "BAYER",
+   "BAYER AKTIENGESELLSCHAFT",
+   "BLACK DIAMOND THERAPEUTICS"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "BTK",
+  "common": "BTK",
+  "cov_patents": 44,
+  "players": 18,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 196,
+  "window": "CLOSED",
+  "latest_pub": "2025-12-26",
+  "assignees": [
+   "BEIGENE",
+   "BEIGENE SWITZERLAND",
+   "BEONE MEDICINES I",
+   "BIOGEN MA",
+   "DIZAL JIANGSU PHARMACEUTICAL",
+   "DIZAL PHARMACEUTICAL",
+   "GILEAD SCIENCES",
+   "JANSSEN PHARMACEUTICA"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "CD274",
+  "common": "PD-L1",
+  "cov_patents": 28,
+  "players": 8,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 1524,
+  "window": "CLOSED",
+  "latest_pub": "2025-09-25",
+  "assignees": [
+   "ELI LILLY AND",
+   "GENENTECH",
+   "GILEAD SCIENCES",
+   "REVOLUTION MEDICINES",
+   "UNIVERSITY OF ROCHESTER",
+   "WILMINGTON TRUST NATIONAL ASSOCIATION AS AGENT",
+   "\u5409\u5229\u5fb7\u79d1\u5b66\u516c\u53f8",
+   "\u9510\u65b0\u533b\u836f\u516c\u53f8"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "MAP4K1",
+  "common": "HPK1",
+  "cov_patents": 19,
+  "players": 6,
+  "earliest_trial": 2018,
+  "clinic_yrs": 8,
+  "recent_trials": 9,
+  "window": "CLOSED",
+  "latest_pub": "2025-11-26",
+  "assignees": [
+   "BLUEPRINT MEDICINES",
+   "CHARLES RIVER DISCOVERY RESEARCH SERVICES UK",
+   "GILEAD SCIENCES",
+   "NIMBUS SATURN",
+   "SCHR\u00d6DINGER",
+   "\u7f06\u56fe\u836f\u54c1\u516c\u53f8"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "ERBB2",
+  "common": "HER2",
+  "cov_patents": 16,
+  "players": 11,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 1565,
+  "window": "CLOSED",
+  "latest_pub": "2025-11-12",
+  "assignees": [
+   "BAYER AKTIENGESELLSCHAFT",
+   "BLUEPRINT MEDICINES",
+   "BOEHRINGER INGELHEIM INT",
+   "BOEHRINGER INGELHEIM INTERNATIONAL",
+   "BRISTOL-MYERS SQUIBB",
+   "F HOFFMANN-LA ROCHE",
+   "HOFFMANN LA ROCHE",
+   "JIANGSU HENGRUI PHARMACEUTICALS"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "SOS1",
+  "common": "SOS1",
+  "cov_patents": 13,
+  "players": 8,
+  "earliest_trial": 2020,
+  "clinic_yrs": 6,
+  "recent_trials": 4,
+  "window": "CLOSED",
+  "latest_pub": "2025-12-18",
+  "assignees": [
+   "BAYER AKTIENGESELLSCHAFT",
+   "BOEHRINGER INGELHEIM INT",
+   "BOEHRINGER INGELHEIM INTERNATIONAL",
+   "REVOLUTION MEDICINES",
+   "WILMINGTON TRUST NATIONAL ASSOCIATION AS AGENT",
+   "\u62dc\u8033\u516c\u53f8",
+   "\u8c6a\u592b\u8fc8\u00b7\u7f57\u6c0f\u6709\u9650\u516c\u53f8",
+   "\u9510\u65b0\u533b\u836f\u516c\u53f8"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "PIK3CA",
+  "common": "PI3K",
+  "cov_patents": 12,
+  "players": 6,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 109,
+  "window": "CLOSED",
+  "latest_pub": "2025-11-19",
+  "assignees": [
+   "MIRATI THERAPEUTICS",
+   "NOVARTIS",
+   "RELAY THERAPEUTICS",
+   "REVOLUTION MEDICINES",
+   "SCORPION THERAPEUTICS",
+   "\u874e\u5b50\u7597\u6cd5\u80a1\u4efd\u6709\u9650\u516c\u53f8"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "BRAF",
+  "common": "BRAF",
+  "cov_patents": 9,
+  "players": 7,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 229,
+  "window": "CLOSED",
+  "latest_pub": "2025-12-03",
+  "assignees": [
+   "ASTRAZENECA UK",
+   "EISAI R&D MANAGEMENT",
+   "F HOFFMANN-LA ROCHE",
+   "HOFFMANN LA ROCHE",
+   "HOFFMANN-LA ROCHE",
+   "PFIZER",
+   "\u5fb7\u897f\u8d39\u62c9\u5236\u836f\u6709\u9650\u8d23\u4efb\u516c\u53f8"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ },
+ {
+  "target": "MTOR",
+  "common": "MTOR",
+  "cov_patents": 8,
+  "players": 5,
+  "earliest_trial": 2012,
+  "clinic_yrs": 14,
+  "recent_trials": 143,
+  "window": "CLOSED",
+  "latest_pub": "2025-04-10",
+  "assignees": [
+   "REVOLUTION MEDICINES",
+   "WILMINGTON TRUST NATIONAL ASSOCIATION AS ADMINISTRATIVE AGENT",
+   "WILMINGTON TRUST NATIONAL ASSOCIATION AS AGENT",
+   "\u8bfa\u534e\u80a1\u4efd\u6709\u9650\u516c\u53f8",
+   "\u9510\u65b0\u533b\u836f\u516c\u53f8"
+  ],
+  "verdict": null,
+  "real_target": null,
+  "is_degrader": null,
+  "ext_stage": null
+ }
+]

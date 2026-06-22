@@ -1,0 +1,24 @@
+# SECRETS — never commit
+.epo_creds.json
+*.creds.json
+*_secret*
+.env
+
+# large raw data (downloaded, not code)
+*.xlsx
+*.parquet
+*.h5
+*.fasta
+*.tmp
+
+# caches
+*_cache.json
+.uniprot_cache.json
+.bt_cache.json
+backtest_cache.json
+__pycache__/
+.venv/
+.DS_Store
+
+# throwaway feasibility code
+phase0/

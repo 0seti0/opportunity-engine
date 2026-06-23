@@ -100,6 +100,9 @@ For each heavily-pursued target (high clinical/literature count):
 - **LLM (bounded, cached, fact-check-overridden):** covalency judgment on ambiguous cases; watchlist prose.
 - **Pin:** data-source snapshot dates, tool versions; write a per-run `manifest.json`; pull knobs (date
   cutoff, warhead lexicon, SMARTS, fraction threshold, SASA/pKa cutoffs) into one `config.yaml`.
+- **Local OPSIN (offline IUPAC→SMILES):** needs a JRE — portable, no Homebrew/sudo:
+  `curl -fSL https://api.adoptium.net/v3/binary/latest/21/ga/mac/aarch64/jre/hotspot/normal/eclipse | tar xz -C ~/opt && ln -sf ~/opt/*-jre/Contents/Home/bin/java ~/.local/bin/java`
+  (`patent_radar._opsin` is local-only — no opsin.ch/cactus call — so resolution can't drift with a remote service.)
 
 ## Build order
 

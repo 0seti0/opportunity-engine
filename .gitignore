@@ -15,6 +15,7 @@
 *_cache.json
 .uniprot_cache.json
 .bt_cache.json
+.tractable.json
 backtest_cache.json
 __pycache__/
 .venv/

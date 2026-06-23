@@ -9,8 +9,6 @@
 Runs on raw patent XML at publication. SureChEMBL becomes a later cross-check, not the source.
 """
 import re
-import urllib.parse
-import urllib.request
 import xml.etree.ElementTree as ET
 
 from rdkit import Chem
@@ -43,37 +41,41 @@ def warhead_in_claims(text):
 
 
 def independent_claims(xml_text):
-    """ST.36-style patent XML: a <claim> is DEPENDENT if it references another (<claim-ref> or 'claim N')."""
+    """Independent claims from patent XML. Handles two real shapes:
+       ST.36     — one <claim> element per claim (dependent = <claim-ref> or 'claim N').
+       EPO OPS   — one <claims>/<claim> blob whose <claim-text> lines are numbered '1.', '2.'.
+    A claim is DEPENDENT if it back-references another claim."""
     root = ET.fromstring(xml_text)
+    ln = lambda el: el.tag.split('}')[-1]
+    claims = [el for el in root.iter() if ln(el) == "claim"]
+
+    def independent(txt):                                   # 'of claim 1', 'any of claims 1-5' -> dependent
+        return not re.search(r"\bclaims?\s+\d+", txt, re.I)
+
     out = []
-    for cl in root.iter():
-        if cl.tag.split('}')[-1] == "claim":
-            txt = "".join(cl.itertext())
-            dependent = any(c.tag.split('}')[-1] == "claim-ref" for c in cl.iter()) \
-                or re.search(r"\bclaim\s+\d+\b", txt, re.I)
-            if not dependent:
-                out.append(re.sub(r"\s+", " ", txt).strip())
+    if len(claims) == 1 and sum(1 for c in claims[0].iter() if ln(c) == "claim-text") > 1:
+        # OPS full-text: split the single blob by leading 'N.' numbering across its claim-text lines
+        units, cur = [], []
+        for line in ("".join(ct.itertext()).strip() for ct in claims[0].iter() if ln(ct) == "claim-text"):
+            if re.match(r"^\d+\.\s", line) and cur:
+                units.append(" ".join(cur)); cur = []
+            cur.append(line)
+        if cur:
+            units.append(" ".join(cur))
+        out = [re.sub(r"\s+", " ", u).strip() for u in units if independent(u)]
+    else:
+        for cl in claims:                                   # ST.36: each <claim> is one claim
+            txt = re.sub(r"\s+", " ", "".join(cl.itertext())).strip()
+            if not any(ln(c) == "claim-ref" for c in cl.iter()) and independent(txt):
+                out.append(txt)
     return out
 
 
 def _opsin(name):
-    """IUPAC name -> SMILES. Production: bundled OPSIN jar (needs a JRE). Here: hosted fallback so it runs."""
-    try:
-        from py2opsin import py2opsin                          # local OPSIN (no network) — preferred in prod
-        s = py2opsin(name)
-        if s:
-            return s
-    except Exception:
-        pass
-    for url in (f"https://opsin.ch/opsin/{urllib.parse.quote(name)}.smi",
-                f"https://cactus.nci.nih.gov/chemical/structure/{urllib.parse.quote(name)}/smiles"):
-        try:
-            s = urllib.request.urlopen(url, timeout=20).read().decode().strip()
-            if s and Chem.MolFromSmiles(s):
-                return s
-        except Exception:
-            continue
-    return None
+    """IUPAC name -> SMILES via local OPSIN (py2opsin's bundled jar + a JRE). Deterministic, offline —
+    no network, so a run is reproducible regardless of opsin.ch / cactus uptime or version drift."""
+    from py2opsin import py2opsin
+    return py2opsin(name) or None                              # '' (unparseable name) -> None
 
 
 def resolve_to_smiles(rep, kind):

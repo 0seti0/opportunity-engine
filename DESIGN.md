@@ -103,6 +103,9 @@ For each heavily-pursued target (high clinical/literature count):
 - **Local OPSIN (offline IUPAC→SMILES):** needs a JRE — portable, no Homebrew/sudo:
   `curl -fSL https://api.adoptium.net/v3/binary/latest/21/ga/mac/aarch64/jre/hotspot/normal/eclipse | tar xz -C ~/opt && ln -sf ~/opt/*-jre/Contents/Home/bin/java ~/.local/bin/java`
   (`patent_radar._opsin` is local-only — no opsin.ch/cactus call — so resolution can't drift with a remote service.)
+- **OCSR (drawn warheads):** `uv run --with rdkit --with decimer --with opencv-python`; DECIMER auto-caches
+  ~664 MB of models to `~/.data/DECIMER-V2` on first use (one-time ~10 min download), warm thereafter. macOS
+  `sips` does the one-page PDF→PNG with no poppler/brew.
 
 ## Build order
 
@@ -114,10 +117,36 @@ For each heavily-pursued target (high clinical/literature count):
 | 4 | **Target-centric discovery** | catches stealth biotechs |
 | 5 | **Structural watchlist** (PDB ensemble · SASA · PROPKA · fpocket) | the secondary BIC list |
 
+## Build status (2026-06-23)
+
+Implemented and validated against the **live OPS API**:
+
+- **`ops.py`** — OPS client: OAuth2 (cached token, re-auth on 401/403), biblio `search(cql)`, `fulltext(pn, part)`,
+  and the image endpoints (`images_inventory`, `page_pdf`).
+- **`feed_build.py`** — Leg-1 covalent screen. Ingest `ic=A61P35 and ti=inhibitor and txt=<TARGET>`, **post-filter
+  to WO/EP** (CN members are national-phase dupes with no OPS full-text — coverage 25% → 100%), then decide
+  covalency from **syntax-bound warhead nomenclature** in the description (clean separation: a covalent series
+  scores ≈30+, a non-covalent patent 0) and resolve the warhead-bearing compound NAMES (repairing the OPS
+  `/V`→italic-`N` artifact) with local OPSIN → SMARTS. Convention-agnostic: keys off the warhead text, not an
+  "Example N" scaffold (real patents label syntheses "Step 7:", "Compound 12"). Validated: EGFR → flags the one
+  covalent patent (WO2026115265 + its acrylamide lead), rejects 16 non-covalent.
+- **`ocsr.py`** — the DRAWN-warhead path (`needs_ocsr`). DECIMER (TF, models cached in `~/.data/DECIMER-V2`) reads
+  single molecules; `sips` rasterizes the one-page OPS PDFs; a **cv2 heuristic** crops structures off the page
+  (decimer-segmentation, the proper splitter, is arm64-blocked — see limits). Validated: recovered the real
+  WO2026115265 acrylamide from a page image end-to-end. `feed_build.ocsr_rescue(pn)` wires the 2→3 handoff.
+
+Knobs in one place: `feed_build.MIN_MENTIONS / IPC`, `ocsr._crop_structures` thresholds, `patent_radar.WARHEAD_SMARTS`.
+Not yet wired: USPTO bulk-XML gap-fill for US-only families; Leg 2 (clinical); unify + alert; structural watchlist.
+
 ## Honest limits
 
 - Claims text often **draws** the warhead (not names it) → OCSR is the necessary complement; OCSR is
   error-prone but **tolerable for binary warhead detection** (you only need the reactive group recognized).
+- **OCSR segmentation is arm64-limited:** decimer-segmentation pins `tensorflow≤2.15.1` (no arm64 wheels), so
+  page splitting falls back to a **cv2 heuristic** — lower recall on dense reaction-scheme pages, and DECIMER
+  misreads text-noise crops (filtered by the warhead SMARTS + a heavy-atom plausibility check) and reads italic
+  locant-`N` as `[2H]`/`[16N]` (the warhead substructure survives). Production: run decimer-segmentation in a
+  py3.10/Docker env, or MolScribe (PyTorch, arm64-clean), when scheme-page recall matters.
 - **OPSIN** fails on malformed names; a single patent **mixes formats** → all three converters are needed.
 - **Occupancy assays aren't covalent-exclusive** → rely on the *combination* of fingerprints.
 - The structural stack is **heuristic triage** (SASA/PROPKA/fpocket), **necessary-not-sufficient** → a

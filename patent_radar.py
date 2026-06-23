@@ -87,9 +87,23 @@ def resolve_to_smiles(rep, kind):
     elif kind == "iupac":
         s = _opsin(rep)
         m = Chem.MolFromSmiles(s) if s else None
-    else:                                                       # image -> DECIMER OCSR (ML fallback) — prod stub
-        return None
+    else:                                                       # image (PNG path) -> DECIMER OCSR (see ocsr.py)
+        import ocsr
+        return ocsr.image_to_smiles(rep)
     return Chem.MolToSmiles(m) if m else None
+
+
+def resolve_batch(names):
+    """IUPAC names -> canonical SMILES (None per failure), in ONE local-OPSIN/java call for the whole list."""
+    from py2opsin import py2opsin
+    if not names:
+        return []
+    raw = py2opsin(list(names))                               # list in -> list out, '' for an unparseable name
+    out = []
+    for s in (raw if isinstance(raw, list) else [raw]):
+        m = Chem.MolFromSmiles(s) if s else None
+        out.append(Chem.MolToSmiles(m) if m else None)
+    return out
 
 
 def has_warhead(smiles):

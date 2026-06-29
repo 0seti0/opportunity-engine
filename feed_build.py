@@ -93,6 +93,20 @@ def verify(pn, target):
             "covalent": covalent, "target_in_text": on_target}
 
 
+def lead_smiles(pn):
+    """First SMARTS-confirmed covalent lead SMILES from a patent's OPS description (the chemistry to fast-follow),
+    or None. Only WO/EP carry OPS full-text — US/CN return None (use USPTO bulk for those)."""
+    epodoc = re.sub(r"^([A-Z]{2}\d+).*", r"\1", (pn or "").replace("-", ""))
+    desc = ops.fulltext(epodoc, "description")
+    if not desc:
+        return None
+    leads = warhead_leads(desc)
+    for smi in pr.resolve_batch(leads):
+        if smi and pr.has_warhead(smi):
+            return smi
+    return None
+
+
 def ocsr_rescue(pn, frac_range=(0.4, 0.95), max_pages=8):
     """For a `needs_ocsr` patent (covalent by text, but no compound NAME resolved -> warheads are DRAWN):
     recover them from the description page images. Returns the warhead-bearing structures DECIMER read.

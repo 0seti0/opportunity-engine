@@ -17,6 +17,45 @@ import openpyxl
 
 HERE = Path(__file__).parent
 XLSX = HERE / "NIHMS1893018-supplement-2.xlsx"
+_LIGAND_CACHE = HERE / ".cysdb_ligand.json"
+_HGNC_URL = "https://storage.googleapis.com/public-download-files/hgnc/tsv/tsv/hgnc_complete_set.txt"
+
+
+def ligandability():
+    """sym -> {'ligandable': bool, 'n_lig_cys': int} from RAW CysDB (cached) — for ANY protein, not just the
+    filtered opportunities. Lets the dossier ask 'is target X covalently ligandable per chemoproteomics?'."""
+    import json as _json
+    if _LIGAND_CACHE.exists():
+        return _json.load(open(_LIGAND_CACHE))
+    import urllib.request
+    if not Path("/tmp/hgnc.txt").exists():                       # complete set has the uniprot_ids column
+        urllib.request.urlretrieve(_HGNC_URL, "/tmp/hgnc.txt")
+    uni2sym = {}
+    for r in csv.DictReader(open("/tmp/hgnc.txt"), delimiter="\t"):
+        if r.get("locus_group") == "protein-coding gene":
+            for u in (r.get("uniprot_ids") or "").split("|"):
+                if u.strip():
+                    uni2sym[u.strip()] = r["symbol"]
+    wb = openpyxl.load_workbook(str(XLSX), read_only=True)
+    ligandable = {}
+    it = wb["Fig4A-C"].iter_rows(values_only=True); next(it)
+    for pid, fda, chembl, drugbank, lig in it:
+        if pid:
+            ligandable[pid] = lig == "yes"
+    ncys = Counter()
+    it = wb["Ligandable Dataset"].iter_rows(min_col=1, max_col=4, values_only=True); next(it)
+    for pid, cysid, resid, lig in it:
+        if pid and lig == "yes":
+            ncys[pid] += 1
+    out = {}
+    for pid, lig in ligandable.items():
+        sym = uni2sym.get(pid)
+        if sym:
+            b = out.setdefault(sym, {"ligandable": False, "n_lig_cys": 0})
+            b["ligandable"] = b["ligandable"] or lig
+            b["n_lig_cys"] = max(b["n_lig_cys"], ncys.get(pid, 0))
+    _json.dump(out, open(_LIGAND_CACHE, "w"))
+    return out
 
 
 def run():

@@ -116,6 +116,55 @@ def run():
     return log
 
 
+def _gpatent(pn):
+    return f"https://patents.google.com/patent/{pn.replace('-', '')}"
+
+
+def report(n=12, leads=True):
+    """Per white-space target, a linked dossier wiring the EXISTING pieces: who's-moving (linked patents/trials),
+    a deterministic title-confirms-target check, the lead covalent SMILES (feed_build), and CysDB ligandability."""
+    import feed_build
+    from cysdb import ligandability
+    log = unify()
+    feed = {e[0]: e for e in json.load(open(HERE / "covalent_warhead_feed_clean.json"))}
+    tg = json.load(open(HERE / "patent_targets.json"))
+    cys = ligandability()
+    white = sorted([e for e in log if e["lane"] in ("OPEN", "EMERGING")], key=lambda e: e["latest"], reverse=True)[:n]
+
+    out = [f"# Covalent white-space dossier — {datetime.date.today().isoformat()}  ({len(white)} targets)\n"]
+    for e in white:
+        pats = sorted([s for s in e["signals"] if s["type"] == "patent"], key=lambda x: x["date"], reverse=True)
+        lp = pats[0] if pats else None
+        title = (feed.get(lp["id"], [None] * 4)[3] if lp else "") or ""
+        common = ((tg.get(lp["id"]) or {}).get("common") if lp else None) or e["target"]
+        names = e["target"].upper() in title.upper() or common.upper() in title.upper()
+        cy = cys.get(e["target"])
+        feas = (f"✅ ligandable cysteine ({cy['n_lig_cys']} in CysDB chemoproteomics)" if cy and cy.get("ligandable")
+                else "⚠️ profiled in CysDB but NO ligandable cysteine found" if cy
+                else "❔ not in CysDB — covalent feasibility unverified")
+        lead = feed_build.lead_smiles(lp["id"]) if (leads and lp) else None
+
+        out.append(f"## {e['target']}  —  {e['lane']} · {e['target_filers']} covalent filer(s)")
+        out.append(f"- **Who's moving:** {e['company']}"
+                   + (f" — [{lp['id']}]({_gpatent(lp['id'])}) ({lp['date']}) · _{title[:64]}_" if lp else ""))
+        for s in (s for s in e["signals"] if s["type"] == "clinical"):
+            out.append(f"- **Clinical:** [{s['id']}](https://clinicaltrials.gov/study/{s['id']}) ({s['date']})")
+        out.append(f"- **Title confirms target:** "
+                   + ("✅ yes" if names else f"❌ NO — title doesn't name {e['target']} (likely mis-attribution — verify)"))
+        out.append(f"- **Chemistry:** warhead {e['warheads']}"
+                   + (f" · lead `{lead}`" if lead
+                      else " · lead: US/CN patent (no OPS full-text)" if lp and lp["id"][:2] in ("US", "CN")
+                      else " · lead: not resolved"))
+        out.append(f"- **Covalent feasibility (CysDB):** {feas}")
+        out.append(f"- **Verify:** [gene](https://www.genenames.org/data/gene-symbol-report/#!/symbol/{e['target']}) · "
+                   f"[trials](https://clinicaltrials.gov/search?term={e['target']}) · "
+                   f"[papers](https://europepmc.org/search?query={e['target']})\n")
+    md = "\n".join(out)
+    (HERE / f"dossier_{datetime.date.today().isoformat()}.md").write_text(md)
+    print(md)
+    return md
+
+
 if __name__ == "__main__":
     if "--selftest" in sys.argv:
         moves = [{"company": "ACME", "target": "EGFR", "type": "patent", "date": "2025-03-01",
@@ -132,5 +181,7 @@ if __name__ == "__main__":
         beta = next(e for e in log if e["company"] == "BETA")
         assert not beta["cross_linked"] and beta["warheads"] == ["butynamide"]
         print("unify self-check OK:", [(e["company"], e["target"], e["cross_linked"]) for e in log])
+    elif "--report" in sys.argv:
+        report()
     else:
         run()

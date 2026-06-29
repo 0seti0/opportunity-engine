@@ -32,3 +32,6 @@ clinical_events.json
 
 .unify_seen.json
 covalent_move_log.json
+
+.cysdb_ligand.json
+dossier_*.md

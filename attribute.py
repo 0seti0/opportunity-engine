@@ -38,8 +38,15 @@ _EXCLUDE = re.compile(                                    # wrong universe: non-
     r"MICROCAPSULE|NANOPARTICLE|\bCOATING|\bRESIN\b|COSMETIC|SYNTHESIS OF|PROCESS FOR PREPAR|\bINTERMEDIATE\b",
     re.I)
 _METHOD = re.compile(r"^\s*METHODS?\b|COMBINATION|THERAPY|DOSING|REGIMEN|RESISTAN|COMPRISING A\b", re.I)
-_DEGRADER = re.compile(r"PROTAC|DEGRADER|MODULATORS? OF PROTEOLYSIS|MOLECULAR GLUE|PROTEOLYSIS.TARGETING", re.I)
+# degrader = a DIFFERENT modality (covalent E3 ligand, not a covalent inhibitor). The glue CHEMISTRY in the
+# title gives it away even when the word "degrader" is absent: glutarimide (piperidine-2,6-dione) is THE
+# cereblon-binding pharmacophore -> e.g. Novartis IKZF2 '3-(1-oxoisoindolin-2-yl)piperidine-2,6-dione' glues.
+_DEGRADER = re.compile(r"PROTAC|DEGRADER|MODULATORS? OF PROTEOLYSIS|MOLECULAR GLUE|PROTEOLYSIS.TARGETING|"
+                       r"GLUTARIMIDE|PIPERIDINE-?2,6-?DIONE|OXOISOINDOLIN|CEREBLON|\bCRBN\b|"
+                       r"THALIDOMIDE|LENALIDOMIDE|POMALIDOMIDE", re.I)
 _IMPLAUSIBLE = re.compile(r"^(OR\d|TAS2R\d|OR\d+[A-Z])", re.I)   # olfactory/taste receptors: NER false-resolutions
+# not covalent small-molecule targets: collagens (structural), secreted neuronal factors, recurrent NER mis-tags
+_NONTARGET = re.compile(r"^(?:NRN1L?|TPO|THPO)$|^COL\d", re.I)
 
 
 def grade(conf, sym, title):
@@ -50,8 +57,8 @@ def grade(conf, sym, title):
         return "excluded"                                # not a covalent small-molecule-vs-human-target patent
     if _DEGRADER.search(t):
         return "degrader"                                # covalent E3-ligand modality, not an inhibitor
-    if _IMPLAUSIBLE.match(sym or ""):
-        return "candidate"                               # implausible target family -> NER artifact, don't trust
+    if _IMPLAUSIBLE.match(sym or "") or _NONTARGET.match(sym or ""):
+        return "candidate"                               # NER artifact / not a covalent small-molecule target
     if conf in ("title", "claims") and _METHOD.search(t):
         return "candidate"                               # treatment/combination context, not composition-of-matter
     if conf in ("title", "claims"):

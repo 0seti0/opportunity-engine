@@ -94,6 +94,22 @@ def page_pdf(link, page):
     return data if code == 200 and data[:4] == b"%PDF" else None
 
 
+def biblio(pn):
+    """-> (publication_date 'YYYY-MM-DD', applicant, english title) from OPS biblio, best-effort (None on miss)."""
+    code, xml = _get(f"/published-data/publication/epodoc/{pn}/biblio")
+    if code != 200:
+        return (None, None, None)
+    pr = re.search(r"<publication-reference\b.*?</publication-reference>", xml, re.S)
+    dm = re.search(r"<date>\s*(\d{8})\s*</date>", pr.group(0)) if pr else None
+    appl = re.search(r"<applicant-name>\s*<name[^>]*>([^<]+)</name>", xml)
+    ttl = (re.search(r'<invention-title[^>]*lang="en"[^>]*>([^<]+)</invention-title>', xml)
+           or re.search(r"<invention-title[^>]*>([^<]+)</invention-title>", xml))
+    d = dm.group(1) if dm else None
+    return (f"{d[:4]}-{d[4:6]}-{d[6:8]}" if d else None,
+            appl.group(1).strip() if appl else None,
+            ttl.group(1).strip() if ttl else None)
+
+
 if __name__ == "__main__":
     # live smoke: auth + search + full-text availability (exercises the re-auth retry + the search regex)
     pubs = search('txt="acrylamide" and ic=C07D and pn=EP', n=10)

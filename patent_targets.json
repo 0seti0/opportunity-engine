@@ -26577,5 +26577,16 @@
    "TRAF6"
   ],
   "grade": "candidate"
+ },
+ "WO2026115265": {
+  "sym": "EGFR",
+  "common": "EGFR",
+  "conf": "radar",
+  "grade": "trusted",
+  "source": "radar",
+  "warheads": [
+   "acrylamide"
+  ],
+  "others": []
  }
 }

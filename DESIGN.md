@@ -144,8 +144,19 @@ Implemented and validated against the **live OPS API**:
   the AUTHORITATIVE attributor** (target-centric + composition-of-matter); `feed_build.verify(pn, target)`
   confirms a candidate by fetching OPS full-text and re-applying the covalency + on-target test.
 
-Knobs in one place: `feed_build.MIN_MENTIONS / IPC`, `attribute._EXCLUDE/_METHOD/_DEGRADER`, `ocsr._crop_structures`, `patent_radar.WARHEAD_SMARTS`.
-Not yet wired: USPTO bulk-XML gap-fill for US-only families; Leg 2 (clinical); unify + alert; structural watchlist.
+- **`refresh.py` + `census_topup.py`** — keep the census current. `refresh` discovers the latest *complete*
+  SureChEMBL snapshot (`snapshot.txt`, read by `attribute.py`) and incrementally rebuilds the feed; `census_topup`
+  sweeps a watchlist through the **live EPO radar** and merges Day-1 covalent hits (`source='radar'`,
+  `grade='trusted'`) — closing SureChEMBL's extraction lag for watched targets.
+- **`clinical_radar.py` (Leg 2, Steps 1+2a+2b)** — the only sub-publication signal. Diffs new Ph1 industry
+  trials (CT.gov), classifies covalency by **patent cross-link** to the census (LIKELY=sponsor+target) and a
+  **web check** on the code-name (`claude -p`; osimertinib✓ / imatinib✗). Precision filters (tractability +
+  modality + PK-probe) cut a live batch's noise 13→1. **2c (design fingerprint) audited (24 labeled trials):
+  CT.gov-registry recall is only 8% (1/12) at 100% precision — the tells live in publications (10/12), not the
+  registry — so 2c is a rare bonus; 2a+2b are the workhorses, full-text-2c is the high-recall future option.**
+
+Knobs in one place: `feed_build.MIN_MENTIONS / IPC`, `attribute._EXCLUDE/_METHOD/_DEGRADER`, `ocsr._crop_structures`, `patent_radar.WARHEAD_SMARTS`, `clinical_radar._FINGERPRINT / FP_THRESHOLD`.
+Not yet wired: USPTO bulk-XML gap-fill for US-only families; full-text-2c; **unify Leg 1 + Leg 2** + alert; structural watchlist.
 
 ## Honest limits
 

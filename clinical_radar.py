@@ -65,8 +65,51 @@ def new_trials(since=None, page_size=200):
                     "title": idm.get("briefTitle", ""),
                     "drugs": [i.get("name") for i in ps.get("armsInterventionsModule", {}).get("interventions", [])
                               if i.get("type") == "DRUG" and "placebo" not in (i.get("name") or "").lower()],
-                    "summary": (ps.get("descriptionModule", {}).get("briefSummary", "") or "")[:800]})
+                    "summary": (ps.get("descriptionModule", {}).get("briefSummary", "") or "")[:800],
+                    "design_text": _design_text(ps)})
     return out
+
+
+def _design_text(ps):
+    """Outcome measures (kept WHOLE — short, high-signal, often 15+ of them) + a capped detailed description.
+    Truncating the combined blob dropped late outcomes like a secondary BTK-occupancy measure -> false negatives."""
+    oc = ps.get("outcomesModule", {})
+    outcomes = " ".join(f"{o.get('measure','')} {o.get('description','') or ''} {o.get('timeFrame','') or ''}"
+                        for o in oc.get("primaryOutcomes", []) + oc.get("secondaryOutcomes", []))
+    return outcomes + " " + (ps.get("descriptionModule", {}).get("detailedDescription", "") or "")[:4000]
+
+
+def trial_design(nct):
+    """Design text for one trial by NCT (single-study CT.gov endpoint) — for the fingerprint / audit."""
+    return _design_text(bt._get(f"{CTGOV}/{nct}?format=json").get("protocolSection", {}))
+
+
+# 2c — clinical-DESIGN fingerprint: covalency tells that need NO chemistry. The COMBINATION is specific;
+# any one alone is weak (occupancy assays aren't covalent-exclusive).
+# AUDIT (24 labeled Ph1 trials, adversarially verified): on the CT.gov REGISTRY this fires on only 1/12
+# covalent drugs (8% recall, 100% precision) — the tells are almost never in the registry; they live in the
+# protocol/publications (10/12 covalent vs 5/12 non-covalent have them there). So 2c-registry is a rare
+# BONUS, not a primary detector: lean on 2a (patent cross-link) + 2b (web). A high-recall 2c would fingerprint
+# FULL-TEXT publications (PMID -> Europe PMC) and require the covalent-SPECIFIC tells (sustained-PD-past-PK /
+# mass-spec adduct / explicit irreversible), since plain occupancy also shows up for reversible drugs.
+_FINGERPRINT = {
+    "occupancy_timecourse": (3, r"target occupancy|receptor occupancy|target engagement|\boccupancy\b"),
+    "sustained_pd":         (2, r"resynthesis|duration of (?:target )?(?:inhibition|engagement)|"
+                                r"recovery of \w+ (?:activity|protein|function)|"
+                                r"sustained (?:target )?(?:inhibition|pharmacodynamic|engagement)|return to baseline"),
+    "adduct_massspec":      (3, r"covalent (?:bond|adduct|occupancy)|activity-based protein profiling|\bABPP\b|"
+                                r"probe[- ]?(?:based )?occupancy|mass spectrometr\w+[^.]{0,40}(?:occupancy|adduct|engagement)"),
+    "pbmc_pd":              (1, r"\bPBMCs?\b"),
+    "covalent_stated":      (3, r"irreversibl\w+|covalent\w*"),
+}
+_FP = {k: (w, re.compile(p, re.I)) for k, (w, p) in _FINGERPRINT.items()}
+FP_THRESHOLD = 4
+
+
+def fingerprint(design_text):
+    """-> {score, signals}. Covalent-suspect when score >= FP_THRESHOLD."""
+    hits = {k: w for k, (w, rx) in _FP.items() if rx.search(design_text or "")}
+    return {"score": sum(hits.values()), "signals": sorted(hits)}
 
 
 def gene_index():
@@ -152,9 +195,15 @@ def run(web=False):
             w = web_covalent(tr["drugs"][0])
             if w.get("covalent") is True:
                 ev["covalency"], ev["why"] = "LIKELY", f"web: {(w.get('evidence') or '')[:80]}"
+        fp = fingerprint(tr.get("design_text", ""))          # 2c: design tells, no chemistry
+        ev["fingerprint"] = fp
+        if fp["score"] >= FP_THRESHOLD and ev["covalency"] in ("—", "POSSIBLE"):
+            ev["covalency"] = "FINGERPRINT"
+            ev["why"] = f"design fingerprint (score {fp['score']}: {', '.join(fp['signals'])})"
+        ev.pop("design_text", None)                          # drop the bulky text from the event
         events.append(ev)
 
-    rank = {"LIKELY": 0, "POSSIBLE": 1, "—": 2}
+    rank = {"LIKELY": 0, "FINGERPRINT": 1, "POSSIBLE": 2, "—": 3}
     events.sort(key=lambda e: rank.get(e["covalency"], 3))
     for e in events:
         if e["covalency"] != "—":
@@ -184,6 +233,9 @@ if __name__ == "__main__":
         assert cross_link({"sponsor": "NeoPhore Ltd"}, ["EGFR"], cov)["level"] == "LIKELY"
         assert cross_link({"sponsor": "Pfizer Inc"}, ["EGFR"], cov)["level"] == "POSSIBLE"
         assert cross_link({"sponsor": "X"}, ["KRAS"], cov)["level"] == "—"
+        # 2c fingerprint: a covalent-design protocol scores high; a generic dose-escalation protocol doesn't
+        assert fingerprint("Target occupancy in PBMC at 24/48h; covalent adduct by mass spectrometry")["score"] >= FP_THRESHOLD
+        assert fingerprint("Maximum tolerated dose; pharmacokinetics; tumor response by RECIST")["score"] < FP_THRESHOLD
         print("clinical_radar self-check OK")
     else:
         run(web="--web" in sys.argv)

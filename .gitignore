@@ -27,3 +27,5 @@ phase0/
 # weekly run snapshots + generated reports
 runs/
 covalent_report_*.md
+.clinical_seen.json
+clinical_events.json

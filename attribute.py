@@ -19,7 +19,9 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 HERE = Path(__file__).parent
-B = "https://ftp.ebi.ac.uk/pub/databases/chembl/SureChEMBL/bulk_data/2026-06-15"
+# Snapshot is pinned in snapshot.txt, advanced by refresh.py (not hardcoded) — fixes the static-pool problem.
+_SNAP = (HERE / "snapshot.txt").read_text().strip() if (HERE / "snapshot.txt").exists() else "2026-06-15"
+B = f"https://ftp.ebi.ac.uk/pub/databases/chembl/SureChEMBL/bulk_data/{_SNAP}"
 ENT, LOC, HGNC = "/tmp/biomedical_entities.parquet", "/tmp/biomedical_locations.parquet", "/tmp/hgnc.txt"
 
 # --- attribution QUALITY grade -----------------------------------------------------------------------

@@ -15,6 +15,7 @@ import sys
 import urllib.parse
 import urllib.request
 from collections import defaultdict
+from datetime import date, timedelta
 from pathlib import Path
 
 import backtest as bt
@@ -39,34 +40,47 @@ _NONSM = re.compile(r"\b\d{2,3}Lu\b|\b\d{2,3}Ga\b|\b\d{3}Ac\b|177Lu|68Ga|225Ac|\
                     r"cell therapy|\bTCR\b|CRISPR|peptide", re.I)
 _PROBE = re.compile(r"bioavailab|drug.drug interaction|\bDDI\b|mass balance|food effect|midazolam|cocktail",
                     re.I)
+# targets/mutations that are covalent BY DEFINITION (the warhead is class-required) -> flag covalency from the
+# TARGET, bypassing the brand-new-code-name problem (HS-10541, KQB368 — web can't confirm an undisclosed warhead)
+_COVALENT_CLASS = re.compile(r"\bG12C\b|\bG12S\b|exon\s?20\s?ins", re.I)
 
 
 def _smallmol_program(tr, targets):
-    """Keep only covalently-tractable targets of a small-molecule (non-radioligand/CAR-T/antibody/probe) trial."""
-    dt = " ".join(tr["drugs"] + [tr["title"]])
-    if _NONSM.search(dt) or _PROBE.search(dt):
+    """Keep covalently-tractable targets of a SMALL-MOLECULE trial. Modality is judged PER DRUG (a small
+    molecule + antibody combo is kept on its small-molecule arm), not nuked because 'antibody' is in the title."""
+    if _PROBE.search(" ".join(tr["drugs"] + [tr["title"]])):
+        return []
+    if not tr["drugs"] or all(_NONSM.search(d or "") for d in tr["drugs"]):   # every drug is a non-SM modality
         return []
     return [t for t in targets if covalently_tractable(t)]
 
 
-def new_trials(since=None, page_size=200):
-    """Newest-first industry Phase-1/Early-Phase-1 interventional trials (stop at `since` if given)."""
-    q = {"filter.advanced": "AREA[Phase](PHASE1 OR EARLY_PHASE1) AND AREA[StudyType]INTERVENTIONAL "
-                            "AND AREA[LeadSponsorClass]INDUSTRY",
-         "sort": "StudyFirstPostDate:desc", "pageSize": page_size, "format": "json"}
-    out = []
-    for s in bt._get(f"{CTGOV}?{urllib.parse.urlencode(q)}").get("studies", []):
-        ps = s.get("protocolSection", {}); idm = ps.get("identificationModule", {})
-        posted = ps.get("statusModule", {}).get("studyFirstPostDateStruct", {}).get("date", "")
-        if since and posted and posted < since:
+def new_trials(since=None, max_pages=12):
+    """ALL Phase-1/Early-Phase-1 industry interventional trials first-posted since `since` (default 90 days),
+    PAGINATED — not just the most-recent 200 (that window missed the late-May covalent G12C/BTK starts)."""
+    since = since or (date.today() - timedelta(days=90)).isoformat()
+    base = ("AREA[Phase](PHASE1 OR EARLY_PHASE1) AND AREA[StudyType]INTERVENTIONAL AND "
+            f"AREA[LeadSponsorClass]INDUSTRY AND AREA[StudyFirstPostDate]RANGE[{since},MAX]")
+    out, token = [], None
+    for _ in range(max_pages):
+        q = {"filter.advanced": base, "pageSize": 100, "format": "json"}
+        if token:
+            q["pageToken"] = token
+        r = bt._get(f"{CTGOV}?{urllib.parse.urlencode(q)}")
+        for s in r.get("studies", []):
+            ps = s.get("protocolSection", {}); idm = ps.get("identificationModule", {})
+            out.append({"nct": idm.get("nctId"),
+                        "posted": ps.get("statusModule", {}).get("studyFirstPostDateStruct", {}).get("date", ""),
+                        "sponsor": ps.get("sponsorCollaboratorsModule", {}).get("leadSponsor", {}).get("name", ""),
+                        "title": idm.get("briefTitle", ""),
+                        "conditions": " ".join(ps.get("conditionsModule", {}).get("conditions", [])),
+                        "drugs": [i.get("name") for i in ps.get("armsInterventionsModule", {}).get("interventions", [])
+                                  if i.get("type") == "DRUG" and "placebo" not in (i.get("name") or "").lower()],
+                        "summary": (ps.get("descriptionModule", {}).get("briefSummary", "") or "")[:800],
+                        "design_text": _design_text(ps)})
+        token = r.get("nextPageToken")
+        if not token:
             break
-        out.append({"nct": idm.get("nctId"), "posted": posted,
-                    "sponsor": ps.get("sponsorCollaboratorsModule", {}).get("leadSponsor", {}).get("name", ""),
-                    "title": idm.get("briefTitle", ""),
-                    "drugs": [i.get("name") for i in ps.get("armsInterventionsModule", {}).get("interventions", [])
-                              if i.get("type") == "DRUG" and "placebo" not in (i.get("name") or "").lower()],
-                    "summary": (ps.get("descriptionModule", {}).get("briefSummary", "") or "")[:800],
-                    "design_text": _design_text(ps)})
     return out
 
 
@@ -155,7 +169,7 @@ def gene_index():
 
 def targets_in(trial, idx, id2sym):
     """Canonical gene symbols named in the trial (uppercase tokens resolving to a unique HGNC gene)."""
-    text = " ".join([trial["title"]] + trial["drugs"] + [trial["summary"]])
+    text = " ".join([trial["title"], trial.get("conditions", "")] + trial["drugs"] + [trial["summary"]])
     hits = set()
     for m in re.finditer(r"\b[A-Z][A-Z0-9]{2,7}\b", text):
         tok = m.group(0)
@@ -226,6 +240,9 @@ def run(web=False, pubs=False):
             continue                         # no covalently-tractable small-molecule target -> 2a/2b can't classify
         xl = cross_link(tr, targets, covidx)
         ev = {**tr, "targets": targets, "covalency": xl["level"], "why": xl["why"], "target": xl["target"]}
+        if _COVALENT_CLASS.search(" ".join([tr["title"], tr.get("conditions", "")] + tr["drugs"])):
+            ev["covalency"] = "LIKELY"                       # covalent-by-class (e.g. all KRAS G12C inhibitors are covalent)
+            ev["why"] = "covalent-by-class (G12C/G12S/exon20ins — covalent-definitional mechanism)"
         fp = fingerprint(tr.get("design_text", ""))          # 2c-registry: design tells (cheap; ~8% recall)
         ev["fingerprint"] = fp
         if fp["score"] >= FP_THRESHOLD and ev["covalency"] in ("—", "POSSIBLE"):
@@ -265,9 +282,11 @@ if __name__ == "__main__":
         tr = {"title": "A Phase 1 Study of an EGFR Inhibitor in NSCLC", "drugs": ["ABC-123"],
               "summary": "covalently targets BTK; AML and NSCLC excluded"}
         assert targets_in(tr, idx, id2) == ["BTK", "EGFR"], targets_in(tr, idx, id2)   # NSCLC/AML/Phase filtered
-        # modality filter: a radioligand/antibody trial is dropped; a small-molecule inhibitor kept
+        # modality filter: pure radioligand/antibody dropped; small-molecule kept; SM+antibody COMBO kept
         assert _smallmol_program({"drugs": ["177Lu-PSMA-617"], "title": "PSMA radioligand"}, ["EGFR"]) == []
         assert _smallmol_program({"drugs": ["ABC-123"], "title": "EGFR inhibitor"}, ["EGFR"]) == ["EGFR"]
+        assert _smallmol_program({"drugs": ["orelabrutinib", "anti-CD20 antibody"], "title": "BTK + antibody"}, ["BTK"]) == ["BTK"]
+        assert _COVALENT_CLASS.search("Study of XYZ in KRAS G12C Mutation Advanced Solid Tumors")   # covalent-by-class
         cov = {"EGFR": {"NEOPHORE"}, "BTK": {"MERCK"}}
         assert cross_link({"sponsor": "NeoPhore Ltd"}, ["EGFR"], cov)["level"] == "LIKELY"
         assert cross_link({"sponsor": "Pfizer Inc"}, ["EGFR"], cov)["level"] == "POSSIBLE"

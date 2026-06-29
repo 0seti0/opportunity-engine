@@ -18,7 +18,7 @@ from whos_moving import firm
 
 HERE = Path(__file__).parent
 SEEN = HERE / ".unify_seen.json"
-COVALENT = ("LIKELY", "FINGERPRINT", "POSSIBLE")     # clinical covalency tiers worth logging
+COVALENT = ("LIKELY", "FINGERPRINT")                 # confident clinical covalency only (POSSIBLE = noisy target-context)
 
 
 def _patent_moves():

@@ -112,6 +112,37 @@ def fingerprint(design_text):
     return {"score": sum(hits.values()), "signals": sorted(hits)}
 
 
+# full-text-2c — covalency from the trial's PUBLICATIONS (Europe PMC abstracts), since the audit showed the
+# tells live in pubs not the registry: this lifts 2c recall 8% -> ~58% at ~88% precision (24-trial audit).
+# Negation-guarded so background/comparator mentions ("non-covalent", "previous covalent BTKi") don't fire.
+EUPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest"
+_PUB_NEG = re.compile(r"non-?covalent|\breversible\b", re.I)
+_PUB_STRONG = re.compile(r"covalent(?:ly)? (?:bind|bond|bound|adduct|modif)|\bCys(?:teine)?[\s-]?\d{2,4}\b|"
+                         r"\bwarhead\b|acrylamide|Michael acceptor|butynamide|fluoroacrylamide|cyanoacryl", re.I)
+_PUB_WORD = re.compile(r"irreversibl\w+|(?<!non[- ])(?<!non)covalent(?:ly)?\b", re.I)
+
+
+def _pub_verdict(text):
+    """A hard covalent MECHANISM phrase fires regardless; a bare 'irreversible/covalent' word fires only if
+    the text doesn't also describe the drug as non-covalent/reversible (kills comparator false positives)."""
+    if _PUB_STRONG.search(text):
+        return True
+    return bool(_PUB_WORD.search(text) and not _PUB_NEG.search(text))
+
+
+def pub_covalent(nct):
+    """full-text-2c: is the trial's drug covalent per its linked PUBLICATIONS? Deterministic, no LLM."""
+    refs = bt._get(f"{CTGOV}/{nct}?format=json").get("protocolSection", {}).get("referencesModule", {}).get("references", [])
+    text = ""
+    for pmid in [r["pmid"] for r in refs if r.get("pmid")][:5]:
+        res = bt._get(f"{EUPMC}/search?query=EXT_ID:{pmid}%20AND%20SRC:MED&resultType=core&format=json"
+                      ).get("resultList", {}).get("result", [])
+        if res:
+            text += " " + res[0].get("title", "") + " " + (res[0].get("abstractText", "") or "")
+    m = _PUB_STRONG.search(text) or _PUB_WORD.search(text)
+    return {"covalent": _pub_verdict(text), "evidence": (m.group(0)[:40] if m else "")}
+
+
 def gene_index():
     """HGNC index (download-if-missing) -> (Index, id->official-symbol)."""
     p = Path("/tmp/hgnc.tsv")
@@ -177,7 +208,7 @@ def web_covalent(drug):
         return {}
 
 
-def run(web=False):
+def run(web=False, pubs=False):
     seen = set(json.loads(SEEN.read_text())) if SEEN.exists() else set()
     idx, id2sym = gene_index()
     covidx = covalent_index()
@@ -191,15 +222,19 @@ def run(web=False):
             continue                         # no covalently-tractable small-molecule target -> 2a/2b can't classify
         xl = cross_link(tr, targets, covidx)
         ev = {**tr, "targets": targets, "covalency": xl["level"], "why": xl["why"], "target": xl["target"]}
-        if web and xl["level"] != "LIKELY" and tr["drugs"]:
-            w = web_covalent(tr["drugs"][0])
-            if w.get("covalent") is True:
-                ev["covalency"], ev["why"] = "LIKELY", f"web: {(w.get('evidence') or '')[:80]}"
-        fp = fingerprint(tr.get("design_text", ""))          # 2c: design tells, no chemistry
+        fp = fingerprint(tr.get("design_text", ""))          # 2c-registry: design tells (cheap; ~8% recall)
         ev["fingerprint"] = fp
         if fp["score"] >= FP_THRESHOLD and ev["covalency"] in ("—", "POSSIBLE"):
             ev["covalency"] = "FINGERPRINT"
             ev["why"] = f"design fingerprint (score {fp['score']}: {', '.join(fp['signals'])})"
+        if pubs and ev["covalency"] in ("—", "POSSIBLE", "FINGERPRINT"):   # full-text-2c (deterministic, ~58% recall)
+            pc = pub_covalent(tr["nct"])
+            if pc["covalent"]:
+                ev["covalency"], ev["why"] = "LIKELY", f"pubs: covalent ('{pc['evidence']}')"
+        if web and ev["covalency"] != "LIKELY" and tr["drugs"]:           # 2b web (LLM; most accurate, context-aware)
+            w = web_covalent(tr["drugs"][0])
+            if w.get("covalent") is True:
+                ev["covalency"], ev["why"] = "LIKELY", f"web: {(w.get('evidence') or '')[:80]}"
         ev.pop("design_text", None)                          # drop the bulky text from the event
         events.append(ev)
 
@@ -236,6 +271,10 @@ if __name__ == "__main__":
         # 2c fingerprint: a covalent-design protocol scores high; a generic dose-escalation protocol doesn't
         assert fingerprint("Target occupancy in PBMC at 24/48h; covalent adduct by mass spectrometry")["score"] >= FP_THRESHOLD
         assert fingerprint("Maximum tolerated dose; pharmacokinetics; tumor response by RECIST")["score"] < FP_THRESHOLD
+        # full-text-2c verdict: mechanism fires; bare word fires unless negated by comparator/non-covalent
+        assert _pub_verdict("osimertinib is an irreversible EGFR-TKI")
+        assert _pub_verdict("the inhibitor covalently binds Cys797 of EGFR")
+        assert not _pub_verdict("pirtobrutinib is a non-covalent BTK inhibitor, unlike covalent BTK inhibitors")
         print("clinical_radar self-check OK")
     else:
-        run(web="--web" in sys.argv)
+        run(web="--web" in sys.argv, pubs="--pubs" in sys.argv)

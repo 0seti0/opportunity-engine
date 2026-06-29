@@ -9,7 +9,7 @@ grail — an early-dated covalent move WITH the chemistry once the patent lands.
 import datetime
 import json
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 from attribute import trusted
@@ -40,13 +40,27 @@ def _clinical_moves():
                    "chemistry": [], "stage": ev.get("covalency")}
 
 
+# mega-crowded covalent franchises — always noise for a fast-follower, regardless of our census's (sparse,
+# Western-skewed) filer count. KRAS shows only 2 filers in our census but is the most saturated covalent lane.
+SATURATED = {"KRAS", "EGFR", "BTK", "ERBB2", "KRASG12C"}
+
+
+def _lane(target, n_filers):
+    """Crowding tier — the Axiom-relevance axis. A move on a SATURATED franchise is noise; OPEN/EMERGING is the
+    white space worth fast-following. Uses a curated denylist (reliable) OR the census filer count (data-driven)."""
+    if target in SATURATED or n_filers > 10:
+        return "CROWDED"
+    return "OPEN" if n_filers <= 1 else "EMERGING" if n_filers <= 3 else "CONTESTED"
+
+
 def _unify(moves):
-    """Combined [move,...] -> one entry per (company, target), earliest-dated, cross-link flagged."""
+    """Combined [move,...] -> one entry per (company, target), earliest-dated, cross-link + crowding flagged."""
     by = defaultdict(lambda: {"signals": [], "chemistry": []})
     for m in moves:
         if m.get("company") and m.get("target"):
             by[(m["company"], m["target"])]["signals"].append(m)
             by[(m["company"], m["target"])]["chemistry"] += m.get("chemistry", [])
+    filers = Counter(t for (_, t) in by)                      # distinct companies with a covalent move on each target
     out = []
     for (company, target), v in by.items():
         sigs = sorted(v["signals"], key=lambda s: s["date"] or "9999")
@@ -55,6 +69,7 @@ def _unify(moves):
                     "earliest": sigs[0]["date"], "latest": sigs[-1]["date"], "earliest_type": sigs[0]["type"],
                     "cross_linked": len(types) > 1, "has_chemistry": bool(v["chemistry"]),
                     "warheads": sorted(set(v["chemistry"])),
+                    "target_filers": filers[target], "lane": _lane(target, filers[target]),
                     "n_patent": sum(s["type"] == "patent" for s in sigs),
                     "n_clinical": sum(s["type"] == "clinical" for s in sigs),
                     "signals": [{"type": s["type"], "id": s["id"], "date": s["date"]} for s in sigs]})
@@ -73,29 +88,31 @@ def unify():
 def run():
     log = unify()
     today = datetime.date.today().isoformat()
-    xlinked = [e for e in log if e["cross_linked"]]
-    clinical = [e for e in log if e["n_clinical"] and not e["cross_linked"]]
     seen = {tuple(x) for x in json.loads(SEEN.read_text())} if SEEN.exists() else set()
-    new = [e for e in log if (e["company"], e["target"]) not in seen]
+    new = {(e["company"], e["target"]) for e in log} - seen
+    # Axiom-relevance: lead with WHITE SPACE (open/emerging targets); bury the saturated franchises.
+    white = sorted([e for e in log if e["lane"] in ("OPEN", "EMERGING")], key=lambda e: e["latest"], reverse=True)
+    contested = [e for e in log if e["lane"] == "CONTESTED"]
+    crowded = sorted({e["target"] for e in log if e["lane"] == "CROWDED"})
+    clinical = [e for e in log if e["n_clinical"]]
 
-    print(f"=== covalent-move log {today}: {len(log)} company×target moves "
-          f"({len(xlinked)} cross-linked · {len(clinical)} clinical-only) ===")
-    print(f"\n⚡ CROSS-LINKED — clinical + patent on the same company×target (early signal WITH chemistry): {len(xlinked)}")
-    for e in xlinked[:15]:
-        print(f"   {e['company'][:22]:22} {e['target']:8} earliest {e['earliest']} ({e['earliest_type']}) "
-              f"· {e['n_patent']}pat/{e['n_clinical']}clin · warheads={e['warheads']}")
-    print(f"\n🧪 CLINICAL-ONLY — early warning, no patent yet (watch for the filing): {len(clinical)}")
-    for e in clinical[:15]:
-        ncts = [s["id"] for s in e["signals"] if s["type"] == "clinical"][:2]
-        print(f"   {e['company'][:22]:22} {e['target']:8} {e['earliest']} {ncts}")
-    print(f"\n🆕 NEW vs last run: {len(new)}")
-    for e in new[:20]:
-        print(f"   {e['company'][:22]:22} {e['target']:8} {e['earliest']} ({e['earliest_type']}) "
-              f"{'⚗ ' + ','.join(e['warheads']) if e['has_chemistry'] else ''}")
+    print(f"=== covalent-move log {today}: {len(log)} moves ===")
+    print(f"\n🎯 WHITE SPACE — covalent moves on OPEN/EMERGING targets (the fast-follow gold): {len(white)}")
+    for e in white[:22]:
+        tag = "🆕 " if (e["company"], e["target"]) in new else "   "
+        print(f"  {tag}{e['latest']}  {e['company'][:22]:22} {e['target']:9} [{e['lane']}/{e['target_filers']}] "
+              f"{('clin ' + e['signals'][-1]['id']) if e['n_clinical'] else ','.join(e['warheads'])}")
+    print(f"\n📊 CONTESTED (4–10 filers, watch): {len(contested)} targets · "
+          f"CROWDED/SATURATED (ignore — KRAS/EGFR/BTK class): {len(crowded)} → {crowded[:14]}")
+    print(f"\n🧪 CLINICAL covalent signals — tagged by lane (crowded = noise):")
+    for e in clinical:
+        ncts = [s["id"] for s in e["signals"] if s["type"] == "clinical"][:1]
+        print(f"   {e['company'][:22]:22} {e['target']:9} [{e['lane']}]  {ncts}  "
+              f"{'<- saturated, low value' if e['lane'] == 'CROWDED' else '<- ACTIONABLE'}")
 
     SEEN.write_text(json.dumps(sorted([[e["company"], e["target"]] for e in log])))
     json.dump(log, open(HERE / "covalent_move_log.json", "w"), indent=1)
-    print(f"\nsaved covalent_move_log.json ({len(log)} moves)")
+    print(f"\nsaved covalent_move_log.json ({len(log)} moves · {len(white)} white-space)")
     return log
 
 

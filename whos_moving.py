@@ -21,20 +21,27 @@ LEGAL = {"INC", "LLC", "LTD", "LIMITED", "CO", "CORP", "CORPORATION", "COMPANY",
          "BV", "NV", "KG", "KGAA", "PLC", "LP", "LLP", "PTE", "PTY", "SRL", "SPA", "OY", "AB", "AS", "ULC"}
 CN = {"诺华": "NOVARTIS", "吉利德": "GILEAD", "默克": "MERCK", "勃林格殷格翰": "BOEHRINGER INGELHEIM",
       "罗氏": "ROCHE", "辉瑞": "PFIZER", "阿斯利康": "ASTRAZENECA", "基因泰克": "GENENTECH",
-      "缬图": "VENTUS", "米拉蒂": "MIRATI", "缆图": "BLUEPRINT"}
+      "缬图": "VENTUS", "米拉蒂": "MIRATI", "缆图": "BLUEPRINT", "锐新": "REVOLUTION"}
+# collapse a company's many legal-entity spellings to one canonical filer (a keyword -> the canonical name)
+CANON = {"GILEAD": "GILEAD SCIENCES", "NOVARTIS": "NOVARTIS", "REVOLUTION": "REVOLUTION MEDICINES",
+         "BOEHRINGER": "BOEHRINGER INGELHEIM", "ASTRAZENECA": "ASTRAZENECA", "GENENTECH": "GENENTECH",
+         "ROCHE": "ROCHE", "PFIZER": "PFIZER", "AMGEN": "AMGEN", "JANSSEN": "JANSSEN", "BEIGENE": "BEIGENE",
+         "TAKEDA": "TAKEDA", "LILLY": "ELI LILLY", "BLUEPRINT": "BLUEPRINT MEDICINES", "INCYTE": "INCYTE",
+         "EISAI": "EISAI", "ABBVIE": "ABBVIE", "SANOFI": "SANOFI", "VERTEX": "VERTEX", "BAYER": "BAYER",
+         "MERCK": "MERCK", "BRISTOL": "BRISTOL MYERS SQUIBB", "MIRATI": "MIRATI", "VENTUS": "VENTUS"}
 
 
-def firm(a):                                       # normalize assignee/sponsor (incl. common CN pharma names)
+def firm(a):                                       # normalize assignee/sponsor to ONE canonical filer
     a = a or ""
     for cn, en in CN.items():
-        if cn in a:
-            return en
-    a = re.sub(r"\(.*?\)", " ", a.upper())
-    a = re.sub(r"[.,/]", " ", a)
+        a = a.replace(cn, en)                       # CN pharma name -> EN, inline
+    parts = [p for p in re.sub(r"[^\x00-\x7F]+", " ", a).split(";") if p.strip()]   # primary assignee, ASCII only
+    a = re.sub(r"\(.*?\)|[.,/]", " ", (parts[0] if parts else "").upper())
     toks = a.split()
-    while toks and toks[-1] in LEGAL:
+    while toks and toks[-1] in LEGAL:               # drop trailing INC/LLC/AG/...
         toks.pop()
-    return " ".join(toks).strip()
+    name = " ".join(toks).strip()
+    return next((v for k, v in CANON.items() if k in name), name)
 
 
 def clinical_programs(target):                     # ClinicalTrials.gov industry programs: sponsor, drug, phase

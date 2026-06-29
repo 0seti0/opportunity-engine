@@ -13,6 +13,7 @@ from collections import defaultdict
 from pathlib import Path
 
 from attribute import trusted
+from tractable import covalently_tractable
 from whos_moving import firm
 
 HERE = Path(__file__).parent
@@ -25,7 +26,7 @@ def _patent_moves():
     feed = {e[0]: e for e in json.load(open(HERE / "covalent_warhead_feed_clean.json"))}
     for pn, d in tg.items():
         e = feed.get(pn)
-        if d.get("sym") and trusted(d) and e:
+        if d.get("sym") and trusted(d) and covalently_tractable(d["sym"]) and e:    # drop antibody-class targets
             yield {"company": firm(e[2] or ""), "target": d["sym"], "date": e[1] or "", "type": "patent",
                    "id": pn, "chemistry": e[5] if len(e) > 5 else [], "stage": "patent"}
 
@@ -33,7 +34,7 @@ def _patent_moves():
 def _clinical_moves():
     p = HERE / "clinical_events.json"
     for ev in (json.load(open(p)) if p.exists() else []):
-        if ev.get("covalency") in COVALENT:
+        if ev.get("covalency") in COVALENT and covalently_tractable(ev.get("target", "")):
             yield {"company": firm(ev.get("sponsor", "")), "target": ev.get("target", ""),
                    "date": ev.get("posted", ""), "type": "clinical", "id": ev.get("nct", ""),
                    "chemistry": [], "stage": ev.get("covalency")}
@@ -51,7 +52,7 @@ def _unify(moves):
         sigs = sorted(v["signals"], key=lambda s: s["date"] or "9999")
         types = {s["type"] for s in sigs}
         out.append({"company": company, "target": target,
-                    "earliest": sigs[0]["date"], "earliest_type": sigs[0]["type"],
+                    "earliest": sigs[0]["date"], "latest": sigs[-1]["date"], "earliest_type": sigs[0]["type"],
                     "cross_linked": len(types) > 1, "has_chemistry": bool(v["chemistry"]),
                     "warheads": sorted(set(v["chemistry"])),
                     "n_patent": sum(s["type"] == "patent" for s in sigs),

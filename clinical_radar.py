@@ -157,9 +157,13 @@ def targets_in(trial, idx, id2sym):
     """Canonical gene symbols named in the trial (uppercase tokens resolving to a unique HGNC gene)."""
     text = " ".join([trial["title"]] + trial["drugs"] + [trial["summary"]])
     hits = set()
-    for tok in set(re.findall(r"\b[A-Z][A-Z0-9]{2,7}\b", text)):
+    for m in re.finditer(r"\b[A-Z][A-Z0-9]{2,7}\b", text):
+        tok = m.group(0)
         if tok in CLIN_STOP:
             continue
+        if re.match(r"\s*[- ]\s*(?:neg|pos|low|high|mut|wild|wt\b|amplif|alter|defic)",
+                    text[m.end():m.end() + 12], re.I):
+            continue                         # biomarker STATUS ("HER2-negative") — a selection criterion, not the target
         r = resolve(tok, idx)
         if r.hgnc_id:                        # RESOLVED (unique); AMBIGUOUS collisions auto-skipped
             hits.add(id2sym[r.hgnc_id])
@@ -215,8 +219,8 @@ def run(web=False, pubs=False):
     trials = new_trials()
     events = []
     for tr in trials:
-        if tr["nct"] in seen:
-            continue
+        if tr["nct"] in seen or not tr["drugs"]:
+            continue                         # seen, or a diagnostic/imaging/device trial (no DRUG intervention)
         targets = _smallmol_program(tr, targets_in(tr, idx, id2sym))
         if not targets:
             continue                         # no covalently-tractable small-molecule target -> 2a/2b can't classify

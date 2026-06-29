@@ -120,42 +120,93 @@ def _gpatent(pn):
     return f"https://patents.google.com/patent/{pn.replace('-', '')}"
 
 
-def report(n=12, leads=True):
-    """Per white-space target, a linked dossier wiring the EXISTING pieces: who's-moving (linked patents/trials),
-    a deterministic title-confirms-target check, the lead covalent SMILES (feed_build), and CysDB ligandability."""
+_INTEL_CACHE = HERE / ".covalent_intel.json"
+
+
+def covalent_competitive(target):
+    """Per-target covalent prior-art + resistance intelligence (claude -p web research, cached). The dimension
+    that separates a real covalent opportunity from a TRAP — e.g. WRN, where covalent Cys727 is already clinical
+    (VVD-214) with a mapped on-target resistance liability and the field is fleeing to non-covalent. No API key."""
+    cache = json.loads(_INTEL_CACHE.read_text()) if _INTEL_CACHE.exists() else {}
+    if target in cache:
+        return cache[target]
+    import subprocess
+
+    from llm_claude_code import _extract_json
+    prompt = (
+        f"Covalent drug-discovery competitive intelligence on the target {target}. Search the web and be specific.\n"
+        f"1. Is there already a COVALENT (irreversible-warhead) small-molecule inhibitor of {target}? Name the most "
+        f"advanced (compound, company, clinical stage / NCT).\n"
+        f"2. Has on-target or clinical RESISTANCE to a covalent {target} inhibitor been reported (e.g. the warhead "
+        f"cysteine mutating)?\n"
+        f"3. Is the {target} field going covalent or non-covalent?\n"
+        f'Return ONLY JSON: {{"existing_covalent": true, "most_advanced": "", "resistance_reported": false, '
+        f'"resistance": "", "field": "covalent|non-covalent|mixed|none", "verdict": "OPEN|TAKEN|TRAP", '
+        f'"evidence": ""}}. verdict: OPEN = no covalent program exists; TAKEN = a covalent inhibitor is clinical; '
+        f"TRAP = covalent is clinical AND (resistance reported OR the field is moving non-covalent to escape it).")
+    try:
+        r = subprocess.run(["claude", "-p", prompt, "--output-format", "json"],
+                           capture_output=True, text=True, timeout=400)
+        o = _extract_json(json.loads(r.stdout).get("result", ""))
+        if isinstance(o, dict) and o.get("verdict"):
+            cache[target] = o
+            _INTEL_CACHE.write_text(json.dumps(cache, indent=1))
+            return o
+    except Exception:
+        pass
+    return {"verdict": "?", "evidence": "intel unavailable"}
+
+
+def report(n=12, leads=True, intel=True):
+    """Per white-space target dossier wiring the EXISTING pieces: who's-moving (linked) · title-confirms-target ·
+    lead chemistry (feed_build) · CysDB feasibility · the covalent COMPETITIVE/resistance verdict (the trap filter).
+    Strong candidates (title-confirmed + OPEN) sort to the top; TRAPs (already-clinical + resistance) sink."""
     import feed_build
     from cysdb import ligandability
     log = unify()
     feed = {e[0]: e for e in json.load(open(HERE / "covalent_warhead_feed_clean.json"))}
     tg = json.load(open(HERE / "patent_targets.json"))
     cys = ligandability()
-    white = sorted([e for e in log if e["lane"] in ("OPEN", "EMERGING")], key=lambda e: e["latest"], reverse=True)[:n]
 
-    out = [f"# Covalent white-space dossier — {datetime.date.today().isoformat()}  ({len(white)} targets)\n"]
-    for e in white:
+    rows = []
+    for e in sorted([x for x in log if x["lane"] in ("OPEN", "EMERGING")], key=lambda x: x["latest"], reverse=True):
         pats = sorted([s for s in e["signals"] if s["type"] == "patent"], key=lambda x: x["date"], reverse=True)
         lp = pats[0] if pats else None
         title = (feed.get(lp["id"], [None] * 4)[3] if lp else "") or ""
         common = ((tg.get(lp["id"]) or {}).get("common") if lp else None) or e["target"]
         names = e["target"].upper() in title.upper() or common.upper() in title.upper()
-        cy = cys.get(e["target"])
-        feas = (f"✅ ligandable cysteine ({cy['n_lig_cys']} in CysDB chemoproteomics)" if cy and cy.get("ligandable")
-                else "⚠️ profiled in CysDB but NO ligandable cysteine found" if cy
-                else "❔ not in CysDB — covalent feasibility unverified")
-        lead = feed_build.lead_smiles(lp["id"]) if (leads and lp) else None
+        ci = covalent_competitive(e["target"]) if (intel and names) else None   # only research real attributions
+        rows.append({"e": e, "lp": lp, "title": title, "names": names, "ci": ci})
+        if len(rows) >= n:
+            break
+    vrank = {"OPEN": 0, None: 1, "?": 1, "TAKEN": 2, "TRAP": 3}
+    rows.sort(key=lambda r: (not r["names"], vrank.get((r["ci"] or {}).get("verdict"), 1)))   # stable over latest-desc
 
-        out.append(f"## {e['target']}  —  {e['lane']} · {e['target_filers']} covalent filer(s)")
+    out = [f"# Covalent white-space dossier — {datetime.date.today().isoformat()}  ({len(rows)} targets)\n"]
+    for r in rows:
+        e, lp, title, names, ci = r["e"], r["lp"], r["title"], r["names"], (r["ci"] or {})
+        cy = cys.get(e["target"])
+        v = ci.get("verdict")
+        flag = ("❌ mis-attributed" if not names else
+                {"OPEN": "✅ OPEN", "TAKEN": "⚠️ covalent taken", "TRAP": "⛔ TRAP — deprioritize"}.get(v, ""))
+        lead = feed_build.lead_smiles(lp["id"]) if (leads and lp) else None
+        feas = (f"✅ ligandable cysteine ({cy['n_lig_cys']} in CysDB)" if cy and cy.get("ligandable")
+                else "⚠️ profiled, no ligandable cysteine" if cy else "❔ not in CysDB")
+
+        out.append(f"## {e['target']}  —  {e['lane']} · {e['target_filers']} filer(s)   {flag}")
         out.append(f"- **Who's moving:** {e['company']}"
-                   + (f" — [{lp['id']}]({_gpatent(lp['id'])}) ({lp['date']}) · _{title[:64]}_" if lp else ""))
+                   + (f" — [{lp['id']}]({_gpatent(lp['id'])}) ({lp['date']}) · _{title[:60]}_" if lp else ""))
         for s in (s for s in e["signals"] if s["type"] == "clinical"):
             out.append(f"- **Clinical:** [{s['id']}](https://clinicaltrials.gov/study/{s['id']}) ({s['date']})")
-        out.append(f"- **Title confirms target:** "
-                   + ("✅ yes" if names else f"❌ NO — title doesn't name {e['target']} (likely mis-attribution — verify)"))
+        out.append(f"- **Title confirms target:** {'✅ yes' if names else '❌ NO — verify (likely mis-attribution)'}")
         out.append(f"- **Chemistry:** warhead {e['warheads']}"
                    + (f" · lead `{lead}`" if lead
                       else " · lead: US/CN patent (no OPS full-text)" if lp and lp["id"][:2] in ("US", "CN")
                       else " · lead: not resolved"))
         out.append(f"- **Covalent feasibility (CysDB):** {feas}")
+        if ci:
+            out.append(f"- **Covalent competition:** **{v}** — {ci.get('most_advanced', '?')[:80]} · field {ci.get('field', '?')}"
+                       + (f" · ⚠️ resistance: {ci.get('resistance', '')[:70]}" if ci.get("resistance_reported") else ""))
         out.append(f"- **Verify:** [gene](https://www.genenames.org/data/gene-symbol-report/#!/symbol/{e['target']}) · "
                    f"[trials](https://clinicaltrials.gov/search?term={e['target']}) · "
                    f"[papers](https://europepmc.org/search?query={e['target']})\n")

@@ -59,11 +59,12 @@ def clinical_programs(target):                     # ClinicalTrials.gov industry
 
 
 def covalent_filers(target):                       # who's filing COVALENT-warhead patents (one slice only)
+    from attribute import trusted                   # post-audit grade (title/claims composition, noise removed)
     tg = json.load(open(HERE / "patent_targets.json"))
     feed = {e[0]: e for e in json.load(open(HERE / "covalent_warhead_feed_clean.json"))}
     firms = defaultdict(lambda: {"latest": "", "n": 0})
     for pn, d in tg.items():
-        if d.get("sym") == target and d.get("conf") in ("title", "claims") and pn in feed:
+        if d.get("sym") == target and trusted(d) and pn in feed:
             e = feed[pn]
             f = firm(e[2].split(';')[0])
             firms[f]["n"] += 1

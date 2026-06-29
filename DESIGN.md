@@ -135,7 +135,16 @@ Implemented and validated against the **live OPS API**:
   (decimer-segmentation, the proper splitter, is arm64-blocked — see limits). Validated: recovered the real
   WO2026115265 acrylamide from a page image end-to-end. `feed_build.ocsr_rescue(pn)` wires the 2→3 handoff.
 
-Knobs in one place: `feed_build.MIN_MENTIONS / IPC`, `ocsr._crop_structures` thresholds, `patent_radar.WARHEAD_SMARTS`.
+- **`attribute.py`** — bulk patent→target census from SureChEMBL text-mine. A reliability audit (30 patents,
+  adversarially verified) measured raw attribution at **title 80% / claims 50% / body 40%**, so attribution is
+  now **graded** (`attribute.grade` → `trusted | candidate | degrader | excluded`): drops combination/resistance
+  patents (partner-target ≠ invention target), non-human/viral targets, antibody/material/process patents, and
+  buckets degraders separately. Consumers (`cysdb`, `whos_moving`, `assemble_evidence`, `report_gen`) filter on
+  `trusted()` — lifting the census from 63%→100% on the labeled sample (1,489→1,100 patents). **`feed_build` is
+  the AUTHORITATIVE attributor** (target-centric + composition-of-matter); `feed_build.verify(pn, target)`
+  confirms a candidate by fetching OPS full-text and re-applying the covalency + on-target test.
+
+Knobs in one place: `feed_build.MIN_MENTIONS / IPC`, `attribute._EXCLUDE/_METHOD/_DEGRADER`, `ocsr._crop_structures`, `patent_radar.WARHEAD_SMARTS`.
 Not yet wired: USPTO bulk-XML gap-fill for US-only families; Leg 2 (clinical); unify + alert; structural watchlist.
 
 ## Honest limits

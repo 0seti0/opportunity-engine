@@ -46,8 +46,9 @@ def run():
     # genes with a covalent patent — only a TITLE/CLAIMS attribution counts as "covalent-closed"; a lone
     # body-mention is too weak (the RAF1 false-positive: flagged closed by one quinazoline patent's body
     # pathway-mention of RAF1, when no covalent RAF program actually exists).
+    from attribute import trusted                          # post-audit grade: drops combination/viral/material/degrader noise
     tg = json.load(open(HERE / "patent_targets.json"))
-    cov_patented = {d["sym"] for d in tg.values() if d.get("sym") and d.get("conf") in ("title", "claims")}
+    cov_patented = {d["sym"] for d in tg.values() if d.get("sym") and trusted(d)}
     cov_body_only = {d["sym"] for d in tg.values() if d.get("sym")} - cov_patented
     # pan-essential genes (Hart CEG2 + DepMap common essentials): covalently drugging a housekeeping
     # enzyme (tubulin, TYMS, polymerases, FASN...) = a toxin, not a best-in-class drug -> exclude.

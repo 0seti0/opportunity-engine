@@ -9,6 +9,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
+from attribute import trusted
 from tractable import covalently_tractable
 from whos_moving import firm, whos_moving
 
@@ -42,7 +43,7 @@ def run():
     # patents (title/claims) per target: company + id + date
     pats = defaultdict(list)
     for pn, d in tg.items():
-        if d.get("sym") and d.get("conf") in ("title", "claims") and pn in feed:
+        if d.get("sym") and trusted(d) and pn in feed:
             e = feed[pn]
             pats[d["sym"]].append({"pn": pn, "assignee": e[2].split(';')[0].strip(), "date": e[1], "title": e[3]})
 
@@ -119,7 +120,7 @@ def run():
     top_syms = {r["target"] for r in ranking}
     prog = defaultdict(lambda: {"firms": set(), "pats": []})
     for pn, d in tg.items():
-        if d.get("sym") and d.get("conf") in ("title", "claims") and pn in feed:
+        if d.get("sym") and trusted(d) and pn in feed:
             e = feed[pn]
             title = (e[3] or "").upper()
             if (e[1] or "")[:4] < "2024" or DEGRADER.search(title):

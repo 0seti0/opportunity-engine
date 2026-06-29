@@ -77,6 +77,22 @@ def screen(target, ipc=IPC, max_pubs=25, pause=1.0):
     return events
 
 
+def verify(pn, target):
+    """AUTHORITATIVE per-patent attribution check. feed_build is the authority (target-centric + composition-
+    of-matter + warhead); attribute.py's text-mined grade is only a CANDIDATE that this confirms. Fetches the
+    OPS full-text and applies the screen's own covalency + on-target test. `pn` may be a SureChEMBL id like
+    'EP-4067347-B1'; only WO/EP carry OPS full-text (others return verified=False, reason given)."""
+    epodoc = re.sub(r"^([A-Z]{2}\d+).*", r"\1", (pn or "").replace("-", ""))   # 'EP-4067347-B1' -> 'EP4067347'
+    desc = ops.fulltext(epodoc, "description")
+    if not desc:
+        return {"pn": pn, "target": target.upper(), "verified": False, "reason": "no OPS full-text (WO/EP only)"}
+    text = re.sub(r"<[^>]+>", " ", desc)
+    covalent = len(pr.warhead_in_claims(text)) >= MIN_MENTIONS
+    on_target = target.upper() in text.upper()
+    return {"pn": pn, "target": target.upper(), "verified": bool(covalent and on_target),
+            "covalent": covalent, "target_in_text": on_target}
+
+
 def ocsr_rescue(pn, frac_range=(0.4, 0.95), max_pages=8):
     """For a `needs_ocsr` patent (covalent by text, but no compound NAME resolved -> warheads are DRAWN):
     recover them from the description page images. Returns the warhead-bearing structures DECIMER read.
@@ -109,6 +125,7 @@ if __name__ == "__main__":
                "<p>[0050] To a stirred solution of the title compound in THF...</p>")
     leads = warhead_leads(fixture)
     assert leads == ["(E)-N-phenyl-3-(pyrrolidin-2-yl)prop-2-enamide"], leads
+    assert re.sub(r"^([A-Z]{2}\d+).*", r"\1", "EP-4067347-B1".replace("-", "")) == "EP4067347"  # verify() pn norm
     print("parser self-check OK:", leads)
 
     target = sys.argv[1] if len(sys.argv) > 1 else "EGFR"

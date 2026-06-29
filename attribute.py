@@ -18,14 +18,68 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
-import duckdb
-
 HERE = Path(__file__).parent
 B = "https://ftp.ebi.ac.uk/pub/databases/chembl/SureChEMBL/bulk_data/2026-06-15"
 ENT, LOC, HGNC = "/tmp/biomedical_entities.parquet", "/tmp/biomedical_locations.parquet", "/tmp/hgnc.txt"
 
+# --- attribution QUALITY grade -----------------------------------------------------------------------
+# A reliability audit (30 patents, adversarially verified vs the real target) measured raw attribution at
+# title 80% / claims 50% / body 40%, with recurring failure modes: combination/resistance patents name a
+# PARTNER-drug target (EGFR) not the invention's (KRAS/AXL); non-human targets (viral protease) get a
+# spurious human gene; antibody/material/process/method-of-use patents have no covalent-inhibitor
+# composition-of-matter. feed_build (target-centric + composition-of-matter + warhead) is the AUTHORITATIVE
+# attributor; this text-mined attribution is a CANDIDATE that must clear these class filters to be 'trusted'.
+_EXCLUDE = re.compile(                                    # wrong universe: non-human target / biologic / material / process
+    r"SARS|\bCOV|CORONAVIR|ANTIVIR|\bVIRUS\b|VIRAL|\b3CL\b|\bMPRO\b|MAIN PROTEASE|HEPATITIS|\bHBV\b|\bHIV\b|"
+    r"INFLUENZA|ANTIBACTER|\bBACTERIAL|ANTIFUNG|ANTIBOD|ANTIGEN.BINDING|BISPECIFIC|NANOBODY|IMMUNOCONJUG|"
+    r"FUSION PROTEIN|CAR.T|VACCINE|OLIGONUCLEOT|SIRNA|\bMRNA\b|APTAMER|POLYMER|HYDROGEL|COPOLYMER|"
+    r"MICROCAPSULE|NANOPARTICLE|\bCOATING|\bRESIN\b|COSMETIC|SYNTHESIS OF|PROCESS FOR PREPAR|\bINTERMEDIATE\b",
+    re.I)
+_METHOD = re.compile(r"^\s*METHODS?\b|COMBINATION|THERAPY|DOSING|REGIMEN|RESISTAN|COMPRISING A\b", re.I)
+_DEGRADER = re.compile(r"PROTAC|DEGRADER|MODULATORS? OF PROTEOLYSIS|MOLECULAR GLUE|PROTEOLYSIS.TARGETING", re.I)
+_IMPLAUSIBLE = re.compile(r"^(OR\d|TAS2R\d|OR\d+[A-Z])", re.I)   # olfactory/taste receptors: NER false-resolutions
+
+
+def grade(conf, sym, title):
+    """Attribution quality bucket: excluded | degrader | trusted | candidate.
+    'trusted' = a covalent-INHIBITOR composition patent attributed from title/claims that clears the filters."""
+    t = title or ""
+    if _EXCLUDE.search(t):
+        return "excluded"                                # not a covalent small-molecule-vs-human-target patent
+    if _DEGRADER.search(t):
+        return "degrader"                                # covalent E3-ligand modality, not an inhibitor
+    if _IMPLAUSIBLE.match(sym or ""):
+        return "candidate"                               # implausible target family -> NER artifact, don't trust
+    if conf in ("title", "claims") and _METHOD.search(t):
+        return "candidate"                               # treatment/combination context, not composition-of-matter
+    if conf in ("title", "claims"):
+        return "trusted"
+    return "candidate"                                   # body-only mention (40% accurate) is never trusted
+
+
+def trusted(rec):
+    """The high-precision covalent-inhibitor census (use this instead of `conf in (title,claims)`)."""
+    return rec.get("grade") == "trusted"
+
+
+def audit_regrade():
+    """Apply the post-audit grade to the EXISTING patent_targets.json in place (pure title post-processing —
+    no parquet re-run). Lets the census tighten immediately; consumers then filter on trusted()."""
+    from collections import Counter
+    tg = json.load(open(HERE / "patent_targets.json"))
+    titles = {e[0]: (e[3] or "") for e in json.load(open(HERE / "covalent_warhead_feed_clean.json"))}
+    for pn, rec in tg.items():
+        rec["grade"] = grade(rec.get("conf"), rec.get("sym"), titles.get(pn, ""))
+    json.dump(tg, open(HERE / "patent_targets.json", "w"), indent=1)
+    old = sum(1 for r in tg.values() if r.get("conf") in ("title", "claims"))
+    new = sum(1 for r in tg.values() if r["grade"] == "trusted")
+    print("regraded", len(tg), "patents:", dict(Counter(r["grade"] for r in tg.values())))
+    print(f"covalent-inhibitor census: {old} (old conf-based) -> {new} trusted "
+          f"({old - new} excluded/degrader/method-demoted)")
+
 
 def run():
+    import duckdb                                          # heavy; only the full rebuild needs it (not grade/trusted)
     feed = json.load(open(HERE / "covalent_warhead_feed_clean.json"))
     pns = sorted({e[0] for e in feed})
     con = duckdb.connect()
@@ -115,15 +169,18 @@ def run():
                 others.append(sym)
         if primary:
             h, sym, conf = primary
-            by_pn[pn] = {"sym": sym, "common": common.get(h, sym), "conf": conf, "others": others}
+            by_pn[pn] = {"sym": sym, "common": common.get(h, sym), "conf": conf,
+                         "grade": grade(conf, sym, title), "others": others}
     print(f"title-QC skipped {skipped} phantom title-gene tags")
 
     json.dump(by_pn, open(HERE / "patent_targets.json", "w"), indent=1)
     print(f"attributed {len(by_pn)}/{len(pns)} feed patents to a validated HGNC target "
           f"({len(pns)-len(by_pn)} have no usable gene annotation)")
     print("confidence:", dict(Counter(d["conf"] for d in by_pn.values())))
+    print("grade:", dict(Counter(d["grade"] for d in by_pn.values())))
     print("top targets:", Counter(d["sym"] for d in by_pn.values()).most_common(18))
 
 
 if __name__ == "__main__":
-    run()
+    import sys
+    audit_regrade() if (len(sys.argv) > 1 and sys.argv[1] == "regrade") else run()

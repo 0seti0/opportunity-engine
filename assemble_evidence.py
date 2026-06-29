@@ -30,12 +30,13 @@ def assemble_evidence(sym):
         ev["clinical_trials_recent_24_26"] = bt.ct_trials(sym, "2024-01-01", "2026-12-31")
     except Exception:
         ev["clinical_trials_total"] = ev["clinical_trials_recent_24_26"] = None
-    # lane: covalent patents (title/claims only) attributed to this target
+    # lane: trusted covalent-inhibitor patents (post-audit grade) attributed to this target
+    from attribute import trusted
     tg = _load("patent_targets.json") or {}
     feed = {e[0]: e for e in (_load("covalent_warhead_feed_clean.json") or [])}
     pats = [{"patent": pn, "title": feed[pn][3], "date": feed[pn][1]}
             for pn, d in tg.items()
-            if d.get("sym") == sym and d.get("conf") in ("title", "claims") and pn in feed]
+            if d.get("sym") == sym and trusted(d) and pn in feed]
     ev["covalent_patents"] = pats or "none in feed (lane likely open)"
     # momentum: literature acceleration (2025-26 vs 2021-23)
     scan = {r["sym"]: r for r in (_load("emerging_open_ranked.json") or {}).get("all", [])}.get(sym)

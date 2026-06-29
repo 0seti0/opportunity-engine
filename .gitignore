@@ -29,3 +29,6 @@ runs/
 covalent_report_*.md
 .clinical_seen.json
 clinical_events.json
+
+.unify_seen.json
+covalent_move_log.json

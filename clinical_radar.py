@@ -1,12 +1,13 @@
-"""Leg 2 — clinical early-warning radar. Catches covalent moves BEFORE the patent publishes, from
-ClinicalTrials.gov (no chemistry). New Phase-1/Early-Phase-1 industry trials -> classify covalency by
-  (Step 1)  diff new trials
-  (Step 2a) patent cross-link to our covalent census (incl. the Day-1 radar top-up)
-  (Step 2b) live web check on the drug code-name (claude -p, no API key; optional)
-The clinical-DESIGN fingerprint (2c) and the unify/cross-link to Leg 1 are the next pieces.
+"""Leg 2 — clinical early-warning radar. Catches covalent moves BEFORE the patent publishes, from clinical
+registries (no chemistry). New Phase-1 industry trials -> classify covalency + score TARGET NOVELTY.
+  (Step 1)  diff new trials — ClinicalTrials.gov + EU CTIS  (WHO ICTRP / ChiCTR have no public API)
+  (Step 2a) patent cross-link to our covalent census   (2b) web check (claude -p)   (2c) fingerprint / pubs
+  (novelty) cross-ref census + CovalentInDB + prior CT.gov trials -> NOVEL / EMERGING / KNOWN target
+  (conf)    earliest signal: AACR/ASCO/ESMO + company-PR sweep for NOVEL targets (claude -p, citation-guarded)
 
-  python clinical_radar.py            # diff new Ph1 trials + patent cross-link (fast)
-  python clinical_radar.py --web      # also run the code-name web check (slow: claude -p per drug)
+  python clinical_radar.py            # CT.gov + CTIS, cross-link + novelty (fast)
+  python clinical_radar.py --web      # + code-name web check (claude -p per drug)
+  python clinical_radar.py --conf     # + conference/PR sweep on NOVEL targets (claude -p)
   python clinical_radar.py --selftest # offline checks
 """
 import json
@@ -82,6 +83,80 @@ def new_trials(since=None, max_pages=12):
         if not token:
             break
     return out
+
+
+# --- (a) ex-US coverage. EU CTIS has a real public JSON API (verified). WHO ICTRP = no public API
+# (registration-gated weekly XML export); ChiCTR = anti-bot HTML — both left as documented slots, NOT faked.
+# CTIS gives the EU Phase-1 covalent starts CT.gov misses, mapped to the SAME trial dict so the cascade is reused.
+CTIS = "https://euclinicaltrials.eu/ctis-public-api/search"
+
+
+def _ctis_post(body):
+    try:
+        req = urllib.request.Request(CTIS, data=json.dumps(body).encode(),
+                                     headers={"Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.load(r)
+    except Exception:
+        return {}                                            # CTIS outage must not break the CT.gov leg
+
+
+def _ctis_date(s):
+    """CTIS dates are 'DD/MM/YYYY' (sometimes prefixed 'GR: ') -> 'YYYY-MM-DD', or '' if unparseable."""
+    m = re.search(r"(\d{2})/(\d{2})/(\d{4})", s or "")
+    return f"{m.group(3)}-{m.group(2)}-{m.group(1)}" if m else ""
+
+
+def new_trials_ctis(since=None, max_pages=6):
+    """EU CTIS Phase-1 inhibitor trials decided since `since` — EU coverage CT.gov misses, in new_trials()'s
+    dict shape so targets_in + the covalency cascade run unchanged. CTIS search needs a text criterion;
+    'inhibitor' is the broad net (mirrors the OPS ti=inhibitor precision/recall tradeoff)."""
+    since = since or (date.today() - timedelta(days=90)).isoformat()
+    out = []
+    for page in range(1, max_pages + 1):
+        data = _ctis_post({"pagination": {"page": page, "size": 50},
+                           "sort": {"property": "decisionDate", "direction": "DESC"},
+                           "searchCriteria": {"containAll": "inhibitor"}}).get("data") or []
+        if not data:
+            break
+        for t in data:
+            posted = _ctis_date(t.get("decisionDateOverall") or t.get("decisionDate"))
+            if posted and posted < since:
+                continue                                     # out of window (no early-break: sort field != filter field)
+            if not re.search(r"\bphase i\b", t.get("trialPhase", "") or "", re.I):
+                continue                                     # Phase-1 only ('Phase I/II' yes; 'Phase II/III/IV' no — \b, not substring)
+            if "pharmaceutical" not in (t.get("sponsorType", "") or "").lower():
+                continue                                     # industry only (matches CT.gov LeadSponsorClass=INDUSTRY)
+            drugs = [p.strip() for p in (t.get("product", "") or "").split(",")
+                     if p.strip() and "placebo" not in p.lower()]
+            out.append({"nct": t.get("ctNumber", ""), "posted": posted, "sponsor": t.get("sponsor", ""),
+                        "title": t.get("ctTitle", ""),
+                        "conditions": " ".join(filter(None, [t.get("conditions", ""), str(t.get("therapeuticAreas", ""))])),
+                        "drugs": drugs, "summary": (t.get("primaryEndPoint", "") or "")[:800],
+                        "design_text": " ".join(filter(None, [t.get("primaryEndPoint", ""), t.get("endPoint", "")]))})
+    return out
+
+
+# --- (b) novelty: how NEW is a covalent move on a target? cross-ref the three prior-art signals we already hold.
+def _prior_trials(target, since):
+    """CT.gov count of INTERVENTIONAL trials on `target` first-posted BEFORE `since` — its clinical history."""
+    q = {"query.term": target, "countTotal": "true", "pageSize": 1, "format": "json",
+         "filter.advanced": f"AREA[StudyType]INTERVENTIONAL AND AREA[StudyFirstPostDate]RANGE[MIN,{since}]"}
+    return bt._get(f"{CTGOV}?{urllib.parse.urlencode(q)}").get("totalCount", 0)
+
+
+def _novelty_tier(ip, chem, prior):
+    return ["NOVEL", "EMERGING", "KNOWN", "KNOWN"][sum([bool(ip), bool(chem), prior > 0])]
+
+
+def novelty(target, covidx, since):
+    """{covalent_ip (census), covalent_chem (CovalentInDB), prior_trials (CT.gov), tier}. NOVEL = no covalent
+    IP + no known covalent chemistry + no prior clinical history = a genuinely new covalent target (the prize)."""
+    from covindb import lookup as covindb_lookup
+    ip = bool(covidx.get(target))
+    chem = covindb_lookup(target) is not None
+    prior = _prior_trials(target, since)
+    return {"covalent_ip": ip, "covalent_chem": chem, "prior_trials": prior, "tier": _novelty_tier(ip, chem, prior)}
 
 
 def _design_text(ps):
@@ -227,11 +302,47 @@ def web_covalent(drug):
         return {}
 
 
-def run(web=False, pubs=False):
+# --- (c) conference/PR sweep: the EARLIEST signal — covalent programs announced at AACR/ASCO/ESMO or in
+# company PR before they hit any trial registry. claude -p web, citation-guarded, cached. Best-effort, opt-in.
+_CONF_CACHE = HERE / ".conference_pr.json"
+
+
+def conference_pr(target):
+    """Recent (~12mo) conference/PR covalent program on `target` not yet in the registries. claude -p web,
+    sources REQUIRED (a 'found' with no source is downgraded), cached. No API key."""
+    cache = json.loads(_CONF_CACHE.read_text()) if _CONF_CACHE.exists() else {}
+    if target in cache:
+        return cache[target]
+    import subprocess
+
+    from llm_claude_code import _extract_json
+    prompt = (f"Search the web (last 12 months). Is there a COVALENT / irreversible small-molecule program "
+              f"against {target} announced in a CONFERENCE abstract (AACR/ASCO/ESMO/AACR-NCI-EORTC) or a company "
+              f"press-release / pipeline page, but NOT yet registered on ClinicalTrials.gov or EU CTIS? Return "
+              f"ONLY JSON: {{\"found\": true, \"stage\": \"preclinical|IND-enabling|conference\", \"company\": \"\", "
+              f"\"event\": \"\", \"evidence\": \"\", \"sources\": [\"url\"]}}. sources = URLs you actually opened "
+              f"([] if none); found=false if nothing covalent-specific.")
+    try:
+        r = subprocess.run(["claude", "-p", prompt, "--output-format", "json"],
+                           capture_output=True, text=True, timeout=300)
+        o = _extract_json(json.loads(r.stdout).get("result", ""))
+        if isinstance(o, dict):
+            if o.get("found") and not o.get("sources"):              # citation guard: uncited != found
+                o = {**o, "found": False, "evidence": "unverified — no source cited"}
+            cache[target] = o
+            _CONF_CACHE.write_text(json.dumps(cache, indent=1))
+            return o
+    except Exception:
+        pass
+    return {"found": False, "evidence": "sweep unavailable"}
+
+
+def run(web=False, pubs=False, conf=False):
+    since = (date.today() - timedelta(days=90)).isoformat()
     seen = set(json.loads(SEEN.read_text())) if SEEN.exists() else set()
     idx, id2sym = gene_index()
     covidx = covalent_index()
-    trials = new_trials()
+    trials = new_trials(since) + new_trials_ctis(since)      # (a) CT.gov + EU CTIS (ICTRP/ChiCTR: no public API)
     events = []
     for tr in trials:
         if tr["nct"] in seen or not tr["drugs"]:
@@ -260,19 +371,27 @@ def run(web=False, pubs=False):
             elif w.get("covalent") is True and ev["covalency"] == "—":     # covalent claimed but uncited -> can't trust
                 ev["covalency"], ev["why"] = "POSSIBLE", "web: covalent claimed, NO source cited (unverified)"
         ev.pop("design_text", None)                          # drop the bulky text from the event
+        if ev["covalency"] != "—":
+            ev["novelty"] = novelty(ev["target"], covidx, since)         # (b) how NEW is this covalent target?
+            if conf and ev["novelty"]["tier"] == "NOVEL":               # (c) earliest-signal sweep, only for the prizes
+                ev["conference"] = conference_pr(ev["target"])
         events.append(ev)
 
+    nov_rank = {"NOVEL": 0, "EMERGING": 1, "KNOWN": 2}
     rank = {"LIKELY": 0, "FINGERPRINT": 1, "POSSIBLE": 2, "—": 3}
-    events.sort(key=lambda e: rank.get(e["covalency"], 3))
+    events.sort(key=lambda e: (rank.get(e["covalency"], 3), nov_rank.get((e.get("novelty") or {}).get("tier"), 3)))
     for e in events:
         if e["covalency"] != "—":
-            print(f"  [{e['covalency']:8}] {e['nct']} {e['posted']} {firm(e['sponsor'])[:20]:20} "
-                  f"{(e['drugs'][0] if e['drugs'] else '?')[:22]:22} {e['target']}  ({e['why']})")
+            nov = (e.get("novelty") or {}).get("tier", "?")
+            print(f"  [{e['covalency']:8}|{nov:8}] {(e['nct'] or '?')[:18]:18} {e['posted']} {firm(e['sponsor'])[:18]:18} "
+                  f"{(e['drugs'][0] if e['drugs'] else '?')[:20]:20} {e['target']}  ({e['why']})")
     SEEN.write_text(json.dumps(sorted(seen | {t['nct'] for t in trials if t['nct']})))
     json.dump(events, open(HERE / "clinical_events.json", "w"), indent=1)
     n_cov = sum(1 for e in events if e["covalency"] != "—")
-    print(f"\nclinical radar: {len(trials)} new Ph1 trials · {len(events)} with a resolvable target · "
-          f"{n_cov} covalent-suspect (cross-link{'+web' if web else ''}).")
+    n_novel = sum(1 for e in events if e["covalency"] != "—" and (e.get("novelty") or {}).get("tier") == "NOVEL")
+    n_ctis = sum(1 for t in trials if (t.get("nct") or "").startswith("20"))     # CTIS ids look like '2025-...'
+    print(f"\nclinical radar: {len(trials)} new Ph1 trials ({n_ctis} via EU CTIS) · {len(events)} with a "
+          f"resolvable target · {n_cov} covalent-suspect ({n_novel} NOVEL targets).")
     return events
 
 
@@ -301,6 +420,11 @@ if __name__ == "__main__":
         assert _pub_verdict("osimertinib is an irreversible EGFR-TKI")
         assert _pub_verdict("the inhibitor covalently binds Cys797 of EGFR")
         assert not _pub_verdict("pirtobrutinib is a non-covalent BTK inhibitor, unlike covalent BTK inhibitors")
+        assert _ctis_date("GR: 29/06/2026") == "2026-06-29" and _ctis_date("n/a") == ""   # (a) CTIS date parse
+        ph = lambda s: bool(re.search(r"\bphase i\b", s, re.I))                             # phase filter is \b, not substring
+        assert ph("Phase I and Phase II (Integrated)") and not ph("Phase III") and not ph("Phase II")
+        assert _novelty_tier(False, False, 0) == "NOVEL"                                    # (b) novelty tiers
+        assert _novelty_tier(True, False, 0) == "EMERGING" and _novelty_tier(True, True, 5) == "KNOWN"
         print("clinical_radar self-check OK")
     else:
-        run(web="--web" in sys.argv, pubs="--pubs" in sys.argv)
+        run(web="--web" in sys.argv, pubs="--pubs" in sys.argv, conf="--conf" in sys.argv)

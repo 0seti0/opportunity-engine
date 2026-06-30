@@ -41,6 +41,7 @@ phase0/
 runs/
 covalent_report_*.md
 .clinical_seen.json
+.conference_pr.json
 clinical_events.json
 
 .unify_seen.json

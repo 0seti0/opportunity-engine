@@ -94,16 +94,19 @@ def verify(pn, target):
 
 
 def lead_smiles(pn):
-    """First SMARTS-confirmed covalent lead SMILES from a patent's OPS description (the chemistry to fast-follow),
-    or None. Only WO/EP carry OPS full-text — US/CN return None (use USPTO bulk for those)."""
+    """First SMARTS-confirmed covalent lead SMILES for a patent (the chemistry to fast-follow), or None.
+    Text path first (OPS description -> named compounds -> OPSIN); when the structures are DRAWN (no named
+    warheads) it FALLS THROUGH to DECIMER OCSR on the OPS page-images. US/CN with no OPS coverage stay None."""
     epodoc = re.sub(r"^([A-Z]{2}\d+).*", r"\1", (pn or "").replace("-", ""))
     desc = ops.fulltext(epodoc, "description")
-    if not desc:
-        return None
-    leads = warhead_leads(desc)
-    for smi in pr.resolve_batch(leads):
-        if smi and pr.has_warhead(smi):
-            return smi
+    if desc:
+        for smi in pr.resolve_batch(warhead_leads(desc)):        # text: named compounds -> OPSIN
+            if smi and pr.has_warhead(smi):
+                return smi
+    if ops.images_inventory(epodoc):                             # drawn warheads -> DECIMER OCSR on the page images
+        hits = ocsr_rescue(epodoc, frac_range=(0.55, 0.98), max_pages=10)   # the Examples sit in the back of the spec
+        if hits:
+            return hits[0]["smiles"]
     return None
 
 

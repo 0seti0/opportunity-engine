@@ -1,0 +1,36 @@
+{
+  "_note": "SEED regression gold set: the methodology audit's CONFIRMED failure modes + canonical covalent chemistry. Run `python test_gold.py`. This is NOT the original 30-patent/24-trial audit set — it encodes what is independently verifiable; grow it toward the full labeled audit.",
+  "attribution": [
+    {"conf": "title",  "sym": "BTK",    "title": "Pyrazolopyrimidine compounds as BTK inhibitors",                                "expect": "trusted",   "note": "real target named in title"},
+    {"conf": "title",  "sym": "SYK",    "title": "Heteroaryl SYK inhibitors",                                                    "expect": "trusted",   "note": "real target named in title"},
+    {"conf": "claims", "sym": "EGFR",   "title": "KRAS G12C inhibitors and uses thereof",                                        "expect": "candidate", "note": "fix1: partner-target named in claims, not the invention -> must NOT be trusted"},
+    {"conf": "claims", "sym": "ISYNA1", "title": "Heteroaryl SYK inhibitors",                                                    "expect": "candidate", "note": "fix1: background gene, real target is SYK"},
+    {"conf": "body",   "sym": "RAF1",   "title": "Quinazoline derivatives and their use",                                        "expect": "candidate", "note": "body-only pathway mention (the RAF1 false-positive)"},
+    {"conf": "radar",  "sym": "EGFR",   "title": "INHIBITOR COMPOUNDS",                                                          "expect": "trusted",   "note": "fix2: feed_build radar provenance preserved through regrade (was demoted to candidate)"},
+    {"conf": "title",  "sym": "MPRO",   "title": "Antiviral compounds targeting the SARS-CoV-2 3CL protease",                    "expect": "excluded",  "note": "non-human/viral universe"},
+    {"conf": "title",  "sym": "IKZF2",  "title": "3-(1-oxoisoindolin-2-yl)piperidine-2,6-dione molecular glue degraders",        "expect": "degrader",  "note": "cereblon glue chemistry, not an inhibitor"},
+    {"conf": "title",  "sym": "EGFR",   "title": "Combination therapy comprising an EGFR inhibitor and chemotherapy",            "expect": "candidate", "note": "method/combination context, not composition-of-matter"}
+  ],
+  "warhead": [
+    {"smiles": "C=CC(=O)Nc1ccccc1",        "name": "acrylamide (osimertinib-class)",                         "expect": true},
+    {"smiles": "ClCC(=O)NCc1ccccc1",       "name": "chloroacetamide",                                        "expect": true},
+    {"smiles": "BrCC(=O)Nc1ccccc1",        "name": "bromoacetamide (fix4: haloacetamide generalization)",    "expect": true},
+    {"smiles": "O=S(=O)(F)c1ccc(N)cc1",    "name": "sulfonyl fluoride (fix4: SuFEx)",                        "expect": true},
+    {"smiles": "OB(O)c1ccccc1",            "name": "boronic acid (fix4: bortezomib-class, proteasome)",      "expect": true},
+    {"smiles": "c1ccccc1C2CO2",            "name": "epoxide / styrene oxide (fix4)",                         "expect": true},
+    {"smiles": "O=C1CCN1",                 "name": "beta-lactam (fix4)",                                     "expect": true},
+    {"smiles": "O=C1C=CC(=O)N1C",          "name": "maleimide (fix4: thiol-Michael; aligns text+structure)", "expect": true},
+    {"smiles": "CC(=O)Oc1ccccc1C(=O)O",    "name": "aspirin (NOT a warhead)",                                "expect": false},
+    {"smiles": "N#Cc1ccccc1",              "name": "benzonitrile (precision guard: generic nitrile NOT matched)", "expect": false},
+    {"smiles": "Clc1ncccn1",               "name": "2-chloropyrimidine (precision guard: SNAr handle, not a warhead)", "expect": false}
+  ],
+  "clinical_fingerprint": [
+    {"text": "Target occupancy in PBMC at 24 and 48h; covalent adduct measured by mass spectrometry", "expect": true},
+    {"text": "Maximum tolerated dose; pharmacokinetics; tumor response by RECIST",                     "expect": false}
+  ],
+  "clinical_pub": [
+    {"text": "osimertinib is an irreversible EGFR-TKI",                                                 "expect": true},
+    {"text": "the inhibitor covalently binds Cys797 of EGFR",                                           "expect": true},
+    {"text": "pirtobrutinib is a non-covalent BTK inhibitor, unlike covalent BTK inhibitors",          "expect": false}
+  ]
+}

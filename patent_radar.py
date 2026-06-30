@@ -15,11 +15,23 @@ from rdkit import Chem
 
 # --- covalent-warhead SMARTS (acyclic constraints exclude steroid-enone / fumarate false positives) -------
 WARHEAD_SMARTS = {
-    "acrylamide":       "[CX3;!R]=[CX3;!R]C(=O)[NX3]",
-    "chloroacetamide":  "[Cl]C[CX3](=O)[NX3]",
-    "propiolamide":     "[CX2]#[CX2]C(=O)[NX3]",
-    "vinylsulfonamide": "[CX3;!R]=[CX3;!R]S(=O)(=O)[NX3]",
+    # Michael-acceptor / alkylating amides (acrylamide subsumes cyano- & fluoro-acrylamide — same C=C-C(=O)N core)
+    "acrylamide":        "[CX3;!R]=[CX3;!R]C(=O)[NX3]",
+    "haloacetamide":     "[Cl,Br,I]C[CX3](=O)[NX3]",        # chloro/bromo/iodo-acetamide (was chloro-only)
+    "propiolamide":      "[CX2]#[CX2]C(=O)[NX3]",
+    "vinylsulfonamide":  "[CX3;!R]=[CX3;!R]S(=O)(=O)[NX3]",
+    "maleimide":         "O=C1C=CC(=O)N1",                  # thiol-Michael (also in the text-name regex -> paths agree)
+    # clinically-validated covalent classes the original 4-pattern set left structurally invisible (audit):
+    "sulfonyl_fluoride": "[#16X4](=O)(=O)[F]",              # SuFEx warhead
+    "epoxide":           "[CX4]1[OX2][CX4]1",               # oxirane / epoxyketone (carfilzomib, proteasome)
+    "aziridine":         "[CX4]1[NX3][CX4]1",
+    "beta_lactam":       "[NX3]1[CX3](=O)[CX4][CX4]1",
+    "boronic_acid":      "[#5]([OX2])[OX2]",                # reversible-covalent (bortezomib/ixazomib, proteasome)
 }
+# Deliberately NOT added — precision killers in the SureChEMBL-wide structure scan, where a greedy pattern over
+# ALL exemplified compounds (>=MIN_CPDS) would mass-false-positive: generic nitrile [CX2]#[NX1] (most drug
+# nitriles are non-covalent), bare aldehyde (ubiquitous/unstable), activated-heteroaryl SNAr halide (an aryl-Cl
+# synthetic handle, not a warhead). Add context-gated if a real miss surfaces.  # ponytail: precision ceiling
 _SMARTS = {k: Chem.MolFromSmarts(v) for k, v in WARHEAD_SMARTS.items()}
 
 # --- claims-text tripwire: warhead NAMES (common + IUPAC), only when they read as chemical nomenclature ----

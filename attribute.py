@@ -51,19 +51,24 @@ _NONTARGET = re.compile(r"^(?:NRN1L?|TPO|THPO)$|^COL\d", re.I)
 
 def grade(conf, sym, title):
     """Attribution quality bucket: excluded | degrader | trusted | candidate.
-    'trusted' = a covalent-INHIBITOR composition patent attributed from title/claims that clears the filters."""
+    'trusted' = (a) a radar hit (feed_build is the AUTHORITATIVE attributor — warhead confirmed on the
+    exemplified composition-of-matter for that target), or (b) a covalent-INHIBITOR composition patent whose
+    target is named in the TITLE (substring-QC'd in run()) and clears the class filters.
+    conf=='claims'/'body' are only CANDIDATES: by construction the gene is NOT in the title, so it is not
+    title-verified — feed_build.verify() promotes the ones that check out. (Audit: claims attribution was
+    ~50% accurate; grading it 'trusted' contaminated ~half the high-precision census, so it now demotes.)"""
     t = title or ""
+    if conf == "radar":
+        return "trusted"                                 # fix2: feed_build Day-1 radar provenance — never demote it
     if _EXCLUDE.search(t):
         return "excluded"                                # not a covalent small-molecule-vs-human-target patent
     if _DEGRADER.search(t):
         return "degrader"                                # covalent E3-ligand modality, not an inhibitor
     if _IMPLAUSIBLE.match(sym or "") or _NONTARGET.match(sym or ""):
         return "candidate"                               # NER artifact / not a covalent small-molecule target
-    if conf in ("title", "claims") and _METHOD.search(t):
-        return "candidate"                               # treatment/combination context, not composition-of-matter
-    if conf in ("title", "claims"):
-        return "trusted"
-    return "candidate"                                   # body-only mention (40% accurate) is never trusted
+    if conf == "title" and not _METHOD.search(t):
+        return "trusted"                                 # fix1: title-attributed composition-of-matter only (title-QC'd)
+    return "candidate"                                   # claims/body/method-context: unverified until feed_build.verify()
 
 
 def trusted(rec):
@@ -152,7 +157,8 @@ def run():
 
     # title-substring QC: a TITLE-ranked gene must actually appear as a token in the (English) title,
     # else it is a phantom tag (multilingual boilerplate / alias collision, e.g. F2R from "IRAK degraders")
-    # -> skip it so the real claims/body target wins. Claims/body genes are trusted (no claims text on hand).
+    # -> skip it so the real claims/body target wins. Claims/body genes are CANDIDATES (grade()), promoted to
+    # trusted only by feed_build.verify() (no claims text on hand here to QC them).
     titles = {e[0]: (e[3] or "").upper() for e in json.load(open(HERE / "covalent_warhead_feed_clean.json"))}
     forms = defaultdict(set)
     for h, fm in con.sql("SELECT hgnc, form FROM hgnc_form WHERE hgnc IN (SELECT DISTINCT hgnc FROM gm)").fetchall():

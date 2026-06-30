@@ -216,7 +216,8 @@ def web_covalent(drug):
     from llm_claude_code import _extract_json
     prompt = (f"Is the investigational drug '{drug}' a COVALENT / irreversible inhibitor or a covalent "
               f"degrader? Search the web. Return ONLY JSON: {{\"covalent\": true, \"target\": \"\", "
-              f"\"evidence\": \"\"}}  (covalent null if you can't tell).")
+              f"\"evidence\": \"\", \"sources\": [\"url\"]}}  (covalent null if you can't tell; sources = the "
+              f"URLs you actually opened, [] if you opened none).")
     try:
         r = subprocess.run(["claude", "-p", prompt, "--output-format", "json"],
                            capture_output=True, text=True, timeout=300)
@@ -254,8 +255,10 @@ def run(web=False, pubs=False):
                 ev["covalency"], ev["why"] = "LIKELY", f"pubs: covalent ('{pc['evidence']}')"
         if web and ev["covalency"] != "LIKELY" and tr["drugs"]:           # 2b web (LLM; most accurate, context-aware)
             w = web_covalent(tr["drugs"][0])
-            if w.get("covalent") is True:
-                ev["covalency"], ev["why"] = "LIKELY", f"web: {(w.get('evidence') or '')[:80]}"
+            if w.get("covalent") is True and w.get("sources"):            # only a WEB-CITED verdict earns LIKELY
+                ev["covalency"], ev["why"] = "LIKELY", f"web: {(w.get('evidence') or '')[:70]} [{len(w['sources'])} src]"
+            elif w.get("covalent") is True and ev["covalency"] == "—":     # covalent claimed but uncited -> can't trust
+                ev["covalency"], ev["why"] = "POSSIBLE", "web: covalent claimed, NO source cited (unverified)"
         ev.pop("design_text", None)                          # drop the bulky text from the event
         events.append(ev)
 

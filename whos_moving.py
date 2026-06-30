@@ -22,13 +22,23 @@ LEGAL = {"INC", "LLC", "LTD", "LIMITED", "CO", "CORP", "CORPORATION", "COMPANY",
 CN = {"诺华": "NOVARTIS", "吉利德": "GILEAD", "默克": "MERCK", "勃林格殷格翰": "BOEHRINGER INGELHEIM",
       "罗氏": "ROCHE", "辉瑞": "PFIZER", "阿斯利康": "ASTRAZENECA", "基因泰克": "GENENTECH",
       "缬图": "VENTUS", "米拉蒂": "MIRATI", "缆图": "BLUEPRINT", "锐新": "REVOLUTION"}
-# collapse a company's many legal-entity spellings to one canonical filer (a keyword -> the canonical name)
+# collapse a company's many legal-entity spellings to one canonical filer (a keyword -> the canonical name).
+# Subsidiary -> ULTIMATE PARENT (point-in-time acquisitions) so one owner isn't counted as several filers —
+# that fragmentation inflated crowding lanes and dismissed real white space (audit). Hand-maintained snapshot;
+# can only MERGE filers (never split), so it only ever surfaces more white space. The digest also prints the
+# distinct filer names at a lane boundary, so a stale mapping is visible to a human.  # ponytail: parent map
 CANON = {"GILEAD": "GILEAD SCIENCES", "NOVARTIS": "NOVARTIS", "REVOLUTION": "REVOLUTION MEDICINES",
-         "BOEHRINGER": "BOEHRINGER INGELHEIM", "ASTRAZENECA": "ASTRAZENECA", "GENENTECH": "GENENTECH",
-         "ROCHE": "ROCHE", "PFIZER": "PFIZER", "AMGEN": "AMGEN", "JANSSEN": "JANSSEN", "BEIGENE": "BEIGENE",
-         "TAKEDA": "TAKEDA", "LILLY": "ELI LILLY", "BLUEPRINT": "BLUEPRINT MEDICINES", "INCYTE": "INCYTE",
-         "EISAI": "EISAI", "ABBVIE": "ABBVIE", "SANOFI": "SANOFI", "VERTEX": "VERTEX", "BAYER": "BAYER",
-         "MERCK": "MERCK", "BRISTOL": "BRISTOL MYERS SQUIBB", "MIRATI": "MIRATI", "VENTUS": "VENTUS"}
+         "BOEHRINGER": "BOEHRINGER INGELHEIM", "ASTRAZENECA": "ASTRAZENECA", "ROCHE": "ROCHE",
+         "GENENTECH": "ROCHE", "PFIZER": "PFIZER", "ARRAY": "PFIZER", "AMGEN": "AMGEN", "JANSSEN": "JANSSEN",
+         "BEIGENE": "BEIGENE", "TAKEDA": "TAKEDA", "LILLY": "ELI LILLY", "LOXO": "ELI LILLY",
+         "BLUEPRINT": "SANOFI", "INCYTE": "INCYTE", "EISAI": "EISAI", "ABBVIE": "ABBVIE",
+         "PHARMACYCLICS": "ABBVIE", "SANOFI": "SANOFI", "VERTEX": "VERTEX", "BAYER": "BAYER", "MERCK": "MERCK",
+         "BRISTOL": "BRISTOL MYERS SQUIBB", "MIRATI": "BRISTOL MYERS SQUIBB", "VENTUS": "VENTUS",
+         "NIMBUS": "NIMBUS THERAPEUTICS"}                  # per-asset SPVs (Nimbus Lakshmi/Saturn/...) -> one owner
+# financial trustees / collateral agents that appear as the assignee when a patent is pledged in debt
+# financing — NOT a drug-company filer. Drop them so they neither inflate crowding nor become a phantom mover.
+TRUSTEE = re.compile(r"WILMINGTON|ANKURA|GLAS TRUST|COLLATERAL AGENT|ALTER DOMUS|U\.?\s?S\.?\s?BANK|"
+                     r"UMB BANK|COMPUTERSHARE|ACQUIOM|WILMINGTON SAVINGS", re.I)
 
 
 def firm(a):                                       # normalize assignee/sponsor to ONE canonical filer
@@ -37,6 +47,8 @@ def firm(a):                                       # normalize assignee/sponsor 
         a = a.replace(cn, en)                       # CN pharma name -> EN, inline
     parts = [p for p in re.sub(r"[^\x00-\x7F]+", " ", a).split(";") if p.strip()]   # primary assignee, ASCII only
     a = re.sub(r"\(.*?\)|[.,/]", " ", (parts[0] if parts else "").upper())
+    if TRUSTEE.search(a):
+        return ""                                   # collateral-agent assignee, not a real filer -> callers drop it
     toks = a.split()
     while toks and toks[-1] in LEGAL:               # drop trailing INC/LLC/AG/...
         toks.pop()
@@ -113,6 +125,19 @@ def whos_moving(target, web=False):
 
 if __name__ == "__main__":
     import sys
+    if "--selftest" in sys.argv:                       # firm() canonicalization incl. subsidiary -> parent
+        assert firm("Gilead Sciences, Inc. ; Gilead Sciences Ireland UC") == "GILEAD SCIENCES"
+        assert firm("Array Biopharma Inc") == "PFIZER"                       # acquired subsidiary -> parent
+        assert firm("Mirati Therapeutics, Inc.") == "BRISTOL MYERS SQUIBB"
+        assert firm("Blueprint Medicines Corporation") == "SANOFI"
+        assert firm("Genentech, Inc.") == "ROCHE"
+        assert firm("吉利德") == "GILEAD SCIENCES"                            # CN -> EN -> canonical
+        assert firm("Nimbus Lakshmi, Inc.") == "NIMBUS THERAPEUTICS"         # per-asset SPV -> one owner
+        assert firm("Wilmington Trust, National Association") == ""          # financial trustee -> dropped
+        assert firm("Ankura Trust Company, LLC") == ""
+        assert firm("Some Tiny Biotech LLC") == "SOME TINY BIOTECH"          # unknown -> cleaned passthrough
+        print("whos_moving firm() self-check OK")
+        sys.exit()
     wm = whos_moving(sys.argv[1] if len(sys.argv) > 1 else "NLRP3")
     print(f"{wm['target']}: {wm['crowding']} — {wm['n_clinical']} industry clinical programs")
     for c in wm["clinical_programs"][:12]:

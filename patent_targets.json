@@ -11,7 +11,7 @@
   "common": "P17",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-109679029-A": {
   "sym": "EGF",
@@ -34,14 +34,14 @@
   "others": [
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-110840847-A": {
   "sym": "CFTR",
   "common": "CFTR",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-110997677-A": {
   "sym": "BTK",
@@ -57,7 +57,7 @@
   "common": "IL6",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-111278818-A": {
   "sym": "BTK",
@@ -100,7 +100,7 @@
   "others": [
    "KDR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-111801334-A": {
   "sym": "BTK",
@@ -131,21 +131,21 @@
   "common": "NRAS",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-112105419-A": {
   "sym": "MUTYH",
   "common": "MYH",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-112110918-A": {
   "sym": "ISL1",
   "common": "ISL1",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-112119075-A": {
   "sym": "MUTYH",
@@ -154,7 +154,7 @@
   "others": [
    "NRAS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-112218859-A": {
   "sym": "PRKN",
@@ -187,7 +187,7 @@
   "common": "NRAS",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-112334460-A": {
   "sym": "ERBB2",
@@ -196,7 +196,7 @@
   "others": [
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-112424207-A": {
   "sym": "NLRP3",
@@ -215,7 +215,7 @@
   "common": "EGFR",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-113024547-A": {
   "sym": "FGFR4",
@@ -250,7 +250,7 @@
    "KMT2B",
    "NPM1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-113164495-A": {
   "sym": "PRKN",
@@ -278,7 +278,7 @@
    "ERBB2",
    "BRAF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-113498342-A": {
   "sym": "AKT1",
@@ -290,7 +290,7 @@
    "ERBB2",
    "PTEN"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-113508118-A": {
   "sym": "NRAS",
@@ -299,7 +299,7 @@
   "others": [
    "HRAS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-113573729-A": {
   "sym": "CD38",
@@ -311,14 +311,14 @@
    "NACAD",
    "BTK"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-113645976-A": {
   "sym": "EGFR",
   "common": "EGFR",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-113784957-A": {
   "sym": "NLRP3",
@@ -362,7 +362,7 @@
   "others": [
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-114727998-A": {
   "sym": "BTK",
@@ -381,7 +381,7 @@
    "EGFR",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-114867530-A": {
   "sym": "MCL1",
@@ -402,7 +402,7 @@
    "PTEN",
    "AKT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-114901366-A": {
   "sym": "AKT1",
@@ -414,14 +414,14 @@
    "CD274",
    "SOS1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-114901662-A": {
   "sym": "SOS1",
   "common": "SOS1",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-114929279-A": {
   "sym": "BRAF",
@@ -479,7 +479,7 @@
    "IGF1",
    "MTOR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-115335059-A": {
   "sym": "IDH1",
@@ -505,7 +505,7 @@
   "others": [
    "DGKA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-115380030-A": {
   "sym": "SSTR4",
@@ -530,7 +530,7 @@
   "others": [
    "FGFR3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-115667216-A": {
   "sym": "YAP1",
@@ -555,14 +555,14 @@
   "common": "EGFR",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-115772161-A": {
   "sym": "FGFR2",
   "common": "FGFR2",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-115803325-A": {
   "sym": "EGFR",
@@ -604,7 +604,7 @@
   "common": "EGFR",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-115867547-A": {
   "sym": "FGFR3",
@@ -613,7 +613,7 @@
   "others": [
    "FGFR2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-115894606-A": {
   "sym": "NRAS",
@@ -625,7 +625,7 @@
    "CD274",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-115916160-A": {
   "sym": "MALT1",
@@ -652,7 +652,7 @@
    "PLCG2",
    "TP53"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-116096862-A": {
   "sym": "ZBTB32",
@@ -671,7 +671,7 @@
   "common": "IKZF2",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-116157404-A": {
   "sym": "LTA4H",
@@ -681,7 +681,7 @@
    "LTC4S",
    "BTK"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-116194144-A": {
   "sym": "FLT3",
@@ -693,7 +693,7 @@
    "TLR9",
    "BTK"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-116209438-A": {
   "sym": "SOS1",
@@ -735,7 +735,7 @@
    "IL10",
    "CRP"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-116348455-A": {
   "sym": "PTPN1",
@@ -756,7 +756,7 @@
    "ERBB2",
    "BRAF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-116472289-A": {
   "sym": "CD19",
@@ -787,7 +787,7 @@
    "TP53",
    "AKT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-116568305-A": {
   "sym": "CD274",
@@ -827,7 +827,7 @@
   "others": [
    "HRAS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-116669763-A": {
   "sym": "FGFR3",
@@ -846,7 +846,7 @@
   "common": "EGFR",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-116710444-A": {
   "sym": "EGFR",
@@ -855,7 +855,7 @@
   "others": [
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-116783202-A": {
   "sym": "TPO",
@@ -881,7 +881,7 @@
   "common": "NF1",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-116981667-A": {
   "sym": "EGFR",
@@ -899,7 +899,7 @@
   "others": [
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-117105933-A": {
   "sym": "MAP4K1",
@@ -933,14 +933,14 @@
   "others": [
    "DGKA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-117396478-A": {
   "sym": "CD274",
   "common": "PD-L1",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-117412753-A": {
   "sym": "BTK",
@@ -956,14 +956,14 @@
   "others": [
    "HRAS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-117440945-A": {
   "sym": "EGFR",
   "common": "EGFR",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-117479943-A": {
   "sym": "EGFR",
@@ -1033,7 +1033,7 @@
    "PTEN",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-117769421-A": {
   "sym": "PRMT5",
@@ -1059,7 +1059,7 @@
   "common": "PI3K",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-117813300-A": {
   "sym": "CCNE1",
@@ -1070,7 +1070,7 @@
    "EGFR",
    "EGF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-117835974-A": {
   "sym": "BTK",
@@ -1129,7 +1129,7 @@
    "EGF",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-117915960-A": {
   "sym": "BTK",
@@ -1166,7 +1166,7 @@
   "others": [
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-117957234-A": {
   "sym": "TPO",
@@ -1196,7 +1196,7 @@
   "common": "alanine aminotransferase",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-118043049-A": {
   "sym": "EGFR",
@@ -1245,7 +1245,7 @@
    "EGFR",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-118221646-A": {
   "sym": "CD274",
@@ -1303,7 +1303,7 @@
    "AKT1",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-119487038-A": {
   "sym": "C3",
@@ -1315,21 +1315,21 @@
    "FLT3",
    "ALB"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-119569735-A": {
   "sym": "BTK",
   "common": "BTK",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-119604291-A": {
   "sym": "EGFR",
   "common": "EGFR",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-119604293-A": {
   "sym": "MTOR",
@@ -1350,7 +1350,7 @@
   "others": [
    "NF1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-119654152-A": {
   "sym": "EGFR",
@@ -1388,7 +1388,7 @@
   "common": "CYP3A4",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-119894893-A": {
   "sym": "GCG",
@@ -1400,7 +1400,7 @@
    "CALCA",
    "ASPG"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-119998298-A": {
   "sym": "CD274",
@@ -1412,7 +1412,7 @@
    "PTEN",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-120040446-A": {
   "sym": "PGR",
@@ -1422,14 +1422,14 @@
    "ERBB2",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-120081791-A": {
   "sym": "BTK",
   "common": "BTK",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "CN-120118089-A": {
   "sym": "BTK",
@@ -1443,14 +1443,14 @@
   "common": "EGFR",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-2004262-B1": {
   "sym": "EGFR",
   "common": "EGFR",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-2066380-B1": {
   "sym": "EGFR",
@@ -1551,7 +1551,7 @@
   "common": "EGFR",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-2718270-B1": {
   "sym": "BTK",
@@ -1599,7 +1599,7 @@
    "CDK5",
    "CDK7"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-2897940-B1": {
   "sym": "CFTR",
@@ -1611,7 +1611,7 @@
    "SERPINA1",
    "PROP1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-2900669-B1": {
   "sym": "ENPP2",
@@ -1642,7 +1642,7 @@
   "common": "myoglobin",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-2968337-B1": {
   "sym": "FGFR4",
@@ -1654,7 +1654,7 @@
    "KDR",
    "ALB"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-2970307-B1": {
   "sym": "EGFR",
@@ -1774,7 +1774,7 @@
    "GSK3B",
    "TLR9"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3119766-B1": {
   "sym": "ISYNA1",
@@ -1786,7 +1786,7 @@
    "GSK3B",
    "TLR9"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3119772-B1": {
   "sym": "ISYNA1",
@@ -1798,7 +1798,7 @@
    "GSK3B",
    "IL6"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3125885-B1": {
   "sym": "EGFR",
@@ -1908,7 +1908,7 @@
    "EGFR",
    "SMDT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3204382-B1": {
   "sym": "BTK",
@@ -1932,7 +1932,7 @@
    "INS",
    "NGF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3206717-B1": {
   "sym": "EGFR",
@@ -2026,7 +2026,7 @@
    "OBP2A",
    "NME4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3242875-B1": {
   "sym": "KDM2B",
@@ -2048,7 +2048,7 @@
    "ENPP7",
    "ENPP6"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3259050-B1": {
   "sym": "MB",
@@ -2162,7 +2162,7 @@
    "IL4",
    "CD80"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3318565-B1": {
   "sym": "JAK3",
@@ -2186,7 +2186,7 @@
    "CXCR2",
    "CCR5"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3328866-B1": {
   "sym": "IDH1",
@@ -2244,7 +2244,7 @@
    "CD63",
    "TMEM115"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3353168-B1": {
   "sym": "EGFR",
@@ -2325,7 +2325,7 @@
    "CCR7",
    "ITGA4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3404027-B1": {
   "sym": "KEAP1",
@@ -2409,7 +2409,7 @@
    "EGFR",
    "EMB"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3436446-B1": {
   "sym": "CFTR",
@@ -2420,7 +2420,7 @@
    "HBE1",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3436447-A1": {
   "sym": "BTK",
@@ -2432,7 +2432,7 @@
    "EPO",
    "IL4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3436447-B1": {
   "sym": "BTK",
@@ -2468,7 +2468,7 @@
    "NPS",
    "BTC"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3452448-B1": {
   "sym": "ATF4",
@@ -2657,7 +2657,7 @@
    "EGFR",
    "PIK3CA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3517536-B1": {
   "sym": "TBK1",
@@ -2669,7 +2669,7 @@
    "PIK3CA",
    "JAK2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3524603-A1": {
   "sym": "FGFR4",
@@ -2875,7 +2875,7 @@
    "FGFR3",
    "CDK1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3663291-A1": {
   "sym": "KEAP1",
@@ -2971,7 +2971,7 @@
    "IL4",
    "CD40"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3689865-B1": {
   "sym": "BTK",
@@ -2983,7 +2983,7 @@
    "IL4",
    "CD52"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3689878-A1": {
   "sym": "BTK",
@@ -3207,7 +3207,7 @@
   "common": "NRAS",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3749665-A1": {
   "sym": "BRAF",
@@ -3225,7 +3225,7 @@
   "common": "EGFR",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3752501-B1": {
   "sym": "CD274",
@@ -3333,7 +3333,7 @@
    "CDK6",
    "CCND3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3784666-B1": {
   "sym": "WFS1",
@@ -3345,7 +3345,7 @@
    "TNFRSF4",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3786165-A1": {
   "sym": "MATK",
@@ -3357,7 +3357,7 @@
    "TFPI",
    "KNG1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3788038-A1": {
   "sym": "NRAS",
@@ -3549,7 +3549,7 @@
    "RD3",
    "TTR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3825313-A1": {
   "sym": "BRD4",
@@ -3572,7 +3572,7 @@
    "PRTN3",
    "VIM"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3837256-B1": {
   "sym": "SMARCA2",
@@ -3620,7 +3620,7 @@
    "KCNH2",
    "EGF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3856726-A1": {
   "sym": "EGFR",
@@ -3632,7 +3632,7 @@
    "RAPGEF5",
    "EGF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3861001-B1": {
   "sym": "IRAK4",
@@ -3644,7 +3644,7 @@
    "PDE4B",
    "IL31"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3863642-A1": {
   "sym": "PRKN",
@@ -3740,7 +3740,7 @@
    "MEIS1",
    "MLLT3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3892278-B1": {
   "sym": "KMT2B",
@@ -3752,7 +3752,7 @@
    "MEIS1",
    "MLLT3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3892302-B1": {
   "sym": "BTK",
@@ -3807,7 +3807,7 @@
    "CD40",
    "IL7"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3914257-B1": {
   "sym": "BCL2L1",
@@ -3843,7 +3843,7 @@
    "CD274",
    "CCR2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3924053-A1": {
   "sym": "EGFR",
@@ -3915,7 +3915,7 @@
    "FGF1",
    "ICOSLG"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3946346-A1": {
   "sym": "EGFR",
@@ -3927,7 +3927,7 @@
    "ROS1",
    "NTRK1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3946360-A1": {
   "sym": "PRKN",
@@ -3963,7 +3963,7 @@
    "NOD2",
    "CCR2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3956329-B9": {
   "sym": "BTK",
@@ -3975,7 +3975,7 @@
    "NOD2",
    "CCR2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3958865-B1": {
   "sym": "EGFR",
@@ -3987,7 +3987,7 @@
    "ERBB3",
    "CSF3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3959211-A1": {
   "sym": "EGFR",
@@ -3999,7 +3999,7 @@
    "EGF",
    "NPB"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3962906-A1": {
   "sym": "TMEM131",
@@ -4011,7 +4011,7 @@
    "LMX1B",
    "HNF1B"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-3966206-A1": {
   "sym": "ATG13",
@@ -4335,7 +4335,7 @@
    "IL2",
    "CD8A"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4026835-A2": {
   "sym": "CD274",
@@ -4378,7 +4378,7 @@
    "SMDT1",
    "BTLA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4031542-B1": {
   "sym": "NRAS",
@@ -4402,7 +4402,7 @@
    "TNFRSF4",
    "CD47"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4043460-B1": {
   "sym": "WFS1",
@@ -4414,7 +4414,7 @@
    "TNFRSF4",
    "CD47"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4045047-A1": {
   "sym": "HRAS",
@@ -4438,7 +4438,7 @@
    "EGFR",
    "HRAS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4046655-A9": {
   "sym": "TNFRSF18",
@@ -4472,7 +4472,7 @@
    "AKT1",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4054724-A1": {
   "sym": "SMARCA2",
@@ -4484,7 +4484,7 @@
    "ERBB2",
    "LTA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4058149-A1": {
   "sym": "MCL1",
@@ -4534,7 +4534,7 @@
   "common": "myoglobin",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4096749-A1": {
   "sym": "EGFR",
@@ -4582,7 +4582,7 @@
    "MET",
    "CDK4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4103221-A1": {
   "sym": "TMEM115",
@@ -4594,7 +4594,7 @@
    "CD40",
    "CD27"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4103222-A1": {
   "sym": "CD28",
@@ -4606,7 +4606,7 @@
    "CD274",
    "CD37"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4107158-A1": {
   "sym": "CRBN",
@@ -4666,7 +4666,7 @@
    "CD274",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4119551-A1": {
   "sym": "EGFR",
@@ -4714,7 +4714,7 @@
    "NOD2",
    "CCR5"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4125906-A1": {
   "sym": "BTK",
@@ -4830,7 +4830,7 @@
    "BRD4",
    "IL27RA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4132907-A1": {
   "sym": "YAP1",
@@ -4875,7 +4875,7 @@
    "RPE65",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4139309-B1": {
   "sym": "ERBB2",
@@ -4935,7 +4935,7 @@
    "CD274",
    "TNFRSF18"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4143189-A1": {
   "sym": "TNF",
@@ -4959,7 +4959,7 @@
    "CD47",
    "CTLA4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4143196-A1": {
   "sym": "PIK3CA",
@@ -5005,7 +5005,7 @@
    "HRAS",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4157836-B1": {
   "sym": "ORC2",
@@ -5017,7 +5017,7 @@
    "HRAS",
    "NRAS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4157837-A1": {
   "sym": "ORC2",
@@ -5029,7 +5029,7 @@
    "HRAS",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4157840-A1": {
   "sym": "CDK7",
@@ -5052,7 +5052,7 @@
    "SOS1",
    "ARID1A"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4161521-A1": {
   "sym": "IRAK4",
@@ -5123,7 +5123,7 @@
    "BMP8B",
    "PIK3CA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4172160-A2": {
   "sym": "SMDT1",
@@ -5147,7 +5147,7 @@
    "HJV",
    "IL7"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4175721-A1": {
   "sym": "SH2D3A",
@@ -5159,7 +5159,7 @@
    "CTLA4",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4181927-A1": {
   "sym": "IDH1",
@@ -5229,7 +5229,7 @@
    "BTK",
    "FLT3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4192474-B1": {
   "sym": "TLR8",
@@ -5241,7 +5241,7 @@
    "FLT3",
    "CCR5"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4192587-A1": {
   "sym": "BTK",
@@ -5265,7 +5265,7 @@
    "TNF",
    "SCN10A"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4193995-A1": {
   "sym": "BTK",
@@ -5287,7 +5287,7 @@
    "ERBB2",
    "BRAF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4196478-A1": {
   "sym": "LTA4H",
@@ -5298,7 +5298,7 @@
    "BTK",
    "SCN10A"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4199908-A1": {
   "sym": "MALT1",
@@ -5496,7 +5496,7 @@
    "AKT1",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4217070-A1": {
   "sym": "EGFR",
@@ -5508,7 +5508,7 @@
    "AKT1",
    "EGF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4219482-A1": {
   "sym": "EGFR",
@@ -5556,7 +5556,7 @@
    "IFNG",
    "CD19"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4219721-A2": {
   "sym": "DHFR",
@@ -5568,7 +5568,7 @@
    "GZMB",
    "PCSK5"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4223294-A1": {
   "sym": "CFTR",
@@ -5580,7 +5580,7 @@
    "PSD",
    "PSD4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4225281-A1": {
   "sym": "EGFR",
@@ -5592,7 +5592,7 @@
    "FGFR3",
    "TP53"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4225303-A1": {
   "sym": "STAT3",
@@ -5664,7 +5664,7 @@
    "EGFR",
    "BTK"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4232019-A1": {
   "sym": "ALB",
@@ -5712,7 +5712,7 @@
    "KIF18A",
    "PIK3CA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4234030-A2": {
   "sym": "CD274",
@@ -5772,7 +5772,7 @@
    "PIK3CA",
    "AURKA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4237088-A1": {
   "sym": "EGFR",
@@ -5781,7 +5781,7 @@
   "others": [
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4237413-A1": {
   "sym": "TMEM131",
@@ -5793,7 +5793,7 @@
    "EIF2B1",
    "EIF2B3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4237418-A1": {
   "sym": "EGFR",
@@ -5802,7 +5802,7 @@
   "others": [
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4237423-A1": {
   "sym": "EGFR",
@@ -5910,7 +5910,7 @@
    "CD38",
    "EZH2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4247807-A1": {
   "sym": "NRAS",
@@ -5970,7 +5970,7 @@
    "BRAF",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4259128-A1": {
   "sym": "IRAK4",
@@ -6144,7 +6144,7 @@
   "common": "BTK",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4284838-A2": {
   "sym": "FOLH1",
@@ -6168,7 +6168,7 @@
    "FGFR1",
    "PSD"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4291235-A1": {
   "sym": "MAP4K1",
@@ -6192,7 +6192,7 @@
    "CD40",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4291562-A1": {
   "sym": "TPO",
@@ -6264,7 +6264,7 @@
    "EGFR",
    "AKT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4301365-A1": {
   "sym": "BTK",
@@ -6348,7 +6348,7 @@
    "FGFR4",
    "ACR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4313989-A1": {
   "sym": "MAP4K1",
@@ -6395,7 +6395,7 @@
    "PIK3CA",
    "CBL"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4320128-A1": {
   "sym": "BTK",
@@ -6535,7 +6535,7 @@
    "CFTR",
    "WEE1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4329888-A1": {
   "sym": "EGFR",
@@ -6595,7 +6595,7 @@
    "ERBB2",
    "MTOR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4334307-A1": {
   "sym": "PRKN",
@@ -6688,7 +6688,7 @@
    "STK11",
    "KEAP1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4341252-A1": {
   "sym": "PDK2",
@@ -6767,7 +6767,7 @@
    "EGF",
    "CCNE2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4356971-A2": {
   "sym": "SMDT1",
@@ -6815,7 +6815,7 @@
    "CCL26",
    "MUTYH"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4359381-A1": {
   "sym": "F2R",
@@ -6827,7 +6827,7 @@
    "CBL",
    "TNFRSF18"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4359389-A1": {
   "sym": "CD274",
@@ -6839,7 +6839,7 @@
    "KIR3DL1",
    "CD47"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4359400-A1": {
   "sym": "EGFR",
@@ -6899,7 +6899,7 @@
    "TNFRSF18",
    "KIR3DL1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4360713-A2": {
   "sym": "ERBB2",
@@ -6935,7 +6935,7 @@
    "EGFR",
    "CDK4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4367117-A1": {
   "sym": "CD274",
@@ -7019,7 +7019,7 @@
    "BMP7",
    "ROS1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4384159-A1": {
   "sym": "EGFR",
@@ -7091,7 +7091,7 @@
    "MOG",
    "CD19"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4398989-A1": {
   "sym": "TPO",
@@ -7139,7 +7139,7 @@
    "GPT",
    "IL23A"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4486455-A1": {
   "sym": "BTK",
@@ -7187,7 +7187,7 @@
    "KCMF1",
    "SHH"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4493554-A1": {
   "sym": "IKZF1",
@@ -7247,7 +7247,7 @@
    "CDK4",
    "HRAS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4501925-A1": {
   "sym": "ERBB2",
@@ -7259,7 +7259,7 @@
    "AKT1",
    "ERBB4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4504171-A2": {
   "sym": "EGFR",
@@ -7307,7 +7307,7 @@
    "CDK7",
    "CDK9"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4506035-A2": {
   "sym": "ERBB2",
@@ -7319,7 +7319,7 @@
    "FGFR3",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4508028-A1": {
   "sym": "ESR2",
@@ -7342,7 +7342,7 @@
    "MAP4K1",
    "CCR8"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4512401-A1": {
   "sym": "CD274",
@@ -7388,7 +7388,7 @@
    "NDST3",
    "EGF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4522113-A1": {
   "sym": "EGFR",
@@ -7436,7 +7436,7 @@
    "KCNH2",
    "EGF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4534085-A1": {
   "sym": "EGFR",
@@ -7448,7 +7448,7 @@
    "RAPGEF5",
    "ABCG2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4536364-A1": {
   "sym": "CD274",
@@ -7460,7 +7460,7 @@
    "AKT1",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4537828-A2": {
   "sym": "BTK",
@@ -7532,7 +7532,7 @@
    "AKT1",
    "PIK3CA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4551226-A1": {
   "sym": "EGFR",
@@ -7623,7 +7623,7 @@
    "IL2",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4568958-A1": {
   "sym": "DGKA",
@@ -7635,7 +7635,7 @@
    "CD274",
    "IL2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4568959-A1": {
   "sym": "DGKA",
@@ -7647,7 +7647,7 @@
    "IL2",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4568960-A1": {
   "sym": "EGFR",
@@ -7683,7 +7683,7 @@
    "PIK3CA",
    "CD40"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4577544-A1": {
   "sym": "PIK3CA",
@@ -7694,7 +7694,7 @@
    "INS",
    "MTOR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4578450-A2": {
   "sym": "CDK4",
@@ -7730,7 +7730,7 @@
    "ATG13",
    "LRRK2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4584269-A1": {
   "sym": "FGFR3",
@@ -7765,7 +7765,7 @@
    "MAT2A",
    "AKT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4598916-A1": {
   "sym": "PRMT5",
@@ -7777,7 +7777,7 @@
    "AURKA",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4598917-A1": {
   "sym": "PRMT5",
@@ -7789,7 +7789,7 @@
    "KIF18A",
    "MAT2A"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4598921-A1": {
   "sym": "EGFR",
@@ -7873,7 +7873,7 @@
    "IL4",
    "CD52"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4608818-A1": {
   "sym": "STING1",
@@ -8005,7 +8005,7 @@
    "KEAP1",
    "STK11"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4637774-A1": {
   "sym": "PRMT5",
@@ -8053,7 +8053,7 @@
    "EGF",
    "CCNE2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4646413-A1": {
   "sym": "ERBB2",
@@ -8065,7 +8065,7 @@
    "EGF",
    "CCNE2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4646414-A1": {
   "sym": "CCNE1",
@@ -8077,7 +8077,7 @@
    "EGFR",
    "CCNE2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4646416-A1": {
   "sym": "CCNE1",
@@ -8089,7 +8089,7 @@
    "EGF",
    "CCNE2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4648766-A1": {
   "sym": "PIK3CA",
@@ -8113,7 +8113,7 @@
    "GCG",
    "IFNG"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4656193-A1": {
   "sym": "BRAF",
@@ -8125,7 +8125,7 @@
    "SOS2",
    "NRAS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "EP-4656201-A2": {
   "sym": "EGFR",
@@ -8245,7 +8245,7 @@
    "FGFR1",
    "ALB"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10196402-B2": {
   "sym": "CCR2",
@@ -8293,7 +8293,7 @@
    "PSD4",
    "NMT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10220165-B2": {
   "sym": "EGFR",
@@ -8334,7 +8334,7 @@
    "HSP90AA1",
    "ERBB3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10227435-B2": {
   "sym": "ZBED1",
@@ -8372,7 +8372,7 @@
    "KNG1",
    "CALCA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10246543-B2": {
   "sym": "ZBED1",
@@ -8393,7 +8393,7 @@
    "JAK2",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10253023-B2": {
   "sym": "BTK",
@@ -8426,7 +8426,7 @@
    "EGFR",
    "SMDT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10266491-B2": {
   "sym": "BTK",
@@ -8474,7 +8474,7 @@
    "IL6",
    "PIK3CA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10273259-B2": {
   "sym": "CENPK",
@@ -8531,7 +8531,7 @@
    "ALB",
    "VWF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10287564-B2": {
   "sym": "ALB",
@@ -8567,7 +8567,7 @@
    "EGFR",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10308835-B2": {
   "sym": "ZBED1",
@@ -8699,7 +8699,7 @@
    "KNG1",
    "MRAS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10370386-B2": {
   "sym": "NRAS",
@@ -8711,7 +8711,7 @@
    "KNG1",
    "RERG"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10377743-B2": {
   "sym": "NRAS",
@@ -8723,7 +8723,7 @@
    "KNG1",
    "INS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10413562-B2": {
   "sym": "BTK",
@@ -8771,7 +8771,7 @@
    "IL4",
    "LOX"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10428108-B2": {
   "sym": "HTRA1",
@@ -8832,7 +8832,7 @@
    "ENPP7",
    "ENPP6"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10457647-B2": {
   "sym": "BTK",
@@ -8844,7 +8844,7 @@
    "IL4",
    "IL6"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10472319-B2": {
   "sym": "MED12",
@@ -8949,7 +8949,7 @@
    "VWF",
    "IFNG"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10590115-B2": {
   "sym": "BRAF",
@@ -8971,7 +8971,7 @@
    "BTK",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10597405-B2": {
   "sym": "NRAS",
@@ -9031,7 +9031,7 @@
    "ICOSLG",
    "FGF1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10632128-B2": {
   "sym": "IFNG",
@@ -9259,7 +9259,7 @@
    "KNG1",
    "RASL12"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10731159-B2": {
   "sym": "EPO",
@@ -9271,7 +9271,7 @@
    "F9",
    "F8"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10736897-B2": {
   "sym": "NRAS",
@@ -9283,7 +9283,7 @@
    "KNG1",
    "CD22"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10738030-B2": {
   "sym": "CFTR",
@@ -9294,7 +9294,7 @@
    "ISYNA1",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10738048-B2": {
   "sym": "FGFR4",
@@ -9354,7 +9354,7 @@
    "HBE1",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10759783-B2": {
   "sym": "BTK",
@@ -9378,7 +9378,7 @@
    "LINC01152",
    "ALB"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10774082-B2": {
   "sym": "HRAS",
@@ -9464,7 +9464,7 @@
    "ALB",
    "VWF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10828300-B2": {
   "sym": "BTK",
@@ -9476,7 +9476,7 @@
    "ERBB2",
    "ITK"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10829458-B2": {
   "sym": "NRAS",
@@ -9488,7 +9488,7 @@
    "KNG1",
    "RASD2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10835454-B2": {
   "sym": "PLG",
@@ -9572,7 +9572,7 @@
    "ENPP6",
    "ENPP7"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10866344-B2": {
   "sym": "NRN1",
@@ -9644,7 +9644,7 @@
    "EGFR",
    "PIK3CA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10912774-B2": {
   "sym": "FGFR4",
@@ -9798,7 +9798,7 @@
    "CD274",
    "RAF1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10968220-B2": {
   "sym": "FGFR4",
@@ -9831,7 +9831,7 @@
    "PSD",
    "PSD4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-10981949-B2": {
   "sym": "CCL26",
@@ -9964,7 +9964,7 @@
    "TNFRSF18",
    "AKT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11059819-B2": {
   "sym": "NRAS",
@@ -9976,7 +9976,7 @@
    "INS",
    "POMC"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11061168-B2": {
   "sym": "ZBED1",
@@ -10031,7 +10031,7 @@
    "KNG1",
    "RRAS2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11136327-B2": {
   "sym": "F3",
@@ -10089,7 +10089,7 @@
    "IL4",
    "JAK3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11180506-B2": {
   "sym": "SOS1",
@@ -10135,7 +10135,7 @@
    "BTK",
    "BRD2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11208399-B2": {
   "sym": "NLRP3",
@@ -10171,7 +10171,7 @@
    "NTRK1",
    "ERBB4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11236068-B2": {
   "sym": "NRAS",
@@ -10216,7 +10216,7 @@
    "MEIS1",
    "MLLT3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11242344-B2": {
   "sym": "PRKN",
@@ -10252,7 +10252,7 @@
    "STAT3",
    "JAK2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11247989-B2": {
   "sym": "EP300",
@@ -10264,7 +10264,7 @@
    "TNF",
    "PDCD1LG2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11254653-B2": {
   "sym": "NLRP3",
@@ -10297,7 +10297,7 @@
    "EGF",
    "F11"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11267812-B2": {
   "sym": "GAPDH",
@@ -10448,7 +10448,7 @@
    "ERBB2",
    "ITK"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11352350-B2": {
   "sym": "IRAK4",
@@ -10594,7 +10594,7 @@
    "VIM",
    "PRTN3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11530206-B2": {
   "sym": "ATG13",
@@ -10675,7 +10675,7 @@
   "common": "myoglobin",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11555029-B2": {
   "sym": "CD274",
@@ -10783,7 +10783,7 @@
    "NOD2",
    "CCR2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11590134-B2": {
   "sym": "ULK1",
@@ -10878,7 +10878,7 @@
    "SMDT1",
    "BTLA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11643421-B2": {
   "sym": "PIK3CA",
@@ -11189,7 +11189,7 @@
    "SMDT1",
    "SCN10A"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11717574-B2": {
   "sym": "BRAF",
@@ -11201,7 +11201,7 @@
    "EGFR",
    "MTOR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11718602-B2": {
   "sym": "EGFR",
@@ -11237,7 +11237,7 @@
    "KCNH2",
    "EGF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11723980-B2": {
   "sym": "IRAK4",
@@ -11285,7 +11285,7 @@
    "CDK4",
    "PANCR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11738013-B2": {
   "sym": "PIK3CA",
@@ -11376,7 +11376,7 @@
    "EGFR",
    "TNFRSF4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11773098-B2": {
   "sym": "CD274",
@@ -11388,7 +11388,7 @@
    "NOD2",
    "CD160"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11773122-B2": {
   "sym": "CCR5",
@@ -11506,7 +11506,7 @@
    "AKAP9",
    "MKRN1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11802182-B2": {
   "sym": "MSI1",
@@ -11746,7 +11746,7 @@
    "CTLA4",
    "TNFRSF4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11897862-B2": {
   "sym": "IKZF1",
@@ -11770,7 +11770,7 @@
    "CD274",
    "BTK"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11897882-B2": {
   "sym": "CRBN",
@@ -11794,7 +11794,7 @@
    "FGFR3",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11905281-B2": {
   "sym": "HRAS",
@@ -11854,7 +11854,7 @@
    "CD274",
    "BTK"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11926625-B2": {
   "sym": "MAP4K1",
@@ -11992,7 +11992,7 @@
    "HRAS",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11945881-B2": {
   "sym": "MUC16",
@@ -12016,7 +12016,7 @@
    "PSD4",
    "NMT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11952352-B2": {
   "sym": "NRAS",
@@ -12052,7 +12052,7 @@
    "ERBB3",
    "HSP90AA1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-11963967-B2": {
   "sym": "RNF13",
@@ -12148,7 +12148,7 @@
    "CELA3B",
    "GZMB"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-12006329-B2": {
   "sym": "OPRM1",
@@ -12184,7 +12184,7 @@
    "PIK3CA",
    "TLR8"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-12037346-B2": {
   "sym": "EGFR",
@@ -12326,7 +12326,7 @@
    "MET",
    "MDM2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-12219327-B2": {
   "sym": "PIK3CA",
@@ -12431,7 +12431,7 @@
    "CD274",
    "BTK"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-12258366-B2": {
   "sym": "SOS1",
@@ -12443,7 +12443,7 @@
    "AKT1",
    "TNFRSF18"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-12269812-B2": {
   "sym": "CD274",
@@ -12643,7 +12643,7 @@
    "FGFR3",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-12338233-B2": {
   "sym": "CD274",
@@ -12832,7 +12832,7 @@
    "ERBB3",
    "CSF3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-12403196-B2": {
   "sym": "NRAS",
@@ -12892,7 +12892,7 @@
    "PIK3CA",
    "AKT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-12410183-B2": {
   "sym": "SMDT1",
@@ -13085,7 +13085,7 @@
    "ERBB2",
    "NTRK1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-12465643-B2": {
   "sym": "NRAS",
@@ -13217,7 +13217,7 @@
    "ERBB2",
    "CDK5"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20190040099-A1": {
   "sym": "CCL26",
@@ -13235,7 +13235,7 @@
    "HBE1",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20190055237-A1": {
   "sym": "FGFR4",
@@ -13247,7 +13247,7 @@
    "FGFR1",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20190055427-A1": {
   "sym": "ZBED1",
@@ -13311,7 +13311,7 @@
    "NGF",
    "EPO"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20190111057-A1": {
   "sym": "EGFR",
@@ -13342,7 +13342,7 @@
    "ERBB4",
    "ERBB3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20190119245-A1": {
   "sym": "BTK",
@@ -13376,7 +13376,7 @@
    "PSD4",
    "NMT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20190127378-A1": {
   "sym": "PTPN11",
@@ -13495,7 +13495,7 @@
    "RASA1",
    "TIAM1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20190177460-A1": {
   "sym": "GMFB",
@@ -13525,7 +13525,7 @@
    "BTK",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20190192522-A1": {
   "sym": "FGFR4",
@@ -13585,7 +13585,7 @@
    "LINC01152",
    "FGFR1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20190224190-A1": {
   "sym": "BTK",
@@ -13621,7 +13621,7 @@
    "ALB",
    "VWF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20190233417-A1": {
   "sym": "BTK",
@@ -13734,7 +13734,7 @@
    "EGFR",
    "SMDT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20190270742-A1": {
   "sym": "FGFR4",
@@ -13824,7 +13824,7 @@
    "INS",
    "RASL10A"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20190284187-A1": {
   "sym": "FGFR4",
@@ -13925,7 +13925,7 @@
    "EGF",
    "VWF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20190315732-A1": {
   "sym": "PRKN",
@@ -14149,7 +14149,7 @@
    "AVP",
    "SOS2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20200115375-A1": {
   "sym": "EGFR",
@@ -14161,7 +14161,7 @@
    "CD274",
    "MAPK1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20200140437-A1": {
   "sym": "NRAS",
@@ -14185,7 +14185,7 @@
    "BTK",
    "BRD2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20200148690-A1": {
   "sym": "BTK",
@@ -14216,7 +14216,7 @@
    "METAP2",
    "EPO"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20200165222-A1": {
   "sym": "BTK",
@@ -14310,7 +14310,7 @@
    "PIK3CA",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20200199102-A1": {
   "sym": "PIN1",
@@ -14322,7 +14322,7 @@
    "MTOR",
    "PPIL4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20200206222-A1": {
   "sym": "FGFR4",
@@ -14406,7 +14406,7 @@
    "CD27",
    "CD33"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20200230110-A1": {
   "sym": "KEAP1",
@@ -14672,7 +14672,7 @@
   "others": [
    "LRP4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20200368237-A1": {
   "sym": "BTK",
@@ -14853,7 +14853,7 @@
    "EGFR",
    "SMDT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20210094919-A1": {
   "sym": "SOS1",
@@ -14963,7 +14963,7 @@
    "EPO",
    "FGF7"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20210147428-A1": {
   "sym": "BTK",
@@ -15018,7 +15018,7 @@
    "FGFR3",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20210177844-A1": {
   "sym": "EGFR",
@@ -15054,7 +15054,7 @@
    "CDK4",
    "PANCR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20210206780-A1": {
   "sym": "IDH1",
@@ -15093,7 +15093,7 @@
    "RASSF1",
    "PIK3CA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20210230142-A9": {
   "sym": "NRAS",
@@ -15117,7 +15117,7 @@
    "RPE65",
    "AKT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20210230166-A1": {
   "sym": "BTK",
@@ -15267,7 +15267,7 @@
    "PSD",
    "PSD4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20210308140-A1": {
   "sym": "NLRP3",
@@ -15291,7 +15291,7 @@
    "TNF",
    "ERBB4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20210309660-A1": {
   "sym": "DMD",
@@ -15303,7 +15303,7 @@
    "HSP90AA1",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20210332054-A1": {
   "sym": "ERBB2",
@@ -15337,7 +15337,7 @@
    "RPE65",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20210369709-A1": {
   "sym": "EGFR",
@@ -15378,7 +15378,7 @@
    "HRAS",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20210386742-A1": {
   "sym": "ERBB2",
@@ -15390,7 +15390,7 @@
    "KCNH2",
    "EGF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220002298-A1": {
   "sym": "NRAS",
@@ -15450,7 +15450,7 @@
    "SMDT1",
    "SCN10A"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220056012-A1": {
   "sym": "MALT1",
@@ -15497,7 +15497,7 @@
    "APC2",
    "CCND3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220106281-A1": {
   "sym": "EIF2B5",
@@ -15521,7 +15521,7 @@
    "TNFRSF18",
    "TNFRSF4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220112308-A1": {
   "sym": "SMARCA1",
@@ -15569,7 +15569,7 @@
    "STAT3",
    "JAK2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220119426-A1": {
   "sym": "CD274",
@@ -15593,7 +15593,7 @@
    "TNF",
    "PDCD1LG2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220127281-A1": {
   "sym": "NRAS",
@@ -15605,7 +15605,7 @@
    "AVP",
    "TIAM1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220133734-A1": {
   "sym": "EGFR",
@@ -15641,7 +15641,7 @@
    "AKT1",
    "TNFRSF18"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220137263-A1": {
   "sym": "MSI1",
@@ -15662,7 +15662,7 @@
    "BTK",
    "CCR5"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220144798-A1": {
   "sym": "IKZF2",
@@ -15758,7 +15758,7 @@
    "PIK3CA",
    "CDK4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220162163-A1": {
   "sym": "PRKN",
@@ -15818,7 +15818,7 @@
    "BRAF",
    "NTRK1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220184074-A1": {
   "sym": "BTK",
@@ -15837,7 +15837,7 @@
   "others": [
    "LRP4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220184090-A1": {
   "sym": "EGFR",
@@ -15873,7 +15873,7 @@
    "ERBB2",
    "GPT"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220204527-A1": {
   "sym": "NRAS",
@@ -15909,7 +15909,7 @@
    "CD274",
    "BTK"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220213092-A1": {
   "sym": "BTK",
@@ -15955,7 +15955,7 @@
    "WEE1",
    "BTK"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220218704-A1": {
   "sym": "EGFR",
@@ -15967,7 +15967,7 @@
    "ERBB2",
    "ITK"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220218709-A1": {
   "sym": "NRAS",
@@ -16039,7 +16039,7 @@
    "LINC01152",
    "FGF1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220340570-A1": {
   "sym": "PRKN",
@@ -16063,7 +16063,7 @@
    "FGFR3",
    "TNFRSF18"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220340577-A1": {
   "sym": "TNFRSF4",
@@ -16190,7 +16190,7 @@
    "CD48",
    "FCGR2B"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20220402907-A1": {
   "sym": "PRKN",
@@ -16238,7 +16238,7 @@
    "CHRD",
    "TNF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230000822-A1": {
   "sym": "BTK",
@@ -16259,7 +16259,7 @@
    "EGFR",
    "PIK3CA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230002367-A1": {
   "sym": "SMARCA2",
@@ -16271,7 +16271,7 @@
    "ERBB2",
    "PRKN"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230002412-A1": {
   "sym": "TNF",
@@ -16307,7 +16307,7 @@
    "NOTCH1",
    "MYD88"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230011726-A1": {
   "sym": "SOS1",
@@ -16329,7 +16329,7 @@
    "CD274",
    "BTK"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230013755-A1": {
   "sym": "BTK",
@@ -16389,7 +16389,7 @@
    "CRBN",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230024133-A1": {
   "sym": "CTLA4",
@@ -16401,7 +16401,7 @@
    "CD38",
    "CD70"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230025351-A1": {
   "sym": "CTSC",
@@ -16425,7 +16425,7 @@
    "RD3",
    "TTR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230026209-A1": {
   "sym": "EGFR",
@@ -16447,7 +16447,7 @@
    "ERBB2",
    "GAST"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230028414-A1": {
   "sym": "PIK3CA",
@@ -16483,7 +16483,7 @@
    "SOS1",
    "HRAS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230029453-A1": {
   "sym": "SH2D3A",
@@ -16495,7 +16495,7 @@
    "IL7",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230030720-A1": {
   "sym": "MEN1",
@@ -16507,7 +16507,7 @@
    "MEIS1",
    "MLLT3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230037639-A1": {
   "sym": "IKZF2",
@@ -16543,7 +16543,7 @@
    "EGFR",
    "CD47"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230039712-A1": {
   "sym": "ATG13",
@@ -16795,7 +16795,7 @@
    "CD19",
    "CD28"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230071978-A1": {
   "sym": "IDH1",
@@ -16899,7 +16899,7 @@
    "TNFRSF18",
    "PIK3CA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230087825-A1": {
   "sym": "SMARCA2",
@@ -16983,7 +16983,7 @@
    "AKT1",
    "TNFRSF18"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230096599-A1": {
   "sym": "IRAK4",
@@ -17054,7 +17054,7 @@
    "ERBB3",
    "HSP90AA1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230103415-A1": {
   "sym": "SMARCA2",
@@ -17066,7 +17066,7 @@
    "CD274",
    "PIK3CA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230104574-A1": {
   "sym": "FGFR2",
@@ -17078,7 +17078,7 @@
    "FGFR4",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230106066-A1": {
   "sym": "IRAK4",
@@ -17438,7 +17438,7 @@
    "AKT1",
    "TNFRSF18"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230149395-A1": {
   "sym": "BTK",
@@ -17481,7 +17481,7 @@
    "MTOR",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230150981-A1": {
   "sym": "SSTR4",
@@ -17536,7 +17536,7 @@
    "CCNE2",
    "CDK4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230167117-A1": {
   "sym": "TLR7",
@@ -17569,7 +17569,7 @@
    "GPR161",
    "LST1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230175038-A1": {
   "sym": "BTK",
@@ -17580,7 +17580,7 @@
    "ACO2",
    "ITK"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230183189-A1": {
   "sym": "CD274",
@@ -17640,7 +17640,7 @@
    "PIK3CA",
    "TLR8"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230190940-A1": {
   "sym": "PRKN",
@@ -17700,7 +17700,7 @@
    "RPE65",
    "AKT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230192709-A1": {
   "sym": "FGFR2",
@@ -17772,7 +17772,7 @@
    "HSP90AA1",
    "AHR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230203031-A1": {
   "sym": "CDK7",
@@ -17808,7 +17808,7 @@
    "OXA1L",
    "IFNA1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230203062-A1": {
   "sym": "CD274",
@@ -17856,7 +17856,7 @@
    "NRAS",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230212199-A1": {
   "sym": "BTK",
@@ -17913,7 +17913,7 @@
   "others": [
    "LRP4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230226186-A1": {
   "sym": "CD274",
@@ -17925,7 +17925,7 @@
    "AKT1",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230227470-A1": {
   "sym": "SOS1",
@@ -17949,7 +17949,7 @@
    "EGFR",
    "SMDT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230233569-A1": {
   "sym": "MTOR",
@@ -18009,7 +18009,7 @@
    "FGFR3",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230242506-A1": {
   "sym": "XIAP",
@@ -18021,7 +18021,7 @@
    "EGFR",
    "PDCD1LG2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230242508-A1": {
   "sym": "IKZF1",
@@ -18230,7 +18230,7 @@
    "SMDT1",
    "CHD2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230271940-A1": {
   "sym": "IKZF2",
@@ -18278,7 +18278,7 @@
    "CYC1",
    "RD3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230278969-A1": {
   "sym": "CTSC",
@@ -18338,7 +18338,7 @@
    "EGFR",
    "ADORA2B"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230293533-A1": {
   "sym": "ERBB2",
@@ -18350,7 +18350,7 @@
    "KCNH2",
    "EGF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230293535-A1": {
   "sym": "BTK",
@@ -18446,7 +18446,7 @@
    "PIK3CA",
    "AKT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230303591-A1": {
   "sym": "EGFR",
@@ -18470,7 +18470,7 @@
    "BTK",
    "FLT3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230312483-A1": {
   "sym": "BTK",
@@ -18482,7 +18482,7 @@
    "IL4",
    "MTOR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230312490-A1": {
   "sym": "NRAS",
@@ -18494,7 +18494,7 @@
    "MMP9",
    "BTLA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230312587-A1": {
   "sym": "SMDT1",
@@ -18530,7 +18530,7 @@
    "CD274",
    "TNFRSF4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230322785-A1": {
   "sym": "ADORA2A",
@@ -18614,7 +18614,7 @@
    "CDK4",
    "PANCR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230339981-A1": {
   "sym": "CD274",
@@ -18650,7 +18650,7 @@
    "FGFR3",
    "PIK3CA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230348494-A1": {
   "sym": "MCL1",
@@ -18686,7 +18686,7 @@
    "INS",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230357211-A1": {
   "sym": "CDK4",
@@ -18722,7 +18722,7 @@
    "AKT1",
    "IGLL1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230364090-A1": {
   "sym": "BTK",
@@ -18806,7 +18806,7 @@
    "AKT1",
    "TNFRSF18"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230372297-A1": {
   "sym": "EGF",
@@ -18873,7 +18873,7 @@
    "CD19",
    "TNFRSF4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230382915-A1": {
   "sym": "ASPG",
@@ -18885,7 +18885,7 @@
    "CTLA4",
    "BTK"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230382940-A1": {
   "sym": "BTK",
@@ -18945,7 +18945,7 @@
    "CD274",
    "GLS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230406866-A1": {
   "sym": "IRAK4",
@@ -18966,7 +18966,7 @@
   "others": [
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20230416242-A1": {
   "sym": "IRAK4",
@@ -19002,7 +19002,7 @@
    "LMX1B",
    "APOL1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20240009197-A1": {
   "sym": "BTK",
@@ -19038,7 +19038,7 @@
    "PARN",
    "MUC1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20240018309-A1": {
   "sym": "MSI1",
@@ -19095,7 +19095,7 @@
    "CDK6",
    "RAF1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20240025932-A1": {
   "sym": "NKTR",
@@ -19131,7 +19131,7 @@
    "SCN10A",
    "SMDT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20240043448-A1": {
   "sym": "NRAS",
@@ -19164,7 +19164,7 @@
   "others": [
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20240051955-A1": {
   "sym": "BTK",
@@ -19211,7 +19211,7 @@
    "CD274",
    "GLS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20240059789-A1": {
   "sym": "FOLH1",
@@ -19388,7 +19388,7 @@
    "AKT1",
    "PIK3CA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20240100056-A1": {
   "sym": "MTOR",
@@ -19466,7 +19466,7 @@
    "EGFR",
    "MTOR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20240116877-A1": {
   "sym": "PDGFRA",
@@ -19478,7 +19478,7 @@
    "LAG3",
    "AKT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20240116926-A1": {
   "sym": "EGFR",
@@ -19636,7 +19636,7 @@
    "ATG13",
    "LRRK2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20240156815-A1": {
   "sym": "EGFR",
@@ -19645,7 +19645,7 @@
   "others": [
    "LRP4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20240158400-A1": {
   "sym": "BTK",
@@ -20012,7 +20012,7 @@
    "NRAS",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250002504-A1": {
   "sym": "SOS1",
@@ -20220,7 +20220,7 @@
    "BRAF",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250051309-A1": {
   "sym": "NR6A1",
@@ -20232,7 +20232,7 @@
    "OR5A1",
    "NKTR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250051320-A1": {
   "sym": "CRBN",
@@ -20412,7 +20412,7 @@
    "EGF",
    "CDK1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250074923-A1": {
   "sym": "EGFR",
@@ -20544,7 +20544,7 @@
    "TNF",
    "IL23A"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250100998-A1": {
   "sym": "TIPARP",
@@ -20808,7 +20808,7 @@
    "AKT1",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250134869-A1": {
   "sym": "JAK3",
@@ -20844,7 +20844,7 @@
    "EGF",
    "ERBB3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250136621-A1": {
   "sym": "CD274",
@@ -20868,7 +20868,7 @@
    "EIF2B3",
    "EIF2B1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250145608-A1": {
   "sym": "SOS1",
@@ -20964,7 +20964,7 @@
    "CTLA4",
    "TIPARP"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250163038-A1": {
   "sym": "F2R",
@@ -20976,7 +20976,7 @@
    "TNFRSF4",
    "TNFRSF18"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250163039-A1": {
   "sym": "NRAS",
@@ -21144,7 +21144,7 @@
    "TNFRSF4",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250188073-A1": {
   "sym": "STMN4",
@@ -21156,7 +21156,7 @@
    "AKT1",
    "NRAS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250195521-A1": {
   "sym": "SOS1",
@@ -21180,7 +21180,7 @@
    "PIK3CA",
    "AKT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250197377-A1": {
   "sym": "BTK",
@@ -21259,7 +21259,7 @@
    "AARS1",
    "SHH"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250205232-A1": {
   "sym": "CFTR",
@@ -21475,7 +21475,7 @@
    "CDK7",
    "CDK9"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250221997-A1": {
   "sym": "TYK2",
@@ -21618,7 +21618,7 @@
    "THPO",
    "CD28"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250243204-A1": {
   "sym": "FGFR2",
@@ -21630,7 +21630,7 @@
    "GPT",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250250231-A1": {
   "sym": "ESR2",
@@ -21841,7 +21841,7 @@
   "common": "BTK",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250282761-A1": {
   "sym": "EGFR",
@@ -21923,7 +21923,7 @@
    "MRC1",
    "C1QC"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250296936-A1": {
   "sym": "NR5A2",
@@ -21947,7 +21947,7 @@
    "SOS1",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250304599-A1": {
   "sym": "EGFR",
@@ -22197,7 +22197,7 @@
    "GNAS",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "US-20250375460-A1": {
   "sym": "STAT3",
@@ -22383,7 +22383,7 @@
   "common": "EGFR",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2019155399-A1": {
   "sym": "BRAF",
@@ -22437,7 +22437,7 @@
    "RASA1",
    "SOS2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2019217307-A1": {
   "sym": "APC2",
@@ -22470,7 +22470,7 @@
   "others": [
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2020012334-A1": {
   "sym": "IKZF2",
@@ -22501,7 +22501,7 @@
   "common": "NRAS",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2020047192-A1": {
   "sym": "GATD3",
@@ -22523,7 +22523,7 @@
    "RAPGEF5",
    "EGF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2020081282-A1": {
   "sym": "EGFR",
@@ -22535,7 +22535,7 @@
    "CD274",
    "MAPK1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2020102730-A1": {
   "sym": "NRAS",
@@ -22558,7 +22558,7 @@
    "NPM1",
    "MEIS1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2020132597-A1": {
   "sym": "NRN1",
@@ -22582,7 +22582,7 @@
    "CD40",
    "IL7"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2020144615-A1": {
   "sym": "CHADL",
@@ -22594,7 +22594,7 @@
    "CD40",
    "CD33"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2020146613-A1": {
   "sym": "GAPDH",
@@ -22613,7 +22613,7 @@
    "MTOR",
    "TFE3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2020156968-A2": {
   "sym": "ALB",
@@ -22661,7 +22661,7 @@
    "NTRK1",
    "ROS1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2020231990-A1": {
   "sym": "FGFR2",
@@ -22673,7 +22673,7 @@
    "FGFR4",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2020232130-A1": {
   "sym": "PIK3CA",
@@ -22818,7 +22818,7 @@
   "common": "TYL",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2021076655-A1": {
   "sym": "HRAS",
@@ -22902,7 +22902,7 @@
    "FGFR3",
    "PIK3CA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2021118877-A1": {
   "sym": "EGFR",
@@ -22914,7 +22914,7 @@
    "CDK4",
    "MAPK1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2021126816-A1": {
   "sym": "PIK3CA",
@@ -22986,7 +22986,7 @@
    "TIPARP",
    "RPE65"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2021156178-A1": {
   "sym": "ERBB2",
@@ -23022,7 +23022,7 @@
    "IL7",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2021161245-A1": {
   "sym": "TMEM115",
@@ -23034,7 +23034,7 @@
    "CD40",
    "CD27"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2021188696-A1": {
   "sym": "STAT3",
@@ -23104,7 +23104,7 @@
    "RPE65",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2021213800-A1": {
   "sym": "ERBB2",
@@ -23140,7 +23140,7 @@
    "GPR161",
    "RAI2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2021230886-A1": {
   "sym": "FGFR4",
@@ -23167,7 +23167,7 @@
   "others": [
    "NRAS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2021239786-A1": {
   "sym": "EGFR",
@@ -23244,7 +23244,7 @@
    "CTLA4",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022009052-A2": {
   "sym": "SH2D3A",
@@ -23256,7 +23256,7 @@
    "CTLA4",
    "IL7"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022023460-A1": {
   "sym": "YAP1",
@@ -23302,7 +23302,7 @@
   "others": [
    "FGFR2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022034529-A1": {
   "sym": "LTA4H",
@@ -23313,7 +23313,7 @@
    "BTK",
    "SCN10A"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022038252-A1": {
   "sym": "MALT1",
@@ -23333,7 +23333,7 @@
   "others": [
    "FGFR3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022043895-A2": {
   "sym": "EGFR",
@@ -23357,7 +23357,7 @@
    "NRAS",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022081973-A1": {
   "sym": "RNF13",
@@ -23369,7 +23369,7 @@
    "NKTR",
    "C5"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022083569-A1": {
   "sym": "CD274",
@@ -23381,7 +23381,7 @@
    "AURKA",
    "PIK3CA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022087216-A1": {
   "sym": "IRAK4",
@@ -23441,7 +23441,7 @@
    "MTOR",
    "AURKA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022094244-A1": {
   "sym": "TMEM131",
@@ -23453,7 +23453,7 @@
    "EIF2B3",
    "EIF2B1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022097060-A1": {
   "sym": "CD19",
@@ -23477,7 +23477,7 @@
    "AKT1",
    "PIK3CA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022101184-A1": {
   "sym": "EGFR",
@@ -23544,7 +23544,7 @@
    "CD38",
    "EZH2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022109485-A1": {
   "sym": "NRAS",
@@ -23587,7 +23587,7 @@
   "common": "EGFR",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022119748-A1": {
   "sym": "CD274",
@@ -23599,7 +23599,7 @@
    "CDK6",
    "RAF1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022125427-A1": {
   "sym": "EGFR",
@@ -23802,7 +23802,7 @@
   "others": [
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022221227-A9": {
   "sym": "EGFR",
@@ -23931,7 +23931,7 @@
    "MTOR",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022266190-A1": {
   "sym": "CCNE1",
@@ -23943,7 +23943,7 @@
    "EGF",
    "CCNE2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022266425-A1": {
   "sym": "TMEM131",
@@ -23955,7 +23955,7 @@
    "BRAF",
    "AASS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022266426-A1": {
   "sym": "TMEM131",
@@ -23967,7 +23967,7 @@
    "BRAF",
    "SMDT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022266427-A1": {
   "sym": "TMEM131",
@@ -23978,7 +23978,7 @@
    "ERBB2",
    "BRAF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022266458-A1": {
   "sym": "TMEM131",
@@ -23989,7 +23989,7 @@
    "ERBB2",
    "BRAF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022269508-A1": {
   "sym": "NRAS",
@@ -24001,7 +24001,7 @@
    "MUTYH",
    "CCL26"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022269525-A1": {
   "sym": "PIK3CA",
@@ -24085,7 +24085,7 @@
    "KIR3DL1",
    "CD47"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022271684-A1": {
   "sym": "CD274",
@@ -24097,7 +24097,7 @@
    "TNFRSF18",
    "KIR3DL1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2022271749-A1": {
   "sym": "EGFR",
@@ -24133,21 +24133,21 @@
    "TNFRSF18",
    "CBL"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023011505-A1": {
   "sym": "EGFR",
   "common": "EGFR",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023011581-A1": {
   "sym": "FGFR2",
   "common": "FGFR2",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023015199-A1": {
   "sym": "MAP4K1",
@@ -24243,7 +24243,7 @@
    "BRAF",
    "HRAS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023031781-A1": {
   "sym": "EGFR",
@@ -24267,7 +24267,7 @@
    "MOG",
    "CD19"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023039464-A1": {
   "sym": "TPO",
@@ -24313,7 +24313,7 @@
    "ERBB2",
    "BRAF"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023049363-A1": {
   "sym": "CYP3A4",
@@ -24409,7 +24409,7 @@
    "BRAF",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023079136-A1": {
   "sym": "AADAT",
@@ -24443,7 +24443,7 @@
    "CRBN",
    "AKT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023086575-A1": {
   "sym": "BTK",
@@ -24479,7 +24479,7 @@
    "EGF",
    "CCNE2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023092107-A1": {
   "sym": "CCNE1",
@@ -24491,7 +24491,7 @@
    "EGF",
    "CDK1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023097194-A2": {
   "sym": "CD274",
@@ -24551,7 +24551,7 @@
    "SOS1",
    "ERBB2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023099620-A1": {
   "sym": "SOS1",
@@ -24623,7 +24623,7 @@
    "CTLA4",
    "PIK3CA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023104916-A1": {
   "sym": "BTK",
@@ -24669,7 +24669,7 @@
    "RAF1",
    "INS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023108108-A1": {
   "sym": "BRAF",
@@ -24681,7 +24681,7 @@
    "INS",
    "EGFR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023114829-A1": {
   "sym": "CD274",
@@ -24693,7 +24693,7 @@
    "CD28",
    "TNFRSF18"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023114954-A1": {
   "sym": "EGFR",
@@ -24860,7 +24860,7 @@
    "GPT",
    "IL23A"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023167938-A1": {
   "sym": "EGFR",
@@ -24939,7 +24939,7 @@
    "KCMF1",
    "SHH"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023173084-A9": {
   "sym": "CD274",
@@ -24951,7 +24951,7 @@
    "SHH",
    "YARS1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023177553-A1": {
   "sym": "GLYR1",
@@ -24992,7 +24992,7 @@
    "CDK4",
    "NRAS"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023183900-A1": {
   "sym": "TYK2",
@@ -25047,7 +25047,7 @@
   "common": "HER2",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023186075-A1": {
   "sym": "CD274",
@@ -25059,7 +25059,7 @@
    "CDK7",
    "CDK8"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023187037-A1": {
   "sym": "EGFR",
@@ -25162,7 +25162,7 @@
    "CDK4",
    "TM2D1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023198901-A1": {
   "sym": "ESR2",
@@ -25185,7 +25185,7 @@
    "NRAS",
    "VCL"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023205475-A1": {
   "sym": "CTPS1",
@@ -25209,7 +25209,7 @@
    "MAP4K1",
    "CCR8"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023209084-A1": {
   "sym": "EGFR",
@@ -25269,7 +25269,7 @@
    "EGF",
    "ERBB3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023214325-A1": {
   "sym": "TET2",
@@ -25387,7 +25387,7 @@
    "VSIG4",
    "MRC1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023247774-A1": {
   "sym": "BTK",
@@ -25423,7 +25423,7 @@
    "NOTCH1",
    "MYD88"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023278326-A1": {
   "sym": "CCNE1",
@@ -25435,7 +25435,7 @@
    "EGFR",
    "CDK4"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2023278402-A1": {
   "sym": "SMARCA4",
@@ -25507,7 +25507,7 @@
    "CDK4",
    "GPT"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2024006929-A1": {
   "sym": "CD274",
@@ -25629,7 +25629,7 @@
    "IL2",
    "CD274"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2024033458-A1": {
   "sym": "EGFR",
@@ -25665,7 +25665,7 @@
    "CD40",
    "PIK3CA"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2024044769-A1": {
   "sym": "PIK3CA",
@@ -25676,7 +25676,7 @@
    "INS",
    "MTOR"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2024046221-A1": {
   "sym": "EGFR",
@@ -25721,7 +25721,7 @@
    "CALCA",
    "ASPG"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2024059169-A1": {
   "sym": "EGFR",
@@ -25757,7 +25757,7 @@
    "AURKA",
    "KIF18A"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2024076672-A1": {
   "sym": "PRMT5",
@@ -25769,7 +25769,7 @@
    "GLS",
    "AKT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2024076674-A1": {
   "sym": "PRMT5",
@@ -25781,7 +25781,7 @@
    "MTOR",
    "MAT2A"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2024081363-A1": {
   "sym": "CD274",
@@ -25985,7 +25985,7 @@
    "EGF",
    "CCNE2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2024148087-A1": {
   "sym": "CCNE1",
@@ -25997,7 +25997,7 @@
    "EGF",
    "CCNE2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2024148089-A1": {
   "sym": "CCNE1",
@@ -26009,7 +26009,7 @@
    "EGF",
    "CCNE2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2024148091-A1": {
   "sym": "CCNE1",
@@ -26021,7 +26021,7 @@
    "EGFR",
    "CCNE2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2024150110-A1": {
   "sym": "JAK3",
@@ -26033,7 +26033,7 @@
    "GCG",
    "IFNG"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2024151930-A1": {
   "sym": "PIK3CA",
@@ -26069,7 +26069,7 @@
    "CDH3",
    "MSLN"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2025006568-A2": {
   "sym": "TPO",
@@ -26093,7 +26093,7 @@
    "CCR8",
    "FLT3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2025006720-A1": {
   "sym": "CTLA4",
@@ -26105,7 +26105,7 @@
    "CCR8",
    "FLT3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2025006753-A2": {
   "sym": "CRBN",
@@ -26189,7 +26189,7 @@
    "C1D",
    "AKT1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2025037036-A1": {
   "sym": "MRGPRX2",
@@ -26294,7 +26294,7 @@
    "CCR8",
    "FLT3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2025054530-A1": {
   "sym": "CTLA4",
@@ -26306,7 +26306,7 @@
    "CCR8",
    "FLT3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2025059427-A1": {
   "sym": "C5",
@@ -26325,7 +26325,7 @@
   "common": "BTK",
   "conf": "claims",
   "others": [],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2025072117-A1": {
   "sym": "CHD2",
@@ -26337,7 +26337,7 @@
    "NTRK1",
    "NTRK2"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2025072120-A1": {
   "sym": "EML4",
@@ -26349,7 +26349,7 @@
    "NPM1",
    "KLC1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2025076094-A1": {
   "sym": "EGFR",
@@ -26421,7 +26421,7 @@
    "ERBB2",
    "SOS1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2025088571-A1": {
   "sym": "EGFR",
@@ -26493,7 +26493,7 @@
    "TUBB3",
    "RAF1"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2025137424-A1": {
   "sym": "EGFR",
@@ -26504,7 +26504,7 @@
    "BRAF",
    "ERBB3"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2025137640-A1": {
   "sym": "WRN",
@@ -26528,7 +26528,7 @@
    "CD274",
    "MAT2A"
   ],
-  "grade": "trusted"
+  "grade": "candidate"
  },
  "WO-2025217307-A1": {
   "sym": "CDKN2A",
@@ -26582,7 +26582,7 @@
   "sym": "EGFR",
   "common": "EGFR",
   "conf": "radar",
-  "grade": "candidate",
+  "grade": "trusted",
   "source": "radar",
   "warheads": [
    "acrylamide"

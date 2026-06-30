@@ -60,7 +60,10 @@ def _unify(moves):
         if m.get("company") and m.get("target"):
             by[(m["company"], m["target"])]["signals"].append(m)
             by[(m["company"], m["target"])]["chemistry"] += m.get("chemistry", [])
-    filers = Counter(t for (_, t) in by)                      # distinct companies with a covalent move on each target
+    filer_names = defaultdict(set)                            # distinct OWNERS (firm()-canonicalized) per target
+    for (company, target) in by:
+        filer_names[target].add(company)
+    filers = {t: len(s) for t, s in filer_names.items()}      # the crowding count is # distinct owners, not rows
     out = []
     for (company, target), v in by.items():
         sigs = sorted(v["signals"], key=lambda s: s["date"] or "9999")
@@ -69,7 +72,8 @@ def _unify(moves):
                     "earliest": sigs[0]["date"], "latest": sigs[-1]["date"], "earliest_type": sigs[0]["type"],
                     "cross_linked": len(types) > 1, "has_chemistry": bool(v["chemistry"]),
                     "warheads": sorted(set(v["chemistry"])),
-                    "target_filers": filers[target], "lane": _lane(target, filers[target]),
+                    "target_filers": filers[target], "target_filer_names": sorted(filer_names[target]),
+                    "lane": _lane(target, filers[target]),
                     "n_patent": sum(s["type"] == "patent" for s in sigs),
                     "n_clinical": sum(s["type"] == "clinical" for s in sigs),
                     "signals": [{"type": s["type"], "id": s["id"], "date": s["date"]} for s in sigs]})
@@ -100,8 +104,10 @@ def run():
     print(f"\n🎯 WHITE SPACE — covalent moves on OPEN/EMERGING targets (the fast-follow gold): {len(white)}")
     for e in white[:22]:
         tag = "🆕 " if (e["company"], e["target"]) in new else "   "
+        # surface the distinct owners when >1 so a firm() split (would inflate the lane) is visible to a human
+        split = f"  filers:{','.join(n[:12] for n in e['target_filer_names'])}" if e["target_filers"] > 1 else ""
         print(f"  {tag}{e['latest']}  {e['company'][:22]:22} {e['target']:9} [{e['lane']}/{e['target_filers']}] "
-              f"{('clin ' + e['signals'][-1]['id']) if e['n_clinical'] else ','.join(e['warheads'])}")
+              f"{('clin ' + e['signals'][-1]['id']) if e['n_clinical'] else ','.join(e['warheads'])}{split}")
     print(f"\n📊 CONTESTED (4–10 filers, watch): {len(contested)} targets · "
           f"CROWDED/SATURATED (ignore — KRAS/EGFR/BTK class): {len(crowded)} → {crowded[:14]}")
     print(f"\n🧪 CLINICAL covalent signals — tagged by lane (crowded = noise):")
@@ -128,6 +134,11 @@ def covalent_competitive(target):
     that separates a real covalent opportunity from a TRAP — e.g. WRN, where covalent Cys727 is already clinical
     (VVD-214) with a mapped on-target resistance liability and the field is fleeing to non-covalent. No API key."""
     cache = json.loads(_INTEL_CACHE.read_text()) if _INTEL_CACHE.exists() else {}
+    # auto-heal: drop any cached verdict that self-reports it could NOT verify (the TIPARP 'web verification was
+    # blocked' OPEN) so it gets re-researched rather than trusted forever. Legacy cited entries are kept.
+    cache = {k: v for k, v in cache.items()
+             if not any(p in (v.get("evidence") or "").lower()
+                        for p in ("verification was blocked", "could not verify", "unable to verify", "no web"))}
     if target in cache:
         return cache[target]
     import subprocess
@@ -142,13 +153,17 @@ def covalent_competitive(target):
         f"3. Is the {target} field going covalent or non-covalent?\n"
         f'Return ONLY JSON: {{"existing_covalent": true, "most_advanced": "", "resistance_reported": false, '
         f'"resistance": "", "field": "covalent|non-covalent|mixed|none", "verdict": "OPEN|TAKEN|TRAP", '
-        f'"evidence": ""}}. verdict: OPEN = no covalent program exists; TAKEN = a covalent inhibitor is clinical; '
+        f'"evidence": "", "sources": ["url"]}}. sources = the URLs you actually opened ([] if none). '
+        f"verdict: OPEN = no covalent program exists; TAKEN = a covalent inhibitor is clinical; "
         f"TRAP = covalent is clinical AND (resistance reported OR the field is moving non-covalent to escape it).")
     try:
         r = subprocess.run(["claude", "-p", prompt, "--output-format", "json"],
                            capture_output=True, text=True, timeout=400)
         o = _extract_json(json.loads(r.stdout).get("result", ""))
         if isinstance(o, dict) and o.get("verdict"):
+            if not o.get("sources"):                              # uncited -> don't trust or cache as authoritative
+                return {**o, "verdict": "?",
+                        "evidence": "unverified — no web source cited: " + (o.get("evidence") or "")[:140]}
             cache[target] = o
             _INTEL_CACHE.write_text(json.dumps(cache, indent=1))
             return o

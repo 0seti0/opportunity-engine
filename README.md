@@ -32,6 +32,30 @@ uv run --with biopython --python 3.12 python factcheck.py
 uv run --with openpyxl --python 3.12 python report.py
 ```
 
+### MolNexTR OCSR backend (optional — higher patent-lead recall)
+`ocsr.py` reads drawn structures off patent images; it defaults to DECIMER. MolNexTR (~93% vs ~41% on real
+USPTO patent images) is wired behind a flag with graceful DECIMER fallback. One-time setup builds a persistent
+engine venv holding the full runtime + MolNexTR + torch (checkpoint ~1.1GB, cached via HuggingFace):
+
+```bash
+uv venv .venv-engine --python 3.11
+uv pip install --python .venv-engine rdkit duckdb openpyxl py2opsin opencv-python biopython requests \
+  huggingface_hub "git+https://github.com/CYF2000127/MolNexTR"
+# checkpoint cached on first use; symlinked to a stable path: .models/molnextr_best.pth
+```
+
+The backend is **auto-detected** (`_ocsr_backend`): from `.venv-engine` MolNexTR is selected automatically (the
+checkpoint resolves from `.models/molnextr_best.pth` — no env var needed); ephemeral `uv run` envs (no torch)
+use DECIMER. Force DECIMER anywhere with `OCSR_BACKEND=decimer`.
+
+```bash
+.venv-engine/bin/python unify.py --report            # auto-detects MolNexTR
+OCSR_BACKEND=decimer .venv-engine/bin/python ...      # kill switch -> DECIMER
+```
+Verify the wiring (no model needed): `python ocsr.py --selftest`.
+A/B on real patent crops (WO2026115265, 29 crops): MolNexTR 4 warhead-bearing vs DECIMER 3 (caught 1 DECIMER
+missed, 0 regressions), with cleaner output (no salt-fragment hallucination).
+
 ## Data (not in repo — download separately)
 - SureChEMBL bulk parquet: https://ftp.ebi.ac.uk/pub/databases/chembl/SureChEMBL/bulk_data/
 - CysDB supplement (NIHMS1893018-supplement-2.xlsx): from the CysDB paper (Cell Chem Biol 2023)

@@ -19,7 +19,12 @@
 backtest_cache.json
 __pycache__/
 .venv/
+.venv-engine/
 .DS_Store
+
+# model weights / OCSR backend (large, downloaded — not code)
+.models/
+*.pth
 
 # throwaway feasibility code
 phase0/

@@ -29,6 +29,16 @@ def main():
     from patent_radar import has_warhead               # fix4 (expanded SMARTS + precision guards)
     ok &= _check("warhead.has_warhead", GOLD["warhead"], lambda c: bool(has_warhead(c["smiles"])))
 
+    import importlib.util, os, ocsr                     # OCSR backend auto-detect (prefer MolNexTR, DECIMER fallback/kill switch)
+    os.environ.pop("OCSR_BACKEND", None); os.environ.pop("OCSR_MOLNEXTR_CKPT", None)
+    avail = bool(importlib.util.find_spec("MolNexTR") and ocsr._molnextr_ckpt())
+    auto_sel = ocsr._ocsr_backend()
+    os.environ["OCSR_BACKEND"] = "decimer"; kill_sel = ocsr._ocsr_backend(); os.environ.pop("OCSR_BACKEND", None)
+    ok &= _check("ocsr.backend_select",
+                 [{"name": "auto matches availability", "got": auto_sel, "expect": "molnextr" if avail else "decimer"},
+                  {"name": "OCSR_BACKEND=decimer kill switch", "got": kill_sel, "expect": "decimer"}],
+                 lambda c: c["got"])
+
     try:                                               # clinical verdicts (also in clinical_radar.py --selftest)
         from clinical_radar import fingerprint, FP_THRESHOLD, _pub_verdict
         ok &= _check("clinical.fingerprint", GOLD["clinical_fingerprint"],

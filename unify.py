@@ -177,6 +177,7 @@ def report(n=12, leads=True, intel=True):
     lead chemistry (feed_build) · CysDB feasibility · the covalent COMPETITIVE/resistance verdict (the trap filter).
     Strong candidates (title-confirmed + OPEN) sort to the top; TRAPs (already-clinical + resistance) sink."""
     import feed_build
+    from covindb import lookup as covindb_lookup
     from cysdb import ligandability
     log = unify()
     feed = {e[0]: e for e in json.load(open(HERE / "covalent_warhead_feed_clean.json"))}
@@ -219,6 +220,15 @@ def report(n=12, leads=True, intel=True):
                       else " · lead: US/CN patent (no OPS full-text)" if lp and lp["id"][:2] in ("US", "CN")
                       else " · lead: not resolved"))
         out.append(f"- **Covalent feasibility (CysDB):** {feas}")
+        cov = covindb_lookup(e["target"])                    # deterministic covalent prior-art (CovalentInDB, <=Jul-2024)
+        if cov:
+            pa = (f"⚗️ {cov['n_inhibitors']} known covalent inhibitors / {cov['n_chemotypes']} chemotypes; "
+                  f"warheads {cov['warheads'][:3]}"
+                  + (f"; site {', '.join(cov['cys_sites'][:2])}" if cov['cys_sites'] else "")
+                  + (f"; best kinact/Ki {cov['best_kinact_ki']:g} /M/s" if cov.get('best_kinact_ki') else ""))
+        else:
+            pa = "none in CovalentInDB (≤Jul-2024; recent/clinical not covered — see clinical + competition)"
+        out.append(f"- **Covalent prior-art (CovalentInDB):** {pa}")
         if ci:
             out.append(f"- **Covalent competition:** **{v}** — {ci.get('most_advanced', '?')[:80]} · field {ci.get('field', '?')}"
                        + (f" · ⚠️ resistance: {ci.get('resistance', '')[:70]}" if ci.get("resistance_reported") else ""))

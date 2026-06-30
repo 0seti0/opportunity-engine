@@ -10,6 +10,14 @@
 *.h5
 *.fasta
 *.tmp
+*.tar.gz
+
+# CovalentInDB 2.0 raw (downloaded once — IP-sensitive, parsed locally by covindb.py)
+CovInDB_All.csv
+Covalent_Complex_Records.csv
+Natural_Compounds_Library.csv
+Virtual_Screening_Library.csv
+.covindb.json
 
 # caches
 *_cache.json

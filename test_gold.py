@@ -39,6 +39,16 @@ def main():
                   {"name": "OCSR_BACKEND=decimer kill switch", "got": kill_sel, "expect": "decimer"}],
                  lambda c: c["got"])
 
+    import covindb                                      # covalent prior-art layer (raw CSV gitignored — skip if absent)
+    if covindb.CSV.exists():
+        eg = covindb.lookup("EGFR")
+        ok &= _check("covindb.lookup",
+                     [{"name": "EGFR has CYS-797 covalent chemistry", "got": bool(eg and any("797" in s for s in eg["cys_sites"])), "expect": True},
+                      {"name": "WRN absent (verified recency gap)", "got": covindb.lookup("WRN") is None, "expect": True}],
+                     lambda c: c["got"])
+    else:
+        print("covindb.lookup             skipped (CovInDB_All.csv gitignored / not present)")
+
     try:                                               # clinical verdicts (also in clinical_radar.py --selftest)
         from clinical_radar import fingerprint, FP_THRESHOLD, _pub_verdict
         ok &= _check("clinical.fingerprint", GOLD["clinical_fingerprint"],

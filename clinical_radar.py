@@ -337,6 +337,20 @@ def conference_pr(target):
     return {"found": False, "evidence": "sweep unavailable"}
 
 
+def _dedup_moves(events):
+    """Cross-registry dedup: the same covalent move can arrive as an NCT (CT.gov) AND a CTIS number — collapse
+    same-(firm, target) events to one, keeping the strongest covalency then the EARLIEST date (the earliest
+    signal is the point). Also folds same-(firm,target) intra-registry duplicates (mirrors unify's aggregation)."""
+    rank = {"LIKELY": 0, "FINGERPRINT": 1, "POSSIBLE": 2, "—": 3}
+    best = {}
+    for e in events:
+        k = (firm(e.get("sponsor", "")), e.get("target"))
+        score = (rank.get(e["covalency"], 3), e.get("posted") or "9999")
+        if k not in best or score < (rank.get(best[k]["covalency"], 3), best[k].get("posted") or "9999"):
+            best[k] = e
+    return list(best.values())
+
+
 def run(web=False, pubs=False, conf=False):
     since = (date.today() - timedelta(days=90)).isoformat()
     seen = set(json.loads(SEEN.read_text())) if SEEN.exists() else set()
@@ -377,6 +391,8 @@ def run(web=False, pubs=False, conf=False):
                 ev["conference"] = conference_pr(ev["target"])
         events.append(ev)
 
+    n_raw = len(events)
+    events = _dedup_moves(events)                            # collapse CT.gov+CTIS duplicates of one program
     nov_rank = {"NOVEL": 0, "EMERGING": 1, "KNOWN": 2}
     rank = {"LIKELY": 0, "FINGERPRINT": 1, "POSSIBLE": 2, "—": 3}
     events.sort(key=lambda e: (rank.get(e["covalency"], 3), nov_rank.get((e.get("novelty") or {}).get("tier"), 3)))
@@ -390,8 +406,9 @@ def run(web=False, pubs=False, conf=False):
     n_cov = sum(1 for e in events if e["covalency"] != "—")
     n_novel = sum(1 for e in events if e["covalency"] != "—" and (e.get("novelty") or {}).get("tier") == "NOVEL")
     n_ctis = sum(1 for t in trials if (t.get("nct") or "").startswith("20"))     # CTIS ids look like '2025-...'
-    print(f"\nclinical radar: {len(trials)} new Ph1 trials ({n_ctis} via EU CTIS) · {len(events)} with a "
-          f"resolvable target · {n_cov} covalent-suspect ({n_novel} NOVEL targets).")
+    print(f"\nclinical radar: {len(trials)} new Ph1 trials ({n_ctis} via EU CTIS) · {len(events)} unique "
+          f"(company,target) moves ({n_raw} before cross-registry dedup) · {n_cov} covalent-suspect "
+          f"({n_novel} NOVEL targets).")
     return events
 
 
@@ -425,6 +442,10 @@ if __name__ == "__main__":
         assert ph("Phase I and Phase II (Integrated)") and not ph("Phase III") and not ph("Phase II")
         assert _novelty_tier(False, False, 0) == "NOVEL"                                    # (b) novelty tiers
         assert _novelty_tier(True, False, 0) == "EMERGING" and _novelty_tier(True, True, 5) == "KNOWN"
+        # cross-registry dedup: same (firm,target) via NCT + CTIS -> one move (strongest covalency, earliest)
+        dd = _dedup_moves([{"sponsor": "Verastem Inc.", "target": "KRAS", "covalency": "POSSIBLE", "posted": "2026-06-15"},
+                           {"sponsor": "Verastem Inc", "target": "KRAS", "covalency": "LIKELY", "posted": "2026-06-09"}])
+        assert len(dd) == 1 and dd[0]["covalency"] == "LIKELY", dd
         print("clinical_radar self-check OK")
     else:
         run(web="--web" in sys.argv, pubs="--pubs" in sys.argv, conf="--conf" in sys.argv)

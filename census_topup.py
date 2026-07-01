@@ -25,7 +25,8 @@ HERE = Path(__file__).parent
 CENSUS = HERE / "patent_targets.json"
 FEED = HERE / "covalent_warhead_feed_clean.json"
 DEFAULT = ["EGFR", "BTK", "KRAS", "BRAF", "FGFR2", "FGFR3", "RET", "JAK3", "SOS1", "CDK7",
-           "PRMT5", "WRN", "KEAP1", "NLRP3", "STAT6", "TYK2", "PARP1", "USP1"]
+           "PRMT5", "WRN", "KEAP1", "NLRP3", "STAT6", "TYK2", "PARP1", "USP1",
+           "RAF1"]                       # on Axiom's pipeline -> screen every run so any covalent RAF1 filing is caught
 
 
 def _norm(pn):

@@ -50,4 +50,8 @@ covalent_move_log.json
 .cysdb_ligand.json
 dossier_*.md
 
+.slack_webhook
+.notify_seen.json
+.pipeline
+
 .covalent_intel.json

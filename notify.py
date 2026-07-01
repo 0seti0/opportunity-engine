@@ -108,18 +108,22 @@ def findings():
 
 
 def _line(f, soften):
+    """Terse line: target — company (+ crowding hint if multiple) (patent/trial DATE) — cysteine — link.
+    The 'sole covalent filer' framing lives in the section header, so single-filer lines just name the company."""
     t = f["target"]
-    when = (f" — patent {f['patent']['date']}" if f.get("patent") else f" — trial {f['trial']['date']}" if f.get("trial") else "")
-    cys = f" It has a reactive cysteine ({f['cys'][0]}), so a covalent approach is feasible." if f["cys"] else ""
-    link = (f" <{f['patent']['url']}|see the patent →>" if f.get("patent") and f["patent"]["url"]
-            else f" <{f['trial']['url']}|see the trial →>" if f.get("trial") and f["trial"]["url"] else "")
-    if t in soften:
-        who = f"{f['company']} is filing covalent patents on it (others are too)"
-    elif f["n_filers"] <= 1:
-        who = f"{f['company']} is the only company filing covalent patents on it in my data"
+    kind = "patent" if f.get("patent") else "trial"
+    d = (f['patent']['date'] if f.get("patent") else f['trial']['date'] if f.get("trial") else "")
+    when = f" ({kind} {d})" if d else ""
+    cys = f" · reactive cysteine {f['cys'][0]}" if f["cys"] else ""
+    link = (f" <{f['patent']['url']}|see →>" if f.get("patent") and f["patent"]["url"]
+            else f" <{f['trial']['url']}|see →>" if f.get("trial") and f["trial"]["url"] else "")
+    if t in soften:                                         # web found other covalent filers -> crowding hint
+        who = f"{f['company'].title()} + others"
+    elif f["n_filers"] > 1:
+        who = ", ".join(c.title() for c in f["filers"][:3])
     else:
-        who = f"{f['n_filers']} companies are filing covalent patents on it ({', '.join(f['filers'][:3])})"
-    return f"• *{t}*{when} — {who}.{cys}{link}"
+        who = f["company"].title()
+    return f"• *{t}* — {who}{when}{cys}.{link}"
 
 
 def compose(fs, soften=(), pipeline=None):
@@ -132,7 +136,7 @@ def compose(fs, soften=(), pipeline=None):
         for p in pipeline:
             if p["moves"]:
                 for m in p["moves"][:4]:
-                    lines.append(f"• *{p['target']}* — new {m['kind']} from {(m.get('company') or '?')[:26]} "
+                    lines.append(f"• *{p['target']}* — new {m['kind']} from {(m.get('company') or '?').title()[:26]} "
                                  f"({m.get('date', '')}). <{m['url']}|see it →>")
             else:
                 lines.append(f"• *{p['target']}* — no new covalent patents or trials since last check (still clear).")
@@ -151,8 +155,8 @@ def compose(fs, soften=(), pipeline=None):
         when = (f"patent {f['patent']['date']}" if f.get("patent") else f"trial {f['trial']['date']}" if f.get("trial") else "")
         link = (f" <{f['patent']['url']}|see the patent →>" if f.get("patent") and f["patent"]["url"]
                 else f" <{f['trial']['url']}|see the trial →>" if f.get("trial") and f["trial"]["url"] else "")
-        lines.append(f"⚠️ *{f['target']}* ({when}) — {f['company']} has a new covalent move, but I'd skip it: a "
-                     f"covalent {f['target']} inhibitor is already clinical ({adv}){res}, so the angle is taken.{link}")
+        lines.append(f"⚠️ *{f['target']}* ({when}) — {f['company'].title()} has a new covalent move, but I'd skip it: "
+                     f"a covalent {f['target']} inhibitor is already clinical ({adv}){res}, so the angle is taken.{link}")
     return "\n\n".join(lines)
 
 
@@ -232,6 +236,9 @@ if __name__ == "__main__":
         fs = [{"target": "SARM1", "company": "ELI LILLY", "filers": ["ELI LILLY"], "n_filers": 1, "novel": True,
                "patent": {"id": "WO-2023177972-A1", "url": "https://patents.google.com/patent/WO2023177972A1", "date": "2023-09-21"},
                "trial": None, "date": "2023-09-21", "cys": [], "intel": {}},
+              {"target": "PRMT5", "company": "GILEAD SCIENCES", "filers": ["AMGEN", "GILEAD SCIENCES"], "n_filers": 2,
+               "novel": False, "patent": {"id": "WO-2025096589-A1", "url": "https://patents.google.com/patent/WO2025096589A1", "date": "2025-12-25"},
+               "trial": None, "date": "2025-12-25", "cys": ["CYS-278"], "intel": {}},
               {"target": "WRN", "company": "GILEAD SCIENCES", "filers": ["GILEAD SCIENCES", "INCYTE"], "n_filers": 2,
                "novel": False, "patent": {"id": "US-20250230168-A1", "url": "https://patents.google.com/patent/US20250230168A1", "date": "2025-07-17"},
                "trial": None, "date": "2025-07-17", "cys": [], "intel": {"verdict": "TRAP", "most_advanced": "VVD-214 (Vividion)", "resistance_reported": True}}]
@@ -239,13 +246,15 @@ if __name__ == "__main__":
                 {"target": "BRAF", "moves": [{"kind": "trial", "id": "NCT09", "url": "https://clinicaltrials.gov/study/NCT09", "company": "PFIZER", "date": "2026-06-01"}]}]
         m = compose(fs, pipeline=pipe)
         head = m.split("*🆕")[0]
-        assert "On your pipeline" in head and "RAF1" in head and "still clear" in head    # RAF1 pinned first, even with no moves
-        assert "BRAF" in head and "NCT09" in head                                          # a pipeline move is shown
+        assert "On your pipeline" in head and "RAF1" in head and "still clear" in head and "Pfizer" in head  # RAF1 first
         assert m.index("RAF1") < m.index("SARM1")                                          # pipeline before new targets
-        assert "ELI LILLY is the only company" in m and "2023-09-21" in m and "VVD-214" in m
-        assert "OPEN" not in m and "EMERGING" not in m
-        sline = next(l for l in compose(fs, soften={"SARM1"}, pipeline=pipe).split("\n\n") if l.startswith("• *SARM1*"))
-        assert "only company" not in sline and "others are too" in sline
+        sarm = next(l for l in m.split("\n\n") if l.startswith("• *SARM1*"))
+        assert "Eli Lilly" in sarm and "only company" not in sarm and "2023-09-21" in sarm  # just the company, no verbose phrase
+        prmt = next(l for l in m.split("\n\n") if l.startswith("• *PRMT5*"))
+        assert "Amgen, Gilead Sciences" in prmt and "reactive cysteine CYS-278" in prmt     # multi-filer -> names listed
+        assert "VVD-214" in m and "skip it" in m and "OPEN" not in m and "EMERGING" not in m
+        soft = next(l for l in compose(fs, soften={"SARM1"}, pipeline=pipe).split("\n\n") if l.startswith("• *SARM1*"))
+        assert "Eli Lilly + others" in soft                                                # web-crowded -> '+ others'
         print("notify self-check OK\n" + "-" * 60 + "\n" + m)
         sys.exit()
     run(dry="--dry" in sys.argv)

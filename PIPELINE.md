@@ -1,7 +1,8 @@
 # Layer 1 — Target Radar: Detailed Pipeline Description
 
 The end-to-end data flow for Layer 1, stage by stage, with data shapes, rules, cross-cutting
-guarantees, and failure handling. Companion to the [Layer 1 course](../layer1-course/README.md).
+guarantees, and failure handling for the proposed target-radar architecture.
+This is a design document; see [README.md](README.md) for the current scripts and data.
 
 ---
 

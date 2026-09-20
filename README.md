@@ -56,7 +56,29 @@ Verify the wiring (no model needed): `python ocsr.py --selftest`.
 A/B on real patent crops (WO2026115265, 29 crops): MolNexTR 4 warhead-bearing vs DECIMER 3 (caught 1 DECIMER
 missed, 0 regressions), with cleaner output (no salt-fragment hallucination).
 
-## Data (not in repo — download separately)
+## Repository layout and data
+
+The root contains standalone Python stages and their checked-in input snapshots.
+Keep `gold.json` for `test_gold.py`, `snapshot.txt` for census attribution, and the
+JSON/CSV files consumed by the scripts: these are required inputs or saved evidence,
+not disposable caches. In particular, `covalent_warhead_feed_clean.json` and
+`patent_targets.json` supply the current patent census; `unified_candidates.json`
+supplies the weekly shortlist. Saved rankings and research handoffs also remain
+available because the external LLM workflow is not fully reproducible from this repo.
+These snapshots are historical data, not a live assessment.
+
+Unused exploratory feed, whitespace, and crowding exports have been removed from
+the working tree and are ignored. Their previous versions remain in Git history.
+New disposable analysis exports should go under the ignored `runs/` directory.
+
+- [DESIGN.md](DESIGN.md): covalent early-warning radar design and dated build status.
+- [ARCHITECTURE.md](ARCHITECTURE.md) and [PIPELINE.md](PIPELINE.md): earlier target-radar
+  design proposals; they describe a broader system, not implemented guarantees.
+- `pipeline.py`, `query.py`, and `claims.jsonl`: claim-log prototype.
+- `backtest.py`, `casecontrol.py`, `casecontrol2.py`, and `cleantest.py`: distinct
+  retrospective evaluation approaches; their fixtures are retained.
+
+### External source data (download separately)
 - SureChEMBL bulk parquet: https://ftp.ebi.ac.uk/pub/databases/chembl/SureChEMBL/bulk_data/
 - CysDB supplement (NIHMS1893018-supplement-2.xlsx): from the CysDB paper (Cell Chem Biol 2023)
 - HGNC complete set, DepMap common essentials, Hart CEG2 — see script headers
@@ -92,3 +114,9 @@ the subscription path is for individual use and is rate-limited.
 
 ## Note
 `.epo_creds.json` (EPO OPS keys) is gitignored — never commit it.
+
+## Offline regression checks
+
+With RDKit installed, run `python test_gold.py`. The optional CovalentInDB check
+is skipped when its separately downloaded CSV is absent. Backend selection can
+also be checked with `python ocsr.py --selftest` without model weights.

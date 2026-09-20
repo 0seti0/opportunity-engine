@@ -55,3 +55,12 @@ dossier_*.md
 .pipeline
 
 .covalent_intel.json
+
+# Retired exploratory exports (not consumed by the maintained scripts)
+/cov_crowding.csv
+/covalent_feed_raw.csv
+/covalent_feed_credible.csv
+/covalent_warhead_feed.json
+/covalent_whitespace.csv
+/covalent_whitespace_fam.json
+/covalent_whitespace_ranked.csv
